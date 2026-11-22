@@ -248,6 +248,8 @@ def enrich(row):
         result["responsibilities"]=[b for b in bullets if b not in result["requirements"]][:10]
         result["page_status"]="Listed in Himalayas API"
         result["verification_note"]="Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas."
+        result["salary"]=normalize_salary(result.get("salary"))
+        result["description"]=concise(result.get("description") or result.get("snippet"),260)
         return result
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
