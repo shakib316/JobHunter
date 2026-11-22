@@ -146,6 +146,12 @@ def find_jobposting(obj):
     return None
 def enrich(row):
     result={**row,"company":row.get("api_company") or "Employer not verified","location":row.get("api_location") or "Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":row.get("api_salary") or "Not disclosed","employment_type":row.get("api_employment_type") or "Not specified","experience":"Not specified","date_posted":datetime.fromtimestamp(row["api_date_posted"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_date_posted") else "Not specified","valid_through":datetime.fromtimestamp(row["api_valid_through"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_valid_through") else "Not specified","apply_url":row.get("apply_url") or row["url"],"source_url":row.get("source_url") or row["url"],"source_name":row.get("source_name") or row.get("discovery_source","Job source"),"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only","discovery_source":row.get("discovery_source","DuckDuckGo")}
+    if row.get("source_name")=="Himalayas":
+        for skill in SKILLS:
+            if re.search(re.escape(skill),result["description"],re.I): result["skills"].append(skill)
+        result["page_status"]="Listed in Himalayas API"
+        result["verification_note"]="Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas."
+        return result
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
         result["page_status"]=f"Fetched (HTTP {r.status_code})"
@@ -220,7 +226,7 @@ def rank(x):
     if "remote" in loc: x["fit_reasons"].append("Remote opportunity indicated")
     if not x["fit_reasons"]: x["fit_reasons"].append("Relevant security role; validate detailed requirements")
     x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering and cloud security"
-    x["verification_note"]="Discovery result only; confirm the role is active and apply on the employer's official careers site."
+    x["verification_note"]=x.get("verification_note") or "Discovery result only; confirm the role is active and apply on the employer's official careers site."
     return x
 def rough_score(x):
     title=x["title"].lower(); blob=(title+" "+x["snippet"]).lower()
