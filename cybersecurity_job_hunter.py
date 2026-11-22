@@ -206,7 +206,11 @@ def enrich(row):
                 if resp: result["responsibilities"]=[clean(resp if isinstance(resp,str) else json.dumps(resp))[:1200]]
                 if quals: result["requirements"]=[clean(quals if isinstance(quals,str) else json.dumps(quals))[:1200]]
                 exp=job.get("experienceRequirements")
-                if exp: result["experience"]=clean(exp if isinstance(exp,str) else json.dumps(exp))
+                if exp:
+                    exp_items=exp if isinstance(exp,list) else [exp]
+                    months=next((e.get("monthsOfExperience") for e in exp_items if isinstance(e,dict) and e.get("monthsOfExperience")),None)
+                    if months: result["experience"]=str(int(months)//12)+"+ years"
+                    else: result["experience"]=clean(exp if isinstance(exp,str) else json.dumps(exp))
                 sal=job.get("baseSalary")
                 if sal: result["salary"]=clean(json.dumps(sal,ensure_ascii=False))
                 desc=job.get("description")
@@ -216,8 +220,6 @@ def enrich(row):
             for sel,field in [('meta[name="description"]','description'),('meta[property="og:description"]','description')]:
                 tag=soup.select_one(sel)
                 if tag and tag.get("content") and len(tag["content"])>len(result[field]): result[field]=clean(tag["content"])
-            title=soup.title.string if soup.title and soup.title.string else ""
-            if title and len(title)>len(result["title"]) and re.search(r"security|siem|soar|detection|cyber",title,re.I): result["title"]=clean(title)[:180]
             target=clean(row["target_employer"])
             if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery","API discovery"] and target.lower() in (row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc).lower():
                 result["company"]=target
