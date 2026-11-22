@@ -58,7 +58,8 @@ def location_allowed(location, description=""):
     # Keep multi-location roles if at least one location matches the user's list.
     if re.search(rf"\b(?:{allowed_cities})\b",loc,re.I): return True
     # Explicit Pan-India / All-India listings are eligible; generic "India" alone is not.
-    if re.search(r"\b(?:pan[ -]?india|all[ -]?india|across india|anywhere in india|india[ -]wide|multiple locations across india|open across india)\b",loc,re.I): return True
+    pan_india=r"\b(?:pan[ -]?india|all[ -]?india|across india|anywhere in india|india[ -]wide|multiple locations across india|open across india)\b"
+    if re.search(pan_india,loc+" "+desc,re.I): return True
     if not re.search(r"\b(remote|worldwide|anywhere|global|open to all|all countries)\b",loc,re.I): return False
     if re.search(r"not confirmed|unconfirmed|eligibility unknown",loc,re.I): return False
     # A remote label restricted to another city is not eligible for this search.
@@ -332,6 +333,8 @@ def enrich(row):
                 result["company"]=target
             m=re.search(r"(Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida)",text,re.I)
             if m and result["location"] in ["Not specified","Remote"]: result["location"]=m.group(1)
+            if result["location"] in ["Not specified","India"] and re.search(r"\b(?:pan[ -]?india|all[ -]?india|across india|anywhere in india|india[ -]wide|multiple locations across india|open across india)\b",text,re.I):
+                result["location"]="Pan-India"
             sal=re.search(r"(?:₹|INR|USD|US\$|\$)\s?[\d,.]+\s?(?:k|K|LPA|lakh|lakhs|per annum|/year|/yr|annually)",text,re.I)
             if sal and not re.search(r"\$\s?0(?:\.0+)?\b",sal.group(0)): result["salary"]=sal.group(0)
             for s in SKILLS:
