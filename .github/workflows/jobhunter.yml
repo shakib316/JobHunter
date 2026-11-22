@@ -6,6 +6,7 @@ on:
     paths:
       - "cybersecurity_job_hunter.py"
       - "requirements.txt"
+      - "docs/index.html"
       - ".github/workflows/jobhunter.yml"
   schedule:
     - cron: "30 3 * * 1,4"
@@ -18,7 +19,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   search-and-publish:
-    if: github.actor != "github-actions[bot]"
     runs-on: ubuntu-latest
     timeout-minutes: 20
     environment:
