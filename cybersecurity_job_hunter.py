@@ -17,7 +17,7 @@ VENDORS=["Palo Alto Networks","CrowdStrike","Microsoft Security","Google Cloud S
 GCCS=["Deutsche Börse Group","Vanguard","Charles Schwab","UBS","HSBC","Voya Financial","T-Mobile","DoorDash","Billtrust","Sanofi","JLL","Acumatica","Blackbaud","Regeneron","Amgen","Eli Lilly","Citizens Financial Group","Nationwide","HCA Healthcare","Western Union","Costco","Marriott","DAZN","Agilent","McDonald's","Micron","Mattel","S&P Global","State Street","Wells Fargo","Synchrony","Salesforce","Google","Amazon","Microsoft"]
 ROLES=["security engineer","cybersecurity engineer","cyber security engineer","siem engineer","soar engineer","detection engineer","security platform engineer","security operations engineer","security analyst","soc engineer","security architect","cloud security engineer","incident response","threat detection","security consultant","security lead","cyber security lead"]
 SKILLS=["Google SecOps","Chronicle","Splunk","Splunk ES","SOAR","SIEM","YARA-L","BindPlane","Cribl","Microsoft Sentinel","CrowdStrike","NG SIEM","detection engineering","detection rules","incident response","log ingestion","log parsing","normalization","alert tuning","vulnerability management","cloud infrastructure","cloud security","threat hunting","AWS","Azure","GCP","KQL","Python","EDR","XDR","Kubernetes"]
-LOCATIONS=["Hyderabad","Remote India","Remote","Bengaluru","Pune","Gurugram","Gurgaon","Noida","Delhi","Chennai","Mumbai","India"]
+LOCATIONS=["Remote","Hyderabad","Gurugram","Gurgaon","Delhi","Noida"]
 HYDERABAD_WATCHLIST=[
     ("Providence India","Lead Cybersecurity Engineer / SIEM Lead Engineer","Hyderabad, Telangana, India","https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180","LinkedIn","Not specified","LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements."),
     ("HCLTech","Track Manager - Security Investigations, SIEM","Hyderabad, Telangana, India","https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/","Employer careers","Not specified","HCLTech employer careers listing; confirm active status and experience requirements."),
@@ -29,11 +29,10 @@ def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
 def search_queries():
     qs=[]
     role=' OR '.join('"'+r+'"' for r in ROLES[:9])
-    for c in VENDORS: qs.append((f'"{c}"',f'"{c}" ({role}) (Hyderabad OR India OR remote) jobs'))
-    for c in GCCS: qs.append((f'"{c}"',f'"{c}" (security OR SIEM OR SOAR OR detection OR SOC) (Hyderabad OR India OR remote) careers jobs'))
+    for c in VENDORS: qs.append((f'"{c}"',f'"{c}" ({role}) (Hyderabad OR Gurugram OR Gurgaon OR Delhi OR Noida OR remote) jobs'))
+    for c in GCCS: qs.append((f'"{c}"',f'"{c}" (security OR SIEM OR SOAR OR detection OR SOC) (Hyderabad OR Gurugram OR Gurgaon OR Delhi OR Noida OR remote) careers jobs'))
     qs += [("New Hyderabad GCCs",'new GCC Hyderabad 2026 cybersecurity security engineer SIEM SOAR jobs'),
            ("New Hyderabad GCCs",'Hyderabad global capability centre expansion information security careers 2026'),
-           ("India discovery",'India remote security engineer SIEM SOAR detection engineer jobs'),
            ("Delhi NCR discovery",'Delhi OR Gurgaon OR Gurugram OR Noida security engineer SIEM SOAR detection engineer cybersecurity jobs'),
            ("Delhi NCR GCC discovery",'Delhi NCR Gurgaon Gurugram Noida GCC security operations SIEM SOAR detection careers'),
            ("Hyderabad discovery",'Hyderabad security engineer cloud security SIEM SOAR jobs')]
@@ -46,9 +45,9 @@ def api_row(title, company, location, url, description="", salary="Not disclosed
     # This dashboard prioritises India. Accept explicitly India-based roles and truly worldwide remote roles;
     # do not label US/Europe-only vacancies as "Remote India".
     loc=location.lower()
-    india=bool(re.search(r"india|hyderabad|bengaluru|bangalore|pune|gurugram|gurgaon|delhi|new delhi|chennai|mumbai|noida",loc))
-    worldwide=bool(re.search(r"worldwide|anywhere|global|all countries|open to all",loc))
-    if not (india or worldwide): return None
+    # Only the six requested location buckets are eligible; generic India and other cities are excluded.
+    allowed=bool(re.search(r"remote|worldwide|anywhere|global|all countries|open to all|hyderabad|gurugram|gurgaon|delhi|new delhi|noida",loc))
+    if not allowed: return None
     return {"title":title,"url":url,"snippet":clean(description)[:4500],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":location or "Not specified","api_salary":clean(salary) or "Not disclosed","discovery_source":source}
 
 def discover():
@@ -140,7 +139,7 @@ def discover():
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
                         if not url or not title or BAD.search(title+" "+url): continue
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
-                        if not re.search(r"India|Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Chennai|Mumbai|Noida|worldwide|anywhere|global",snippet+" "+title,re.I): continue
+                        if not re.search(r"Remote|worldwide|anywhere|global|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
                         add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"India/remote eligibility to verify","search_query_location":"India priority","discovery_source":"DuckDuckGo"})
                 except Exception as e:
                     print("Search query failed:",str(e)[:160])
@@ -225,7 +224,7 @@ def enrich(row):
             target=clean(row["target_employer"])
             if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery","API discovery"] and target.lower() in (row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc).lower():
                 result["company"]=target
-            m=re.search(r"(Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Gurgaon|Chennai|Mumbai|Noida|India)",text,re.I)
+            m=re.search(r"(Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida)",text,re.I)
             if m and result["location"] in ["Not specified","Remote"]: result["location"]=m.group(1)
             sal=re.search(r"(?:₹|INR|USD|US\$|\$)\s?[\d,.]+\s?(?:k|K|LPA|lakh|lakhs|per annum|/year|/yr|annually)",text,re.I)
             if sal and not re.search(r"\$\s?0(?:\.0+)?\b",sal.group(0)): result["salary"]=sal.group(0)
@@ -281,6 +280,8 @@ def main():
     # Enrich only the strongest 60 leads to keep scheduled runs predictable.
     raw=sorted(raw,key=rough_score,reverse=True)[:60]
     enriched=[rank(enrich(x)) for x in raw]
+    allowed_location=re.compile(r"remote|worldwide|anywhere|global|all countries|open to all|hyderabad|gurugram|gurgaon|delhi|new delhi|noida",re.I)
+    enriched=[x for x in enriched if allowed_location.search(x.get("location",""))]
     today=now.date()
     def is_current(x):
         if re.search(r"HTTP (?:404|410)",x.get("page_status","")): return False
