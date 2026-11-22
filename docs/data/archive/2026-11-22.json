@@ -1,8 +1,8 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 08:38 UTC",
-  "generated_at_iso": "2026-11-22T08:38:46.466491+00:00",
-  "total_candidates": 47,
+  "generated_at": "2026-11-22 08:41 UTC",
+  "generated_at_iso": "2026-11-22T08:41:44.274784+00:00",
+  "total_candidates": 57,
   "count": 15,
   "profile": {
     "title": "Security Engineer",
@@ -40,7 +40,7 @@
       "company": "Palo Alto Networks",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -48,23 +48,23 @@
       "company": "CrowdStrike",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Microsoft Security",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "company": "Google Cloud Security",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -72,7 +72,7 @@
       "company": "SentinelOne",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -80,7 +80,7 @@
       "company": "Darktrace",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -88,39 +88,39 @@
       "company": "Fortinet",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Cisco Security",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "company": "Check Point Software",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "company": "IBM Security",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "company": "Zscaler",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -128,7 +128,7 @@
       "company": "Vectra AI",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -136,7 +136,7 @@
       "company": "CyberArk",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -144,7 +144,7 @@
       "company": "Okta",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -152,7 +152,7 @@
       "company": "Cloudflare",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -160,7 +160,7 @@
       "company": "Proofpoint",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -168,7 +168,7 @@
       "company": "Trellix",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -176,7 +176,7 @@
       "company": "Sophos",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -184,7 +184,7 @@
       "company": "Rapid7",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -192,7 +192,7 @@
       "company": "Elastic",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -200,7 +200,7 @@
       "company": "Arctic Wolf",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -208,7 +208,7 @@
       "company": "ReliaQuest",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -216,7 +216,7 @@
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -224,7 +224,7 @@
       "company": "Securonix",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -232,7 +232,7 @@
       "company": "Abnormal Security",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -240,7 +240,7 @@
       "company": "Recorded Future",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -248,7 +248,7 @@
       "company": "Tenable",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -256,7 +256,7 @@
       "company": "Qualys",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -264,7 +264,7 @@
       "company": "Wiz",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -272,7 +272,7 @@
       "company": "Akamai",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -280,7 +280,7 @@
       "company": "Bitdefender",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -288,7 +288,7 @@
       "company": "Trend Micro",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -296,7 +296,7 @@
       "company": "BlackBerry Cylance",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -304,7 +304,7 @@
       "company": "Cybereason",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -312,31 +312,31 @@
       "company": "eSentire",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Huntress",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "company": "Expel",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "company": "Dropzone AI",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -344,7 +344,7 @@
       "company": "Torq",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -352,23 +352,23 @@
       "company": "Simbian",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Prophet Security",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
       "error": ""
     },
     {
       "company": "Radiant Security",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -376,7 +376,7 @@
       "company": "Stellar Cyber",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -384,7 +384,7 @@
       "company": "Lakera",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -392,7 +392,7 @@
       "company": "Protect AI",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -400,7 +400,7 @@
       "company": "HiddenLayer",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -408,7 +408,7 @@
       "company": "Mindgard",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -416,7 +416,7 @@
       "company": "Robust Intelligence",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -424,7 +424,7 @@
       "company": "Netskope",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -432,7 +432,7 @@
       "company": "SparkCognition",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -440,7 +440,7 @@
       "company": "Deutsche Börse Group",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -448,7 +448,7 @@
       "company": "Vanguard",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -456,7 +456,7 @@
       "company": "Charles Schwab",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -464,7 +464,7 @@
       "company": "UBS",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -472,7 +472,7 @@
       "company": "HSBC",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -480,7 +480,7 @@
       "company": "Voya Financial",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -488,7 +488,7 @@
       "company": "T-Mobile",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -496,7 +496,7 @@
       "company": "DoorDash",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -504,7 +504,7 @@
       "company": "Billtrust",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -512,7 +512,7 @@
       "company": "Sanofi",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -520,23 +520,23 @@
       "company": "JLL",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Acumatica",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "company": "Blackbaud",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -544,7 +544,7 @@
       "company": "Regeneron",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -552,7 +552,7 @@
       "company": "Amgen",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -560,7 +560,7 @@
       "company": "Eli Lilly",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -568,7 +568,7 @@
       "company": "Citizens Financial Group",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -576,7 +576,7 @@
       "company": "Nationwide",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -584,7 +584,7 @@
       "company": "HCA Healthcare",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -592,7 +592,7 @@
       "company": "Western Union",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -600,7 +600,7 @@
       "company": "Costco",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -608,7 +608,7 @@
       "company": "Marriott",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -616,7 +616,7 @@
       "company": "DAZN",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -624,7 +624,7 @@
       "company": "Agilent",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -632,7 +632,7 @@
       "company": "McDonald's",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -640,7 +640,7 @@
       "company": "Micron",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -648,7 +648,7 @@
       "company": "Mattel",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -656,7 +656,7 @@
       "company": "S&P Global",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -664,7 +664,7 @@
       "company": "State Street",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -672,7 +672,7 @@
       "company": "Wells Fargo",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -680,7 +680,7 @@
       "company": "Synchrony",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -688,7 +688,7 @@
       "company": "Salesforce",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -696,7 +696,7 @@
       "company": "Google",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -704,7 +704,7 @@
       "company": "Amazon",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     },
@@ -712,7 +712,7 @@
       "company": "Microsoft",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 5,
       "matching_jobs": 0,
       "error": ""
     }
@@ -720,36 +720,36 @@
   "broad_search_coverage": [
     {
       "query": "New Hyderabad GCCs",
-      "status": "checked_no_match",
-      "results_seen": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 1,
       "error": ""
     },
     {
       "query": "New Hyderabad GCCs",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 8,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Delhi NCR discovery",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 7,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Delhi NCR GCC discovery",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 7,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Hyderabad discovery",
       "status": "checked_no_match",
-      "results_seen": 0,
+      "results_seen": 7,
       "matching_jobs": 0,
       "error": ""
     }
@@ -785,20 +785,20 @@
       "status": "ok",
       "companies_configured": 85,
       "companies_checked": 85,
-      "companies_with_matches": 0,
-      "matching_jobs": 0,
+      "companies_with_matches": 8,
+      "matching_jobs": 9,
       "note": "All 50 vendors and 35 GCCs are queried each run. checked_no_match means providers returned no qualifying result, not proof that no vacancy exists."
     },
     "Employer metasearch": {
       "status": "ok",
-      "matching_jobs": 0,
+      "matching_jobs": 9,
       "queries_attempted": 85,
       "backends": "Bing, Brave, Google, Yahoo"
     },
     "Broad market discovery": {
       "status": "ok",
       "queries_attempted": 5,
-      "matching_jobs": 0
+      "matching_jobs": 1
     }
   },
   "results": [
@@ -874,7 +874,7 @@
       "responsibilities": [
         "Build, operate, and mature SIEM/XDR capabilities, including log ingestion, detection rule development, alert tuning, and investigation…",
         "Design and implement detection strategies for suspicious activity, including data exfiltration patterns using application and database…",
-        "Extend audit and attribution coverage across the estate — Kubernetes audit logs, database audit logging, SSO and access-path telemetry — so…"
+        "Investigate and respond to security incidents across cloud infrastructure and applications, performing root cause analysis and driving…"
       ],
       "requirements": [
         "Extend audit and attribution coverage across the estate — Kubernetes audit logs, database audit logging, SSO and access-path telemetry — so…",
@@ -1250,9 +1250,9 @@
       "location": "Remote India",
       "description": "At Securonix , we’re on a mission to secure the world by staying ahead of cyber threats, reinforcing all layers of our platform with AI capabilities. Our Securonix Unified Defense SIEM provides organizations with the first and only AI-Reinforced solution…",
       "responsibilities": [
-        "Winning as One Team: We work together with universal respect to achieve aligned outcomes",
-        "Customer Driven Innovation: We innovate to stay ahead of the market and create value for our customers",
-        "Agility in Action: We embrace change and are unified in our purpose and objectives amidst change"
+        "Lead end-to-end SIEM implementation or integrations in a customer environment.",
+        "Coordinate with customers to deploy collectors and agents in the on-premises network for data collection and forwarding.",
+        "Work with customers to design and implement secure data flow into the Securonix cloud, following industry-standard best practices."
       ],
       "requirements": [
         "Understand customer business requirements and the threat landscape applicable to their industry’s vertical sector to develop tailored use…",
@@ -1335,9 +1335,9 @@
       "location": "Remote India",
       "description": "At Securonix , we’re on a mission to secure the world by staying ahead of cyber threats, reinforcing all layers of our platform with AI capabilities. Our Securonix Unified Defense SIEM provides organizations with the first and only AI-Reinforced solution…",
       "responsibilities": [
-        "Winning as One Team: We work together with universal respect to achieve aligned outcomes",
-        "Customer Driven Innovation: We innovate to stay ahead of the market and create value for our customers",
-        "Agility in Action: We embrace change and are unified in our purpose and objectives amidst change"
+        "Lead end-to-end SIEM implementation or integrations in a customer environment.",
+        "Coordinate with customers to deploy collectors and agents in the on-premises network for data collection and forwarding.",
+        "Work with customers to design and implement secure data flow into the Securonix cloud, following industry-standard best practices."
       ],
       "requirements": [
         "Understand customer business requirements and the threat landscape applicable to their industry’s vertical sector to develop tailored use…",
@@ -1416,8 +1416,8 @@
       "description": "Coupa makes margins multiply through its community-generated AI and industry-leading total spend management platform for businesses large and small. Coupa AI is informed by trillions of dollars of direct and indirect spend data across a global network of 10M+…",
       "responsibilities": [
         "Pioneering Technology: At Coupa, we're at the forefront of innovation, leveraging the latest technology to empower our customers with…",
-        "Collaborative Culture: We value collaboration and teamwork, and our culture is driven by transparency, openness, and a shared commitment to…",
-        "Global Impact: Join a company where your work has a global, measurable impact on our clients, the business, and each other."
+        "Global Impact: Join a company where your work has a global, measurable impact on our clients, the business, and each other.",
+        "Architect and build multi cloud security controls across Coupa's cloud environment. VPC segmentation, security groups/NACLs, IAM policy…"
       ],
       "requirements": [
         "Partner with Risk & Compliance to translate audit framework requirements (SOC 2, ISO 27001, PCI-DSS, FedRAMP) into concrete technical…",
