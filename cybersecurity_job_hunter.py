@@ -59,7 +59,7 @@ def find_jobposting(obj):
             if found: return found
     return None
 def enrich(row):
-    result={**row,"company":row["target_employer"],"location":"Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":"Not disclosed","employment_type":"Not specified","experience":"Not specified","date_posted":"Not specified","valid_through":"Not specified","responsibilities":[],"requirements":[],"apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only"}
+    result={**row,"company":"Employer not verified","location":"Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":"Not disclosed","employment_type":"Not specified","experience":"Not specified","date_posted":"Not specified","valid_through":"Not specified","responsibilities":[],"requirements":[],"apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only"}
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
         result["page_status"]=f"Fetched (HTTP {r.status_code})"
@@ -103,6 +103,9 @@ def enrich(row):
                 if tag and tag.get("content") and len(tag["content"])>len(result[field]): result[field]=clean(tag["content"])
             title=soup.title.string if soup.title and soup.title.string else ""
             if title and len(title)>len(result["title"]) and re.search(r"security|siem|soar|detection|cyber",title,re.I): result["title"]=clean(title)[:180]
+            target=clean(row["target_employer"])
+            if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery"] and target.lower() in (row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc).lower():
+                result["company"]=target
             m=re.search(r"(Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Gurgaon|Chennai|Mumbai|Noida|India|Remote)",text,re.I)
             if m: result["location"]=m.group(1)
             sal=re.search(r"(?:₹|INR|USD|\$)\s?[\d,.]+\s?(?:LPA|LPA|per annum|/year|to\s+(?:₹|INR|USD|\$)?\s?[\d,.]+)?",text,re.I)
@@ -120,7 +123,7 @@ def rank(x):
     loc=x["location"].lower()
     location=15 if "hyderabad" in loc else 12 if "remote" in loc and ("india" in loc or "not specified" not in loc) else 8 if "india" in loc else 3
     seniority=5 if re.search(r"senior|lead|staff|principal|manager",t) else 2
-    employer=5 if x["target_employer"] not in ("New Hyderabad GCCs","India discovery","Hyderabad discovery") else 0
+    employer=5 if x["company"]!="Employer not verified" else 0
     penalties=15 if re.search(r"intern|junior|graduate|entry.level",t) else 0
     x["score"]=max(0,min(100,title+skill+location+seniority+employer-penalties))
     x["fit_reasons"]=[]
@@ -150,7 +153,7 @@ def main():
         seen.add(k); chosen.append(x)
         if len(chosen)>=MAX_RESULTS: break
     stamp=now.strftime("%Y-%m-%d %H:%M UTC")
-    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"broad_discovery_queries":5,"locations_priority":LOCATIONS},"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
+    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"broad_discovery_queries":4,"locations_priority":LOCATIONS},"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
     DATA.mkdir(parents=True,exist_ok=True); ARCHIVE.mkdir(parents=True,exist_ok=True)
     (DATA/"latest.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
     dated=now.strftime("%Y-%m-%d")
