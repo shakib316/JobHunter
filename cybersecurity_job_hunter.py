@@ -150,7 +150,7 @@ def enrich(row):
     if row.get("source_name")=="Himalayas":
         for skill in SKILLS:
             if re.search(re.escape(skill),result["description"],re.I): result["skills"].append(skill)
-        exp=re.search(r"(\\d{1,2})\\s*\\+?\\s*(?:years|yrs)",result["description"],re.I)
+        exp=re.search(r"(\d{1,2})\s*\+?\s*(?:years|yrs)",result["description"],re.I)
         if exp: result["experience"]=exp.group(1)+"+ years (from job description)"
         result["page_status"]="Listed in Himalayas API"
         result["verification_note"]="Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas."
@@ -226,9 +226,9 @@ def rank(x):
     loc=x["location"].lower()
     location=20 if "hyderabad" in loc else 18 if "remote india" in loc else 15 if "india" in loc else 12 if "remote" in loc else 3
     seniority=5 if re.search(r"senior|lead|staff|principal",t) else 2
-    experience=5 if re.search(r"6\\+? years|7\\+? years|8\\+? years|6-\\d+ years|7-\\d+ years",x.get("experience","").lower()) or re.search(r"\\b(?:6|7|8)\\+?\\s*(?:years|yrs)",blob) else 0
+    experience=5 if re.search(r"6\+? years|7\+? years|8\+? years|6-\d+ years|7-\d+ years",x.get("experience","").lower()) or re.search(r"\b(?:6|7|8)\+?\s*(?:years|yrs)",blob) else 0
     employer=5 if x["company"]!="Employer not verified" else 0
-    penalties=18 if re.search(r"intern|junior|graduate|entry.level|analyst i\\b",t) else 0
+    penalties=18 if re.search(r"intern|junior|graduate|entry.level|analyst i\b",t) else 0
     x["score"]=max(0,min(100,title+skill+location+seniority+experience+employer-penalties))
     x["fit_reasons"]=[]
     if any(k in blob for k in ["google secops","chronicle","splunk","soar","siem"]): x["fit_reasons"].append("Direct SIEM/SOAR platform alignment")
