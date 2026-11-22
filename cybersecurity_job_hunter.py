@@ -209,6 +209,8 @@ def main():
     (DATA/"latest.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
     dated=now.strftime("%Y-%m-%d")
     (ARCHIVE/f"{dated}.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
+    archive_dates=sorted([p.stem for p in ARCHIVE.glob("*.json") if p.name!="index.json"],reverse=True)
+    (ARCHIVE/"index.json").write_text(json.dumps({"dates":archive_dates},indent=2),encoding="utf-8")
     fields=["score","title","company","location","salary","employment_type","experience","date_posted","valid_through","url","apply_url","description","skills","fit_reasons","page_status"]
     with (DATA/"latest.csv").open("w",newline="",encoding="utf-8-sig") as f:
         w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore"); w.writeheader()
