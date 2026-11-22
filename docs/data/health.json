@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22 08:17 UTC",
+  "generated_at": "2026-11-22 08:26 UTC",
   "source_health": {
     "RemoteOK": {
       "status": "ok",
@@ -31,7 +31,7 @@
       "status": "ok",
       "companies_configured": 85,
       "companies_checked": 85,
-      "companies_with_matches": 16,
+      "companies_with_matches": 17,
       "matching_jobs": 18,
       "note": "All 50 vendors and 35 GCCs are queried each run. checked_no_match means providers returned no qualifying result, not proof that no vacancy exists."
     },
@@ -44,7 +44,7 @@
     "Broad market discovery": {
       "status": "ok",
       "queries_attempted": 5,
-      "matching_jobs": 20
+      "matching_jobs": 9
     }
   },
   "employer_coverage": [
@@ -227,9 +227,9 @@
     {
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "checked_no_match",
       "results_seen": 5,
-      "matching_jobs": 1,
+      "matching_jobs": 0,
       "error": ""
     },
     {
@@ -245,7 +245,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 5,
-      "matching_jobs": 3,
+      "matching_jobs": 1,
       "error": ""
     },
     {
@@ -299,9 +299,9 @@
     {
       "company": "Trend Micro",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "checked_no_match",
       "results_seen": 5,
-      "matching_jobs": 1,
+      "matching_jobs": 0,
       "error": ""
     },
     {
@@ -331,9 +331,9 @@
     {
       "company": "Huntress",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "checked_no_match",
       "results_seen": 5,
-      "matching_jobs": 1,
+      "matching_jobs": 0,
       "error": ""
     },
     {
@@ -347,9 +347,9 @@
     {
       "company": "Dropzone AI",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
+      "status": "match",
       "results_seen": 5,
-      "matching_jobs": 0,
+      "matching_jobs": 1,
       "error": ""
     },
     {
@@ -373,7 +373,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 5,
-      "matching_jobs": 1,
+      "matching_jobs": 2,
       "error": ""
     },
     {
@@ -443,9 +443,9 @@
     {
       "company": "SparkCognition",
       "category": "Cybersecurity vendor",
-      "status": "checked_no_match",
+      "status": "match",
       "results_seen": 5,
-      "matching_jobs": 0,
+      "matching_jobs": 1,
       "error": ""
     },
     {
@@ -507,9 +507,9 @@
     {
       "company": "DoorDash",
       "category": "GCC",
-      "status": "checked_no_match",
+      "status": "match",
       "results_seen": 5,
-      "matching_jobs": 0,
+      "matching_jobs": 1,
       "error": ""
     },
     {
@@ -699,9 +699,9 @@
     {
       "company": "Salesforce",
       "category": "GCC",
-      "status": "checked_no_match",
+      "status": "match",
       "results_seen": 5,
-      "matching_jobs": 0,
+      "matching_jobs": 1,
       "error": ""
     },
     {
@@ -729,7 +729,7 @@
       "error": ""
     }
   ],
-  "candidate_count": 88,
-  "qualified_count": 41,
+  "candidate_count": 76,
+  "qualified_count": 39,
   "published_count": 15
 }
