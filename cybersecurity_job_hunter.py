@@ -277,7 +277,15 @@ def main():
     # Enrich only the strongest 60 leads to keep scheduled runs predictable.
     raw=sorted(raw,key=rough_score,reverse=True)[:60]
     enriched=[rank(enrich(x)) for x in raw]
-    enriched=[x for x in enriched if x["score"]>=50]
+    today=now.date()
+    def is_current(x):
+        if re.search(r"HTTP (?:404|410)",x.get("page_status","")): return False
+        valid=x.get("valid_through","")
+        try:
+            if valid and valid!="Not specified" and datetime.fromisoformat(valid[:10]).date()<today: return False
+        except ValueError: pass
+        return x["score"]>=50
+    enriched=[x for x in enriched if is_current(x)]
     if not enriched:
         health_payload["qualified_count"]=0
         (DATA/"health.json").write_text(json.dumps(health_payload,indent=2,ensure_ascii=False),encoding="utf-8")
