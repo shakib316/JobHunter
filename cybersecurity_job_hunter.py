@@ -52,7 +52,7 @@ def normalize_salary(value):
 GENERIC_PAGE=re.compile(r"^\s*\d+\s+.*\b(?:jobs?|vacancies)\b.*\b20\d{2}\b",re.I)
 def valid_search_hit(title,url):
     title=clean(title); path=urlparse(url).path.lower().rstrip("/")
-    if not title or GENERIC_PAGE.search(title): return False
+    if not title or GENERIC_PAGE.search(title) or re.search(r"\\b(?:jobs?|vacancies)\\s+(?:in|for|at)\\b",title,re.I): return False
     if re.search(r"/(?:jobs?|careers?|search|job-search|job-categories|category)$",path): return False
     if re.search(r"(?:jobs-in-|job-search|search-results|category=|/category/)",path): return False
     return True
@@ -185,7 +185,7 @@ def discover():
                         tokens=[t for t in re.findall(r"[a-z0-9]+",employer.lower()) if len(t)>3 and t not in {"group","security","cloud","software","technologies","technology","company","holdings"}]
                         evidence=(title+" "+snippet+" "+urlparse(url).netloc).lower()
                         if tokens and not any(t in evidence for t in tokens): continue
-                        add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"India/remote eligibility to verify","search_query_location":"India priority","discovery_source":"Employer search"})
+                        add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"Not specified","search_query_location":"India priority","discovery_source":"Employer search"})
                         matched+=1
                 except Exception as e:
                     message=str(e)[:180]
@@ -204,7 +204,7 @@ def discover():
                         if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
                         if not re.search(r"Remote|worldwide|anywhere|global|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
-                        add({"title":title,"url":url,"snippet":snippet,"target_employer":"Market discovery","search_query":q,"api_location":"India/remote eligibility to verify","search_query_location":"India priority","discovery_source":"Broad search"})
+                        add({"title":title,"url":url,"snippet":snippet,"target_employer":"Market discovery","search_query":q,"api_location":"Not specified","search_query_location":"India priority","discovery_source":"Broad search"})
                         matched+=1
                 except Exception as e:
                     message=str(e)[:180]
