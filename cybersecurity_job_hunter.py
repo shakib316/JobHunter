@@ -55,18 +55,18 @@ def location_allowed(location, description=""):
     loc=clean(location).lower()
     desc=clean(description)
     allowed_cities=r"hyderabad|gurugram|gurgaon|delhi|new delhi|noida"
-    if re.search(rf"\\b(?:{allowed_cities})\\b",loc,re.I): return True
-    if not re.search(r"\\b(remote|worldwide|anywhere|global|open to all|all countries)\\b",loc,re.I): return False
+    if re.search(rf"\b(?:{allowed_cities})\b",loc,re.I): return True
+    if not re.search(r"\b(remote|worldwide|anywhere|global|open to all|all countries)\b",loc,re.I): return False
     if re.search(r"not confirmed|unconfirmed|eligibility unknown",loc,re.I): return False
     # A remote label restricted to another city is not eligible for this search.
-    explicit=re.search(r"(?:location|work location|job location)\\s*:\\s*(?:fully\\s+)?remote\\s*[-–—:]\\s*([^.;]+)",desc,re.I)
+    explicit=re.search(r"(?:location|work location|job location)\s*:\s*(?:fully\s+)?remote\s*[-–—:]\s*([^.;]+)",desc,re.I)
     remote_tail=explicit.group(1) if explicit else loc
-    if re.search(r"\\b(?:Pune|Baroda|Vadodara|Mumbai|Bengaluru|Bangalore|Chennai|Kolkata|Ahmedabad|Jaipur|Kochi|Indore|Bhopal|Nagpur|Lucknow|Chandigarh|Coimbatore|Mysuru|Mysore|Surat)\\b",remote_tail,re.I):
+    if re.search(r"\b(?:Pune|Baroda|Vadodara|Mumbai|Bengaluru|Bangalore|Chennai|Kolkata|Ahmedabad|Jaipur|Kochi|Indore|Bhopal|Nagpur|Lucknow|Chandigarh|Coimbatore|Mysuru|Mysore|Surat)\b",remote_tail,re.I):
         return False
-    return bool(re.search(r"\\b(?:India|worldwide|anywhere|global|all countries|open to all)\\b",loc,re.I) or re.search(r"\\b(?:worldwide|anywhere|global|all countries|open to all)\\b",remote_tail,re.I))
+    return bool(re.search(r"\b(?:India|worldwide|anywhere|global|all countries|open to all)\b",loc,re.I) or re.search(r"\b(?:worldwide|anywhere|global|all countries|open to all)\b",remote_tail,re.I))
 def valid_search_hit(title,url):
     title=clean(title); path=urlparse(url).path.lower().rstrip("/")
-    if not title or GENERIC_PAGE.search(title) or re.search(r"\\b(?:jobs?|vacancies)\\s+(?:in|for|at)\\b",title,re.I): return False
+    if not title or GENERIC_PAGE.search(title) or re.search(r"\b(?:jobs?|vacancies)\s+(?:in|for|at)\b",title,re.I): return False
     if re.search(r"/(?:jobs?|careers?|search|job-search|job-categories|category)$",path): return False
     if re.search(r"(?:jobs-in-|job-search|search-results|category=|/category/)",path): return False
     return True
