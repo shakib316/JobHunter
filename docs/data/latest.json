@@ -1,8 +1,8 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 08:26 UTC",
-  "generated_at_iso": "2026-11-22T08:26:02.041853+00:00",
-  "total_candidates": 60,
+  "generated_at": "2026-11-22 08:38 UTC",
+  "generated_at_iso": "2026-11-22T08:38:46.466491+00:00",
+  "total_candidates": 47,
   "count": 15,
   "profile": {
     "title": "Security Engineer",
@@ -40,7 +40,7 @@
       "company": "Palo Alto Networks",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -48,31 +48,31 @@
       "company": "CrowdStrike",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Microsoft Security",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Google Cloud Security",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "SentinelOne",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -80,7 +80,7 @@
       "company": "Darktrace",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -88,7 +88,7 @@
       "company": "Fortinet",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -96,31 +96,31 @@
       "company": "Cisco Security",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Check Point Software",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "IBM Security",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Zscaler",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -128,23 +128,23 @@
       "company": "Vectra AI",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "CyberArk",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Okta",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -152,7 +152,7 @@
       "company": "Cloudflare",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -160,7 +160,7 @@
       "company": "Proofpoint",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -168,7 +168,7 @@
       "company": "Trellix",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -176,7 +176,7 @@
       "company": "Sophos",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -184,7 +184,7 @@
       "company": "Rapid7",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -192,7 +192,7 @@
       "company": "Elastic",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -200,7 +200,7 @@
       "company": "Arctic Wolf",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -208,7 +208,7 @@
       "company": "ReliaQuest",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -216,7 +216,7 @@
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -224,23 +224,23 @@
       "company": "Securonix",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Abnormal Security",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Recorded Future",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -248,7 +248,7 @@
       "company": "Tenable",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -256,7 +256,7 @@
       "company": "Qualys",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -264,7 +264,7 @@
       "company": "Wiz",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -272,7 +272,7 @@
       "company": "Akamai",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -280,7 +280,7 @@
       "company": "Bitdefender",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -288,7 +288,7 @@
       "company": "Trend Micro",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -296,23 +296,23 @@
       "company": "BlackBerry Cylance",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Cybereason",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "eSentire",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -320,31 +320,31 @@
       "company": "Huntress",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Expel",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Dropzone AI",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Torq",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -352,39 +352,39 @@
       "company": "Simbian",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Prophet Security",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 2,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Radiant Security",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Stellar Cyber",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Lakera",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -392,7 +392,7 @@
       "company": "Protect AI",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -400,7 +400,7 @@
       "company": "HiddenLayer",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -408,7 +408,7 @@
       "company": "Mindgard",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -416,7 +416,7 @@
       "company": "Robust Intelligence",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -424,23 +424,23 @@
       "company": "Netskope",
       "category": "Cybersecurity vendor",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "SparkCognition",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Deutsche Börse Group",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -448,7 +448,7 @@
       "company": "Vanguard",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -456,7 +456,7 @@
       "company": "Charles Schwab",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -464,7 +464,7 @@
       "company": "UBS",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -472,7 +472,7 @@
       "company": "HSBC",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -480,7 +480,7 @@
       "company": "Voya Financial",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -488,23 +488,23 @@
       "company": "T-Mobile",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "DoorDash",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Billtrust",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -512,7 +512,7 @@
       "company": "Sanofi",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -520,23 +520,23 @@
       "company": "JLL",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Acumatica",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Blackbaud",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -544,7 +544,7 @@
       "company": "Regeneron",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -552,7 +552,7 @@
       "company": "Amgen",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -560,7 +560,7 @@
       "company": "Eli Lilly",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -568,7 +568,7 @@
       "company": "Citizens Financial Group",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -576,7 +576,7 @@
       "company": "Nationwide",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -584,7 +584,7 @@
       "company": "HCA Healthcare",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -592,7 +592,7 @@
       "company": "Western Union",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -600,7 +600,7 @@
       "company": "Costco",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -608,7 +608,7 @@
       "company": "Marriott",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -616,7 +616,7 @@
       "company": "DAZN",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -624,7 +624,7 @@
       "company": "Agilent",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -632,7 +632,7 @@
       "company": "McDonald's",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -640,7 +640,7 @@
       "company": "Micron",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -648,7 +648,7 @@
       "company": "Mattel",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -656,23 +656,23 @@
       "company": "S&P Global",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "State Street",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Wells Fargo",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -680,23 +680,23 @@
       "company": "Synchrony",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Salesforce",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "company": "Google",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -704,7 +704,7 @@
       "company": "Amazon",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
@@ -712,7 +712,7 @@
       "company": "Microsoft",
       "category": "GCC",
       "status": "checked_no_match",
-      "results_seen": 5,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     }
@@ -720,37 +720,37 @@
   "broad_search_coverage": [
     {
       "query": "New Hyderabad GCCs",
-      "status": "match",
-      "results_seen": 7,
-      "matching_jobs": 3,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "New Hyderabad GCCs",
       "status": "checked_no_match",
-      "results_seen": 7,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Delhi NCR discovery",
       "status": "checked_no_match",
-      "results_seen": 7,
+      "results_seen": 0,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Delhi NCR GCC discovery",
-      "status": "match",
-      "results_seen": 7,
-      "matching_jobs": 2,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Hyderabad discovery",
-      "status": "match",
-      "results_seen": 7,
-      "matching_jobs": 4,
+      "status": "checked_no_match",
+      "results_seen": 0,
+      "matching_jobs": 0,
       "error": ""
     }
   ],
@@ -773,32 +773,32 @@
     },
     "Himalayas": {
       "status": "ok",
-      "matching_jobs": 45,
+      "matching_jobs": 43,
       "note": "India-filtered remote listings; Apply uses the provider-supplied applicationLink."
     },
     "Hyderabad employer watchlist": {
       "status": "configured",
-      "matching_jobs": 4,
+      "matching_jobs": 3,
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
     "Employer-by-employer search": {
       "status": "ok",
       "companies_configured": 85,
       "companies_checked": 85,
-      "companies_with_matches": 17,
-      "matching_jobs": 18,
+      "companies_with_matches": 0,
+      "matching_jobs": 0,
       "note": "All 50 vendors and 35 GCCs are queried each run. checked_no_match means providers returned no qualifying result, not proof that no vacancy exists."
     },
     "Employer metasearch": {
       "status": "ok",
-      "matching_jobs": 18,
+      "matching_jobs": 0,
       "queries_attempted": 85,
       "backends": "Bing, Brave, Google, Yahoo"
     },
     "Broad market discovery": {
       "status": "ok",
       "queries_attempted": 5,
-      "matching_jobs": 9
+      "matching_jobs": 0
     }
   },
   "results": [
@@ -872,28 +872,14 @@
       "location": "Remote India",
       "description": "The salary range for this role is $5,000 - $9,500 per month (Gross in USD) About Sezzle : With a mission to financially empower the next generation, Sezzle is revolutionizing the shopping experience beyond payments, blending cutting-edge tech with seamless…",
       "responsibilities": [
-        "Build, operate, and mature SIEM/XDR capabilities, including log ingestion, detection rule development, alert tuning, and investigation workflows",
-        "Design and implement detection strategies for suspicious activity, including data exfiltration patterns using application and database telemetry",
-        "Investigate and respond to security incidents across cloud infrastructure and applications, performing root cause analysis and driving long-term fixes",
-        "Run proactive threat hunts across cloud and identity planes, building agentic hunting workflows that make hunts repeatable",
-        "Operate vulnerability management across infrastructure, platforms, and applications - including internal scans, dependency analysis, and external findings, validating true positives and driving remediation with engineering teams",
-        "Triage and validate external security findings (including bug bounty reports), distinguishing true positives and coordinating remediation",
-        "Contribute to threat modeling and security design reviews for the detection, logging, and incident-response implications of new systems",
-        "Apply strong AWS and Kubernetes judgment to secure the systems you operate and advise owning teams on remediation",
-        "Develop and implement automation (including AI) to improve efficiency in security operations, detection, and response",
-        "Participate in the on-call rotation for detection and response and the services you own"
+        "Build, operate, and mature SIEM/XDR capabilities, including log ingestion, detection rule development, alert tuning, and investigation…",
+        "Design and implement detection strategies for suspicious activity, including data exfiltration patterns using application and database…",
+        "Extend audit and attribution coverage across the estate — Kubernetes audit logs, database audit logging, SSO and access-path telemetry — so…"
       ],
       "requirements": [
-        "Extend audit and attribution coverage across the estate — Kubernetes audit logs, database audit logging, SSO and access-path telemetry — so access to sensitive data is attributable to a person or workload, with retention aligned to compliance requirements",
-        "Support and implement security controls aligned with PCI DSS, SOC 2, and other compliance requirements — with your logging and detection work producing the audit evidence as a by-product",
-        "6+ years of experience in security, software, or infrastructure engineering, with hands-on experience securing cloud-based production systems and working with real-world security challenges",
-        "Experience working with SIEM platforms (e.g., Wazuh, Splunk, ELK) for detection engineering, monitoring, and incident response",
-        "Experience designing and tuning detection rules, reducing alert noise, and improving investigation workflows",
-        "Strong hands-on experience in vulnerability management — scanning, triage and validation of scanner and bug-bounty findings, remediation coordination, and verification",
-        "Experience assessing the detection and logging implications of new systems in design reviews",
-        "You have built AI-assisted workflows that others adopted — triage, enrichment, or hunting",
-        "Experience with internal penetration testing or adversarial exercises, and translating results into detection and remediation work",
-        "Experience with container and dependency security tools (e.g., Snyk, Trivy, Grype) as an operator of their findings"
+        "Extend audit and attribution coverage across the estate — Kubernetes audit logs, database audit logging, SSO and access-path telemetry — so…",
+        "Support and implement security controls aligned with PCI DSS, SOC 2, and other compliance requirements — with your logging and detection…",
+        "6+ years of experience in security, software, or infrastructure engineering, with hands-on experience securing cloud-based production…"
       ],
       "skills": [
         "SIEM",
@@ -927,49 +913,52 @@
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
-      "title": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at ...",
-      "url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
-      "snippet": "Oct 17, 2026 · Apply to TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at Hyderabad. Find related TC-CS-CDR-SIEM SOAR Platform Engineer-Senior and IT Services & Consulting Industry Jobs in Hyderabad 3 to 7 Yrs experience with security automation, orchestration, security operations, threat intelligence, communication skills,Palo Alto Cortex XSOAR, Python scripting, integration of security tools ...",
-      "target_employer": "Market discovery",
-      "search_query": "Hyderabad security engineer cloud security SIEM SOAR jobs",
-      "api_location": "Not specified",
-      "search_query_location": "India priority",
-      "discovery_source": "Broad search",
-      "company": "EY",
-      "location": "Hyderabad, Telangana, IN",
-      "description": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Company: EY Job Location: Hyderabad, Telangana, India Employment Type: Full-time Experience Required: 3+ years Wed, 10/07/2026 - 00:43 At EY, youll have the chance to build a career as unique as you are, with the…",
+      "title": "Lead Cybersecurity Engineer / SIEM Lead Engineer",
+      "url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
+      "target_employer": "Providence India",
+      "search_query": "LinkedIn",
+      "api_company": "Providence India",
+      "api_location": "Hyderabad, Telangana, India",
+      "api_salary": "Not disclosed",
+      "discovery_source": "LinkedIn",
+      "source_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "source_name": "LinkedIn",
+      "api_experience": "Not specified",
+      "apply_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "verification_note": "Structured JobPosting metadata was found. Confirm validThrough and the employer application page before applying.",
+      "company": "Providence India",
+      "location": "Hyderabad, IN",
+      "description": "Job Description – SIEM Lead Engineer Role Overview The SIEM Lead Engineer is responsible for leading the design, development, and optimization of SIEM alerting, enrichment, and monitoring capabilities using Splunk. This role focuses on improving alert…",
       "responsibilities": [],
-      "requirements": [
-        "[\"security automation\", \"orchestration\", \"security operations\", \"threat intelligence\", \"communication skills\", \"Palo Alto Cortex XSOAR\", \"Python scripting\", \"integration of security tools\", \"incident response\", \"problemsolving skills\"]"
-      ],
+      "requirements": [],
       "skills": [
+        "Splunk",
+        "Splunk ES",
         "SOAR",
         "SIEM",
-        "incident response",
+        "NG SIEM",
+        "detection engineering",
+        "normalization",
         "cloud security",
-        "AWS",
-        "Azure",
-        "GCP",
         "Python"
       ],
       "salary": "Not disclosed",
       "employment_type": "FULL_TIME",
-      "experience": "3+ years",
-      "date_posted": "2026-10-17T12:53:46+05:30",
-      "valid_through": "2026-12-16T12:53:44+05:30",
-      "apply_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
-      "source_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
-      "source_name": "Broad search",
-      "source_domain": "www.shine.com",
-      "page_status": "Fetched (HTTP 200)",
-      "score": 89,
+      "experience": "6+ years",
+      "date_posted": "2026-11-20T15:20:23.000Z",
+      "valid_through": "2027-03-07T12:35:06.000Z",
+      "source_domain": "in.linkedin.com",
+      "page_status": "Structured JobPosting found; check closing date",
+      "score": 90,
       "fit_reasons": [
         "Direct SIEM/SOAR platform alignment",
         "Detection, investigation and response engineering alignment",
-        "Preferred Hyderabad location"
+        "Log onboarding and telemetry engineering alignment",
+        "Preferred Hyderabad location",
+        "Experience band aligns with a 7-year profile"
       ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security",
-      "verification_note": "Discovery result only; confirm the role is active and apply on the employer's official careers site."
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
       "title": "Security operations analyst",
@@ -1012,19 +1001,12 @@
       "location": "Remote India",
       "description": "About Centric Software: Centric Software® is a global leader, providing an innovative and AI-enabled product-concept-to-commercialization platform for retailers, brands and manufacturers of all sizes. We equip retail, fashion, luxury, footwear, outdoor, home…",
       "responsibilities": [
-        "Design, deploy and maintain log source integrations into Palo Alto Cortex XSIAM / XSOAR, ensuring normalisation, parsing accuracy and data quality across all connected sources.",
+        "Design, deploy and maintain log source integrations into Palo Alto Cortex XSIAM / XSOAR, ensuring normalisation, parsing accuracy and data…",
         "Develop, test and continuously improve SOAR playbooks for automated triage, enrichment and response across key incident types.",
-        "Own SIEM content including detection rules, correlation policies, dashboards and alert thresholds; perform ongoing tuning to reduce false-positive volumes.",
-        "Maintain platform health including connector status monitoring, API rate-limit management and capacity planning for log ingestion pipelines.",
-        "Produce and maintain engineering documentation including integration runbooks, playbook specifications and change records in accordance with CAB policy.",
-        "Administer and engineer the CrowdStrike Falcon platform, including sensor deployment management, policy configuration and response workflow alignment with SOC procedures.",
-        "Configure and maintain Falcon data connectors into the SIEM, ensuring EDR telemetry is enriched and actionable within the detection pipeline.",
-        "Contribute to host-based detection content and work with the SOC team to validate alert fidelity from Falcon- sourced events.",
-        "Support incident response activities requiring Falcon RTR (Real Time Response) capabilities where required.",
-        "Maintain cloud-side IAM roles and service principals used for log collection with least-privilege principles."
+        "Own SIEM content including detection rules, correlation policies, dashboards and alert thresholds; perform ongoing tuning to reduce…"
       ],
       "requirements": [
-        "Ensure cloud logging coverage aligns with the organisation’s detection requirements and regulatory obligations, and identify and remediate gaps in telemetry coverage."
+        "Ensure cloud logging coverage aligns with the organisation’s detection requirements and regulatory obligations, and identify and remediate…"
       ],
       "skills": [
         "SOAR",
@@ -1096,16 +1078,9 @@
       "location": "Remote India",
       "description": "Overview Detection and Response Lead One Identity · Information Security, Cyber Defense Senior individual contributor, practice lead · India · Reports to the Director of Information Security Why this role exists One Identity builds the software that decides…",
       "responsibilities": [
-        "Set the strategy for detection use cases and own the catalog built from it: identity and authentication abuse, privileged access misuse, cloud control plane activity across Azure and AWS, endpoint and email vectors, and the paths specific to how our own products are deployed internally.",
-        "Treat detections as code. Version them, review them, test them against real telemetry, and track coverage against a threat model rather than a vendor's rule count. Detection changes arrive as pull requests with the reasoning attached.",
-        "Own the signal quality problem end to end. Tune what's noisy, retire what's dead, and know which gaps are deliberate.",
-        "Set the telemetry standard. Decide what we need to collect and retain to investigate an incident properly, and make the case for it when that costs something.",
-        "Lead incident response from escalation through closure: scoping, containment, evidence handling, root cause, and the write-up that survives a customer or auditor reading it.",
-        "Direct the managed provider. Set escalation criteria, hold the quality bar on what comes through, and close the loop when something should have been caught and wasn't.",
-        "Run the exercises that make a response work under pressure. Tabletops with engineering and leadership, and the runbooks that make an on-call decision obvious at two in the morning.",
-        "Own the notification path. Know which obligations attach to which kinds of incident, contractual and regulatory, and make sure the clock is understood before it's running.",
-        "Work with product security when an incident touches what we ship. Internal detection and customer-facing disclosure are different disciplines that occasionally share a root cause.",
-        "Decide where agentic workflows belong in detection and response. Enrichment, correlation, and first-pass investigation are tractable now; containment actions are a harder call. You set where automation acts, where it recommends, and how we verify what it did."
+        "Set the strategy for detection use cases and own the catalog built from it: identity and authentication abuse, privileged access misuse…",
+        "Treat detections as code. Version them, review them, test them against real telemetry, and track coverage against a threat model rather…",
+        "Own the signal quality problem end to end. Tune what's noisy, retire what's dead, and know which gaps are deliberate."
       ],
       "requirements": [],
       "skills": [
@@ -1182,24 +1157,14 @@
       "location": "Remote India",
       "description": "It's fun to work in a company where people truly BELIEVE in what they're doing! We're committed to bringing passion and customer focus to the business. Cybersecurity Analyst Location: Remote – Anywhere in India Work Schedule: Monday to Friday Work…",
       "responsibilities": [
-        "Monitor, tune, and triage security alerts across SIEM platforms, escalating confirmed incidents in accordance with established procedures and runbooks.",
-        "Manage the vulnerability management lifecycle, including scanning, risk-based prioritization, remediation tracking, and management reporting.",
-        "Support endpoint security, email security, and network monitoring tools, identifying security gaps and recommending configuration improvements.",
-        "Conduct periodic threat-hunting activities and contribute to the development and enhancement of detection rules and incident response playbooks.",
-        "Participate in incident response activities, including containment, eradication, recovery, and post-incident reviews.",
-        "Support ongoing SOC 2 Type II compliance activities, including evidence collection, control testing, documentation, and coordination with external auditors.",
-        "Maintain and update information security policies, standards, and procedures in collaboration with senior team members.",
-        "Conduct periodic security risk assessments and document findings in the organization's risk register.",
-        "Track identified risks, control deficiencies, and remediation actions through to closure.",
-        "Collaborate with IT, Engineering, and business stakeholders to integrate security best practices into day-to-day operations."
+        "Monitor, tune, and triage security alerts across SIEM platforms, escalating confirmed incidents in accordance with established procedures…",
+        "Manage the vulnerability management lifecycle, including scanning, risk-based prioritization, remediation tracking, and management…",
+        "Support endpoint security, email security, and network monitoring tools, identifying security gaps and recommending configuration…"
       ],
       "requirements": [
-        "Assist with NIST Cybersecurity Framework (NIST CSF) assessments by mapping existing controls to framework requirements, identifying gaps, and supporting remediation efforts.",
+        "Assist with NIST Cybersecurity Framework (NIST CSF) assessments by mapping existing controls to framework requirements, identifying gaps…",
         "5-8 years of experience in information security, with exposure to both technical security operations and compliance functions.",
-        "Hands-on experience with SIEM platforms such as Splunk, Microsoft Sentinel, or equivalent solutions.",
-        "Experience supporting SOC 2 audits from preparation and evidence collection through audit completion.",
-        "Scripting or automation experience using Python or PowerShell for security tooling, analysis, and reporting.",
-        "Experience with GRC platforms such as Archer, ServiceNow GRC, Drata, or Vanta."
+        "Hands-on experience with SIEM platforms such as Splunk, Microsoft Sentinel, or equivalent solutions."
       ],
       "skills": [
         "Splunk",
@@ -1287,25 +1252,12 @@
       "responsibilities": [
         "Winning as One Team: We work together with universal respect to achieve aligned outcomes",
         "Customer Driven Innovation: We innovate to stay ahead of the market and create value for our customers",
-        "Agility in Action: We embrace change and are unified in our purpose and objectives amidst change",
-        "Lead end-to-end SIEM implementation or integrations in a customer environment.",
-        "Coordinate with customers to deploy collectors and agents in the on-premises network for data collection and forwarding.",
-        "Work with customers to design and implement secure data flow into the Securonix cloud, following industry-standard best practices.",
-        "Coordinate with service delivery managers, management, engineering, maintenance, and operational support teams to ensure timely delivery.",
-        "Troubleshooting end-to-end network and infrastructure issues during data onboarding.",
-        "Deploy and integrate the Securonix SOAR solution with the customer infrastructure for response orchestration.",
-        "Training and enabling customers and partners for successful adoption."
+        "Agility in Action: We embrace change and are unified in our purpose and objectives amidst change"
       ],
       "requirements": [
-        "Understand customer business requirements and the threat landscape applicable to their industry’s vertical sector to develop tailored use cases for security and Incident monitoring.",
+        "Understand customer business requirements and the threat landscape applicable to their industry’s vertical sector to develop tailored use…",
         "Develop content, use cases, data models, dashboards, and connectors to support custom user requirements.",
-        "Engage with customers and internal product development teams to gather user requirements, suggest new product features, and help improve existing ones.",
-        "8+ years of experience in information security and SIEM field.",
-        "Experience deploying SIEM acorss multiple customers.",
-        "Strong communication skills and customer facing experience.",
-        "3-4+ years of experience in UEBA deployment",
-        "Experience integrating endpoint security and host-based intrusion detection solutions",
-        "Experience with network forensics and toolsets such as Wireshark, PCAP, tcpdump"
+        "Engage with customers and internal product development teams to gather user requirements, suggest new product features, and help improve…"
       ],
       "skills": [
         "Splunk",
@@ -1385,25 +1337,12 @@
       "responsibilities": [
         "Winning as One Team: We work together with universal respect to achieve aligned outcomes",
         "Customer Driven Innovation: We innovate to stay ahead of the market and create value for our customers",
-        "Agility in Action: We embrace change and are unified in our purpose and objectives amidst change",
-        "Lead end-to-end SIEM implementation or integrations in a customer environment.",
-        "Coordinate with customers to deploy collectors and agents in the on-premises network for data collection and forwarding.",
-        "Work with customers to design and implement secure data flow into the Securonix cloud, following industry-standard best practices.",
-        "Coordinate with service delivery managers, management, engineering, maintenance, and operational support teams to ensure timely delivery.",
-        "Troubleshooting end-to-end network and infrastructure issues during data onboarding.",
-        "Deploy and integrate the Securonix SOAR solution with the customer infrastructure for response orchestration.",
-        "Training and enabling customers and partners for successful adoption."
+        "Agility in Action: We embrace change and are unified in our purpose and objectives amidst change"
       ],
       "requirements": [
-        "Understand customer business requirements and the threat landscape applicable to their industry’s vertical sector to develop tailored use cases for security and Incident monitoring.",
+        "Understand customer business requirements and the threat landscape applicable to their industry’s vertical sector to develop tailored use…",
         "Develop content, use cases, data models, dashboards, and connectors to support custom user requirements.",
-        "Engage with customers and internal product development teams to gather user requirements, suggest new product features, and help improve existing ones.",
-        "8+ years of experience in information security and SIEM field.",
-        "Experience deploying SIEM acorss multiple customers.",
-        "Strong communication skills and customer facing experience.",
-        "3-4+ years of experience in UEBA deployment",
-        "Experience integrating endpoint security and host-based intrusion detection solutions",
-        "Experience with network forensics and toolsets such as Wireshark, PCAP, tcpdump"
+        "Engage with customers and internal product development teams to gather user requirements, suggest new product features, and help improve…"
       ],
       "skills": [
         "Splunk",
@@ -1476,25 +1415,14 @@
       "location": "Remote India",
       "description": "Coupa makes margins multiply through its community-generated AI and industry-leading total spend management platform for businesses large and small. Coupa AI is informed by trillions of dollars of direct and indirect spend data across a global network of 10M+…",
       "responsibilities": [
-        "Pioneering Technology: At Coupa, we're at the forefront of innovation, leveraging the latest technology to empower our customers with greater efficiency and visibility in their spend.",
-        "Collaborative Culture: We value collaboration and teamwork, and our culture is driven by transparency, openness, and a shared commitment to excellence.",
-        "Global Impact: Join a company where your work has a global, measurable impact on our clients, the business, and each other.",
-        "Architect and build multi cloud security controls across Coupa's cloud environment. VPC segmentation, security groups/NACLs, IAM policy design using least-privilege and permission boundaries, and Organizations/SCPs for guardrails at scale.",
-        "Build policy-as-code and IaC security guardrails and wire them into CI/CD as pre-merge and pre-deploy gates rather than after the fact reviews.",
-        "Harden containerized workloads - image scanning, admission control, pod security standards, and runtime detection.",
-        "Write auto-remediation for cloud misconfiguration and drift so common findings close without manual ticket routing.",
-        "Own Vulnerability management program, act as the technical escalation point for security incidents and vulnerability findings - leading forensics, containment, and root-cause analysis using cloud-native and EDR tooling, and driving remediation to closure.",
-        "Mentor other security engineers through design review, threat modeling, and code/architecture review; raise the technical bar for the whole team.",
-        "Own reference architectures, threat models, and runbooks for the security tooling you build; participate in and help improve the on-call rotation."
+        "Pioneering Technology: At Coupa, we're at the forefront of innovation, leveraging the latest technology to empower our customers with…",
+        "Collaborative Culture: We value collaboration and teamwork, and our culture is driven by transparency, openness, and a shared commitment to…",
+        "Global Impact: Join a company where your work has a global, measurable impact on our clients, the business, and each other."
       ],
       "requirements": [
-        "Partner with Risk & Compliance to translate audit framework requirements (SOC 2, ISO 27001, PCI-DSS, FedRAMP) into concrete technical controls, and automate evidence collection by integrating cloud telemetry with GRC tooling.",
-        "10+ years of security engineering experience, including significant hands-on work securing production cloud environments at scale, plus experience leading projects or mentoring other engineers.",
-        "Production experience with Terraform (or equivalent IaC) and policy-as-code frameworks, plus container/Kubernetes security tooling.",
-        "Experience with SIEM/SOAR platforms and vulnerability management tooling (e.g., Wiz, Qualys, Tenable) - building detections and workflows, not just consuming dashboards.",
-        "Working knowledge of compliance frameworks (SOC 2, ISO 27001, PCI-DSS, FedRAMP, NIST 800-53) sufficient to translate control requirements into engineering work.",
-        "Bachelor's degree in Computer Science, Information Systems, or a related field, or equivalent practical experience.",
-        "Referral Bonus Program: Share the Coupa experience! Receive generous monetary referral bonuses when you successfully refer talented friends or acquaintances who are hired into open roles ."
+        "Partner with Risk & Compliance to translate audit framework requirements (SOC 2, ISO 27001, PCI-DSS, FedRAMP) into concrete technical…",
+        "10+ years of security engineering experience, including significant hands-on work securing production cloud environments at scale, plus…",
+        "Production experience with Terraform (or equivalent IaC) and policy-as-code frameworks, plus container/Kubernetes security tooling."
       ],
       "skills": [
         "SOAR",
@@ -1574,19 +1502,12 @@
       "location": "Remote India",
       "description": "Who we are and What we can offe r Swimlane is a rapidly growing, innovative startup that provides cloud-scale, low-code security automation for organizations of all industries and sizes. Our technology is relied upon by major security-forward companies around…",
       "responsibilities": [
-        "Solutions — end-to-end Turbine packages for high-value use cases (SIEM/EDR alert triage, phishing, vulnerability operations, identity response, threat intel, case management).",
-        "Components — reusable ingestion and enrichment building blocks with clean interfaces, so playbooks compose instead of being rewritten per vendor.",
-        ". Marketplace quality — versioned, documented, tested content that deploys cleanly across tenants.",
-        "Translate SOC and MSP operating models into Turbine playbooks, components, apps, and dashboards that are customer-agnostic and configurable.",
-        "Normalize vendor-specific data into common schemas (OCSF / TEDS and Turbine interfaces) using native actions, JavaScript, and Python.",
-        ". Design workflows that mix deterministic automation with AI-assisted steps — enrichment, summarization, classification — with explicit human-in-the-loop controls.",
-        ". Integrate across the security stack via connectors and APIs: SIEM, EDR/XDR, identity, threat intel, ticketing, and cloud security tools.",
-        "Package, version, and publish Solutions and Components to the Marketplace; own docs, test cases, and release notes.",
-        "Partner with Product, UX, Platform, QA, Sales Engineering, and Professional Services to turn field demand into content that scales.",
-        "Raise the bar on content quality: reuse, testability, failure handling, and operability at enterprise and multi-tenant scale."
+        "Solutions — end-to-end Turbine packages for high-value use cases (SIEM/EDR alert triage, phishing, vulnerability operations, identity…",
+        "Components — reusable ingestion and enrichment building blocks with clean interfaces, so playbooks compose instead of being rewritten per…",
+        ". Marketplace quality — versioned, documented, tested content that deploys cleanly across tenants."
       ],
       "requirements": [
-        "7+ years in software development, solutions architecture, or security automation — with hands-on time building SOC or IR workflows, not only writing code next to a security team.",
+        "7+ years in software development, solutions architecture, or security automation — with hands-on time building SOC or IR workflows, not…",
         "Direct experience in a large-enterprise SOC or an MSP / MSSP, including triage, investigation, enrichment, escalation, and response.",
         "Prior Swimlane Turbine, Marketplace, or content-pack experience. OCSF or similar normalization work; MITRE ATT&CK fluency."
       ],
@@ -1633,7 +1554,7 @@
       "source_name": "Employer careers",
       "api_experience": "Not specified",
       "apply_url": "https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/",
-      "verification_note": "HCLTech employer careers listing; confirm active status and experience requirements.",
+      "verification_note": "The page responds, but no structured JobPosting was found. Confirm that this is an individual, open vacancy before applying.",
       "company": "HCLTech",
       "location": "Hyderabad, Telangana, India",
       "description": "Track Manager - Security Investigations, SIEM Job Details | HCLTech We use cookies for the best user experience on our website, including to personalize content & offerings, to provide social media features and to analyze traffic. By clicking “Accept All…",
@@ -1652,7 +1573,7 @@
       "date_posted": "Not specified",
       "valid_through": "Not specified",
       "source_domain": "careers.hcltech.com",
-      "page_status": "Fetched (HTTP 200)",
+      "page_status": "HTTP 200; vacancy not independently verified",
       "score": 73,
       "fit_reasons": [
         "Direct SIEM/SOAR platform alignment",
@@ -1724,28 +1645,14 @@
       "location": "Remote India",
       "description": "The salary range for this role is $5,000 - $9,500 per month (Gross in USD) About Sezzle : With a mission to financially empower the next generation, Sezzle is revolutionizing the shopping experience beyond payments, blending cutting-edge tech with seamless…",
       "responsibilities": [
-        "Own east-west segmentation across our Kubernetes clusters: design the segmentation model, derive network policies from observed traffic, and keep every workload reachable only through explicitly allowed, identity-bound paths — a default that holds as the estate grows, not a one-time project.",
-        "Deliver identity-aware transport — design and roll out mutually authenticated, encrypted service-to-service connections (mTLS), so that authorization decisions rest on verified service identity.",
-        "Keep a live map of the network: VPC peerings, tunnels, cross-account links, and every public entry point — built from cloud APIs and reconciled continuously, so every path into production is known and justified.",
-        "Own segmentation of production and the cardholder-data environment: implement and enforce the CDE and high-trust-tier boundaries, review every peering and public exposure against them, and run segmentation testing with the security team.",
-        "Partner with IT on private access: evaluate and help deliver per-application access (ZTNA) for engineers and operators reaching production systems.",
-        "Own network telemetry: flow logs east-west and north-south, with enough identity on both ends that \"who talked to what, when\" is answerable in minutes — and feed it to our SIEM for the detection team.",
-        "Own cluster admission control and hold the line on drift: workload admission policy (pod security, image provenance, network policy), security groups and firewall rules declared in git, applied only through the IaC pipeline, with admission control at the gate and drift detected and reverted automatically.",
-        "Contain: build the levers that let us isolate a workload or segment quickly when detection flags lateral movement, and take part in incident response when the network is in play.",
-        "Participate in threat modeling and design reviews for anything that changes how traffic flows, and in the on-call rotation for the controls you own.",
-        "Strong AWS networking: VPCs, subnets, security groups, peering and Transit Gateway, PrivateLink, load balancers, flow logs."
+        "Own east-west segmentation across our Kubernetes clusters: design the segmentation model, derive network policies from observed traffic…",
+        "Deliver identity-aware transport — design and roll out mutually authenticated, encrypted service-to-service connections (mTLS), so that…",
+        "Keep a live map of the network: VPC peerings, tunnels, cross-account links, and every public entry point — built from cloud APIs and…"
       ],
       "requirements": [
-        "6+ years of experience in security, network, platform, or infrastructure engineering, with hands-on ownership of network controls in cloud production environments.",
-        "Deep, practical Kubernetes networking knowledge: CNI, NetworkPolicy semantics, DNS, ingress/egress — and experience rolling segmentation out on live clusters without outages.",
-        "Hands-on experience with mTLS and service-to-service authentication (service mesh, proxies, or CNI-level encryption).",
-        "Working knowledge of PCI DSS network requirements — segmentation, scoping of the cardholder-data environment, segmentation testing.",
-        "You have built AI-assisted workflows that others adopted — flow analysis, policy generation, drift review.",
-        "Experience evaluating or deploying ZTNA / identity-aware proxy products. ● Policy-as-code and admission control (OPA/Gatekeeper, Kyverno, conftest).",
-        "Experience with network detection — IDS/IPS, anomalous-flow and lateral-movement detection — and with containment during incidents.",
-        "Familiarity with SOC 2 and with FFIEC-style examination expectations for network security. ● Experience in fintech, payments, BNPL, or other regulated environments.",
-        "You have relentlessly high standards - many people may think your standards are unreasonably high. You are continually raising the bar and driving those around you to deliver great results. You make sure that defects do not get sent down the line and that problems are fixed so they stay fixed.",
-        "You have backbone; disagree, then commit - you can respectfully challenge decisions when you disagree, even when doing so is uncomfortable or exhausting. You have conviction and are tenacious. You do not compromise for the sake of social cohesion. Once a decision is determined, you commit wholly."
+        "6+ years of experience in security, network, platform, or infrastructure engineering, with hands-on ownership of network controls in cloud…",
+        "Deep, practical Kubernetes networking knowledge: CNI, NetworkPolicy semantics, DNS, ingress/egress — and experience rolling segmentation…",
+        "Hands-on experience with mTLS and service-to-service authentication (service mesh, proxies, or CNI-level encryption)."
       ],
       "skills": [
         "SIEM",
@@ -1815,22 +1722,12 @@
       "responsibilities": [
         "Secure our cloud infrastructure (AWS), including IAM, network security, secrets management, logging and monitoring.",
         "Embed security into the SDLC through threat modeling, secure code reviews, and SAST, DAST and dependency scanning in CI/CD.",
-        "Lead vulnerability management end to end, from discovery and triage to remediation with engineering teams.",
-        "Own detection and incident response: build alerting, write runbooks, and lead investigations when something goes wrong.",
-        "Drive compliance programs such as SOC 2 Type II, ISO 27001 and GDPR, and automate evidence collection wherever possible.",
-        "Answer customer security questionnaires and join security reviews with enterprise prospects alongside the sales team.",
-        "Manage third-party and vendor risk, including reviews of the AI and data vendors we integrate with.",
-        "Assess and secure the use of LLMs in our product, covering prompt injection, data leakage and model access controls.",
-        "Run security awareness for the team and make secure practices the easy default.",
-        "Strong working knowledge of AWS security services and Infrastructure as Code (Terraform or similar)."
+        "Lead vulnerability management end to end, from discovery and triage to remediation with engineering teams."
       ],
       "requirements": [
         "4 to 7 years of hands-on experience in security engineering, cloud security or application security, ideally at a B2B SaaS company.",
         "Experience securing web applications and APIs, with a solid grasp of the OWASP Top 10.",
-        "Experience supporting SOC 2 or ISO 27001 audits.",
-        "Experience securing LLM-powered features or AI agent workflows.",
-        "Hands-on experience with tools such as Vanta, Drata, Wiz, Snyk or similar.",
-        "Experience as the first or founding security hire at a startup."
+        "Experience supporting SOC 2 or ISO 27001 audits."
       ],
       "skills": [
         "incident response",
@@ -1906,130 +1803,172 @@
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
-      "title": "Lead Cybersecurity Engineer / SIEM Lead Engineer",
-      "url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
-      "target_employer": "Providence India",
-      "search_query": "LinkedIn",
-      "api_company": "Providence India",
-      "api_location": "Hyderabad, Telangana, India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "LinkedIn",
-      "source_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "source_name": "LinkedIn",
-      "api_experience": "Not specified",
-      "apply_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "verification_note": "LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements.",
-      "company": "Providence India",
-      "location": "Hyderabad, Telangana, India",
-      "description": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
-      "responsibilities": [],
-      "requirements": [],
-      "skills": [],
-      "salary": "Not disclosed",
-      "employment_type": "Not specified",
-      "experience": "Not specified",
-      "date_posted": "Not specified",
-      "valid_through": "Not specified",
-      "source_domain": "in.linkedin.com",
-      "page_status": "Fetched (HTTP 429)",
-      "score": 69,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Preferred Hyderabad location"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "Sr IT Cyber Defense Analyst",
-      "url": "https://himalayas.app/companies/altera-digital-health/jobs/sr-it-cyber-defense-analyst",
-      "snippet": "Senior IT Cyber Defense Analyst (Shift Lead) AI-Enabled Security Operations | 24/7 SOC Location: Remote – Pune/Baroda, India Department: IT Cybersecurity – Security Operations Center (SOC) Reports To: SOC Manager Work Schedule: 24/7 rotational shifts About the Role We are seeking an experienced Senior IT Cyber Defense Analyst (Shift Lead) to lead day-to-day SOC operations, oversee security investigations, coordinate incident response, and mentor SOC analysts. The ideal candidate will bring strong SIEM/EDR expertise, advanced threat investigation skills, and hands-on experience using AI/LLM tools and automation to improve SOC efficiency and detection capabilities. Key Responsibilities Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence. Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network activity. Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework. Develop, optimize, and troubleshoot SIEM queries, analytics rules, and detection use cases using Microsoft Sentinel and KQL. Use approved AI/LLM tools for alert triage, investigation assistance, threat intelligence enrichment, KQL development, incident reporting, and workflow automation; independently validate AI-generated outputs. Automate repetitive SOC tasks using Python, PowerShell, APIs, or SOAR capabilities. Mentor analysts, improve investigation quality, reduce false positives, and maintain accurate incident documentation and audit-ready evidence. Coordinate with Incident Response, IT, Endpoint, Network, and Cloud teams to support containment, remediation, and recovery. Required Skills and Qualifications Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience. 5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring. Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection. Proficiency in Microsoft Sentinel and KQL; experience with Microsoft Defender, CrowdStrike, or similar security platforms. Strong understanding of networking, Windows/Linux, identity security, email threats, and MITRE ATT&CK. Mandatory practical AI/LLM proficiency, including prompt engineering, AI-assisted investigations, validation of AI-generated queries/scripts, and awareness of hallucinations, prompt injection, and data privacy risks. Scripting or automation experience using Python, PowerShell, APIs, or SOAR tools. Strong analytical, communication, decision-making, and team leadership skills; willingness to work in a 24/7 rotational shift environment. Preferred Qualifications Certifications such as Microsoft SC-200, CompTIA CySA+, GCIH, or relevant SIEM/EDR vendor certifications. Experience in proactive threat hunting, detection engineering, cloud security, and SOC process improvement. What Success Looks Like Effective shift leadership and timely, high-quality incident handling. Improved detection coverage, investigation efficiency, and reduced false positives. Practical adoption of AI and automation to reduce repetitive work while maintaining security, accuracy, and human oversight. Strong analyst development, documentation, and operational consistency. Originally posted on Himalayas",
-      "target_employer": "Altera Digital Health",
+      "title": "Sr Security Engineer",
+      "url": "https://himalayas.app/companies/circana/jobs/sr-security-engineer",
+      "snippet": "Sr Security Engineer – Security Operations Center - SOC ( India) Let’s be unstoppable together! Circana is a leading provider of technology, AI, and data solutions for consumer packaged goods companies, manufacturers, and retailers. Our predictive analytics and Liquid Data® platform help clients measure market share, uncover consumer behavior, and drive growth—powered by six decades of expertise and an expansive, high-quality data set. At Circana , we are fueled by our passion for continuous learning and growth, we seek and share feedback freely, and we celebrate victories both big and small in an environment that is flexible and accommodating to our work and personal lives. We have a global commitment to diversity, equity, and inclusion as we believe in the undeniable strength that diversity brings to our business, employees, clients, and communities (with us you can always bring your full self to work). Join our inclusive, committed team to be a challenger, own outcomes, and stay curious together. Learn more at www.circana.com. What will you be doing? This role will be part of a highly energetic, experienced SOC team for various IT Security platforms and practices. You will work directly with the entire Security, IT and business teams to enforce and safeguard cybersecurity at Circana . You will play a critical role in maintaining a strong defensive posture, including Incident Response. As part of the SOC First Responders Team, you will monitor, assess, handle and resolve active security alerts and escalate as needed while still being involved. The idea candidate will have the ability to communicate both clearly and effectively with all levels of global colleagues across Circana . You will be a valued contributor to suggest, enhance and utilize IT Security solutions to ensure assets are properly safeguarded. Job Responsibilities First responders in monitoring, investigating and handling events / alerts. Perform threat detection, investigation, and response to security incidents. Maintain and manage endpoint protection platforms including Antivirus and EDR Perform security audits of internal systems for compliance Perform , report and track active vulnerability scanning processes and remediation Work with the Security Compliance, Risk, Audit and Governance Teams to ensure security, regulatory and compliance best practices are followed. Proactively utilize all IT Security tools to guard against , identify and remediate threats. Contribute to the on-going review and expansion of IT Security tools, policies, and processes Utilize Security solutions to ensure assets are properly safeguarded Proactively assess safeguards to identify potential risks and perform trend analysis Compile and validate statistical data to be used to determine the viability of implementing specific Ability to handle sensitive matters with discretion and maintain confidentiality. Strong verbal and written English language skills Ability to multi-task with attention to detail Requirements Bachelor’s or Master’s degree in Information Technology, Computer Science, or equivalent experience 4 to 6 years experience in IT Systems or Network Engineering / Administration. Min 4+ years relevant experience in an IT Security Analyst or IT Security Administration role Cloud security experience is additional and preferable. Knowledgeable of the following information security disciplines: Data loss prevention (DLP), intrusion detection system (IDS) monitoring, security information and event management (SIEM), incident response, IT Security best practices, system hardening, vulnerability assessment, management and remediation, EDR, antivirus, firewalls, and techniques for analyzing TCP/IP network traffic and event logs Strong hands-on experience with: TrendMicro Deep Security(Antivirus), CrowdStrike(EDR) , Tenable Nessus (Vulnerability Scan) and Knowledge of SIEM tools (ExaBeam) Relevant certifications preferred (e.g., CEH, Security+,) Excellent Interpersonal Skills - Team player and Self Starter. Independent Thinker and Collaborator. Circana Behaviors As well as the technical skills, experience and attributes that are required for the role, our shared behaviors sit at the core of our organization. Therefore, we always look for people who can continuously champion these behaviors throughout the business within their day-to-day role: Stay Curious: Being hungry to learn and grow, always asking the big questions Seek Clarity: Embracing complexity to create clarity a",
+      "target_employer": "Circana",
       "search_query": "Himalayas",
-      "api_company": "Altera Digital Health",
+      "api_company": "Circana",
       "api_location": "Remote India",
       "api_salary": "Not disclosed",
       "discovery_source": "Himalayas",
       "api_bullets": [
-        "Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence.",
-        "Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network activity.",
-        "Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework.",
-        "Develop, optimize, and troubleshoot SIEM queries, analytics rules, and detection use cases using Microsoft Sentinel and KQL.",
-        "Use approved AI/LLM tools for alert triage, investigation assistance, threat intelligence enrichment, KQL development, incident reporting, and workflow automation; independently validate AI-generated outputs.",
-        "Automate repetitive SOC tasks using Python, PowerShell, APIs, or SOAR capabilities.",
-        "Mentor analysts, improve investigation quality, reduce false positives, and maintain accurate incident documentation and audit-ready evidence.",
-        "Coordinate with Incident Response, IT, Endpoint, Network, and Cloud teams to support containment, remediation, and recovery.",
-        "Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience.",
-        "5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring.",
-        "Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection.",
-        "Proficiency in Microsoft Sentinel and KQL; experience with Microsoft Defender, CrowdStrike, or similar security platforms.",
-        "Strong understanding of networking, Windows/Linux, identity security, email threats, and MITRE ATT&CK.",
-        "Mandatory practical AI/LLM proficiency, including prompt engineering, AI-assisted investigations, validation of AI-generated queries/scripts, and awareness of hallucinations, prompt injection, and data privacy risks.",
-        "Scripting or automation experience using Python, PowerShell, APIs, or SOAR tools.",
-        "Strong analytical, communication, decision-making, and team leadership skills; willingness to work in a 24/7 rotational shift environment.",
-        "Certifications such as Microsoft SC-200, CompTIA CySA+, GCIH, or relevant SIEM/EDR vendor certifications.",
-        "Experience in proactive threat hunting, detection engineering, cloud security, and SOC process improvement.",
-        "Effective shift leadership and timely, high-quality incident handling.",
-        "Improved detection coverage, investigation efficiency, and reduced false positives.",
-        "Practical adoption of AI and automation to reduce repetitive work while maintaining security, accuracy, and human oversight.",
-        "Strong analyst development, documentation, and operational consistency."
+        "First responders in monitoring, investigating and handling events / alerts.",
+        "Perform threat detection, investigation, and response to security incidents.",
+        "Maintain and manage endpoint protection platforms including Antivirus and EDR",
+        "Perform security audits of internal systems for compliance",
+        "Perform , report and track active vulnerability scanning processes and remediation",
+        "Work with the Security Compliance, Risk, Audit and Governance Teams to ensure security, regulatory and compliance best practices are followed.",
+        "Proactively utilize all IT Security tools to guard against , identify and remediate threats.",
+        "Contribute to the on-going review and expansion of IT Security tools, policies, and processes",
+        "Utilize Security solutions to ensure assets are properly safeguarded",
+        "Proactively assess safeguards to identify potential risks and perform trend analysis",
+        "Compile and validate statistical data to be used to determine the viability of implementing specific",
+        "Ability to handle sensitive matters with discretion and maintain confidentiality.",
+        "Strong verbal and written English language skills",
+        "Ability to multi-task with attention to detail",
+        "Bachelor’s or Master’s degree in Information Technology, Computer Science, or equivalent experience",
+        "4 to 6 years experience in IT Systems or Network Engineering / Administration.",
+        "Min 4+ years relevant experience in an IT Security Analyst or IT Security Administration role",
+        "Cloud security experience is additional and preferable.",
+        "Knowledgeable of the following information security disciplines: Data loss prevention (DLP), intrusion detection system (IDS) monitoring, security information and event management (SIEM), incident response, IT Security best practices, system hardening, vulnerability assessment, management and remediation, EDR, antivirus, firewalls, and techniques for analyzing TCP/IP network traffic and event logs",
+        "Strong hands-on experience with: TrendMicro Deep Security(Antivirus), CrowdStrike(EDR) , Tenable Nessus (Vulnerability Scan) and Knowledge of SIEM tools (ExaBeam)",
+        "Relevant certifications preferred (e.g., CEH, Security+,)",
+        "Excellent Interpersonal Skills - Team player and Self Starter. Independent Thinker and Collaborator.",
+        "Stay Curious: Being hungry to learn and grow, always asking the big questions",
+        "Seek Clarity: Embracing complexity to create clarity and inspire action",
+        "Own the Outcome: Being accountable for decisions and taking ownership of our choices",
+        "Center on the Client: Relentlessly adding value for our customers",
+        "Be a Challenger: Never complacent, always striving for continuous improvement",
+        "Champion Inclusivity: Fostering trust in relationships engaging with empathy, respect and integrity",
+        "Commit to each other: Contributing to making Circana a great place to work for everyone"
       ],
-      "apply_url": "https://himalayas.app/companies/altera-digital-health/jobs/sr-it-cyber-defense-analyst?utm_source=api",
-      "source_url": "https://himalayas.app/companies/altera-digital-health/jobs/sr-it-cyber-defense-analyst",
+      "apply_url": "https://himalayas.app/companies/circana/jobs/sr-security-engineer?utm_source=api",
+      "source_url": "https://himalayas.app/companies/circana/jobs/sr-security-engineer",
       "source_name": "Himalayas",
       "api_employment_type": "Full Time",
-      "api_date_posted": 1795107718,
-      "api_valid_through": 1798505680,
-      "company": "Altera Digital Health",
+      "api_date_posted": 1795106402,
+      "api_valid_through": 1800106075,
+      "company": "Circana",
       "location": "Remote India",
-      "description": "Senior IT Cyber Defense Analyst (Shift Lead) AI-Enabled Security Operations | 24/7 SOC Location: Remote – Pune/Baroda, India Department: IT Cybersecurity – Security Operations Center (SOC) Reports To: SOC Manager Work Schedule: 24/7 rotational shifts About…",
+      "description": "Sr Security Engineer – Security Operations Center - SOC ( India) Let’s be unstoppable together! Circana is a leading provider of technology, AI, and data solutions for consumer packaged goods companies, manufacturers, and retailers. Our predictive analytics…",
       "responsibilities": [
-        "Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence.",
-        "Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network activity.",
-        "Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework.",
-        "Develop, optimize, and troubleshoot SIEM queries, analytics rules, and detection use cases using Microsoft Sentinel and KQL.",
-        "Use approved AI/LLM tools for alert triage, investigation assistance, threat intelligence enrichment, KQL development, incident reporting, and workflow automation; independently validate AI-generated outputs.",
-        "Automate repetitive SOC tasks using Python, PowerShell, APIs, or SOAR capabilities.",
-        "Mentor analysts, improve investigation quality, reduce false positives, and maintain accurate incident documentation and audit-ready evidence.",
-        "Coordinate with Incident Response, IT, Endpoint, Network, and Cloud teams to support containment, remediation, and recovery.",
-        "Strong understanding of networking, Windows/Linux, identity security, email threats, and MITRE ATT&CK.",
-        "Mandatory practical AI/LLM proficiency, including prompt engineering, AI-assisted investigations, validation of AI-generated queries/scripts, and awareness of hallucinations, prompt injection, and data privacy risks."
+        "First responders in monitoring, investigating and handling events / alerts.",
+        "Perform threat detection, investigation, and response to security incidents.",
+        "Maintain and manage endpoint protection platforms including Antivirus and EDR"
       ],
       "requirements": [
-        "Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience.",
-        "5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring.",
-        "Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection.",
-        "Proficiency in Microsoft Sentinel and KQL; experience with Microsoft Defender, CrowdStrike, or similar security platforms.",
-        "Scripting or automation experience using Python, PowerShell, APIs, or SOAR tools.",
-        "Experience in proactive threat hunting, detection engineering, cloud security, and SOC process improvement."
+        "Bachelor’s or Master’s degree in Information Technology, Computer Science, or equivalent experience",
+        "4 to 6 years experience in IT Systems or Network Engineering / Administration.",
+        "Min 4+ years relevant experience in an IT Security Analyst or IT Security Administration role"
       ],
       "skills": [
-        "SOAR",
         "SIEM",
-        "Microsoft Sentinel",
         "CrowdStrike",
-        "NG SIEM",
-        "detection engineering",
         "incident response",
         "cloud security",
-        "threat hunting",
-        "KQL",
-        "Python",
-        "EDR",
-        "XDR"
+        "EDR"
       ],
       "salary": "Not disclosed",
       "employment_type": "Full Time",
-      "experience": "5+ years (from job description)",
+      "experience": "6+ years (from job description)",
       "date_posted": "2026-11-19",
-      "valid_through": "2026-12-29",
+      "valid_through": "2027-01-16",
       "source_domain": "himalayas.app",
       "page_status": "Listed in Himalayas API",
       "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
-      "score": 69,
+      "score": 68,
       "fit_reasons": [
         "Direct SIEM/SOAR platform alignment",
         "Detection, investigation and response engineering alignment",
+        "Remote India eligibility indicated",
+        "Experience band aligns with a 7-year profile"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "AI and Cloud Security Engineer",
+      "url": "https://himalayas.app/companies/td-synnex/jobs/ai-and-cloud-security-engineer",
+      "snippet": "Overview TD SYNNEX (NYSE: SNX) is the world's largest IT distributor, and we are accelerating AI adoption across Azure AI Foundry, AWS Bedrock, Copilot Studio, Databricks, and self-hosted agent environments. Our security philosophy is distinctive: rather than slowing innovation with pre-approval gatekeeping, we operate a runtime-first, default-allow security posture — every AI interaction is intercepted, analyzed, and enforced at the moment of execution. In our architecture, the traditional network perimeter no longer defines the defensive boundary: the AI agent is the perimeter. The AI & Cloud Security team is chartered to make that vision operational. We are seeking senior technical owner of the AI security runtime control plane and detection fabric. You will build and integrate the inline enforcement pipeline (AI gateway → runtime data protection → intent-based enforcement), tune the policies that keep it fast and low-friction, and serve as the final escalation point for the most complex AI and cloud security incidents. You will also help implement and participate in operation of a closed-loop defensive system in which continuous red-team findings automatically improve runtime policies, detection logic, and SOC threat models. You join a team of two AI & Cloud Security Architects and will be the engineering force that turns strategy into operating controls — across a multi-cloud estate (Azure, AWS, GCP). This role involves collaborating with cross-functional teams to ensure the security of AI and cloud environments, AI applications and infrastructure, addressing potential threats, and maintaining compliance with regulatory standards. The ideal candidate will have a strong background in AI technologies and their implementation as well as cloud security, security principles and cybersecurity best practices. The ability to develop automation in both AI and cloud environments with infrastructure as code (IaC) or policy as code principles is required. The engineer will report to AI & Cloud Security leadership and have strong working relationships with IT and application development leadership. Responsibilities Integration — build and own the AI runtime control plane. Engineer, deploy and operate the inline enforcement pipeline for AI traffic: an AI gateway chained with runtime data-protection and intent-based enforcement platforms, fronting LLMs, tools, and MCP servers across Azure AI Foundry, AWS Bedrock, GCP Vertex, Copilot Studio, Databricks, and self-hosted environments. Harden the gateway layer for resilience : configure buffering and overload management, enforcement timeouts on external-processing filters, layered global/local rate limiting, and prompt-truncation filters to defend against token-exhaustion and \"reasoning overload\" denial-of-service attacks. Integrate the wider AI security ecosystem into one coherent system : onboard AI asset-intelligence context (agent inventory, ownership, blast radius) into enforcement decisions; connect model-security and supply-chain telemetry and continuous red-team signals into SIEM correlation and SOC workflows; stream unified AI detections, decision logs, and policy events for forensics and audit. Policy tuning — enforce without friction. Author and calibrate runtime policies: prompt-injection and jailbreak prevention, PII detection/redaction and data masking, intent-based filtering, tool-call validation, MCP access control, and agent permission boundaries (including \"lethal trifecta\" prevention for low-code agents). Balance detection versus hard-block modes to minimize false positives, and tune per AI archetype — embedded SaaS copilots, democratized low-code agents, homegrown agentic pipelines, device-based coding agents, and homegrown models. Operate the closed loop : translate continuous adversarial-testing findings into runtime policy updates, new detection content, and guardrail tuning, then validate remediation through re-testing — so defenses evolve with attackers rather than remaining static. L3 coverage — final escalation for the AI Security toolset. Lead deep investigations of AI-specific attacks (direct/indirect prompt injection, RAG poisoning, memory poisoning, agent hijacking, MCP/tool abuse, model manipulation, AI-driven data exfiltration), perform decision-replay forensics and root-cause analysis, drive automated containment (agent quarantine, permission revocation, kill switch) toward our sub-15-minute containment objectives, and mentor L2 analysts. Troubles",
+      "target_employer": "TD SYNNEX",
+      "search_query": "Himalayas",
+      "api_company": "TD SYNNEX",
+      "api_location": "Remote India",
+      "api_salary": "Not disclosed",
+      "discovery_source": "Himalayas",
+      "api_bullets": [
+        "Integration — build and own the AI runtime control plane. Engineer, deploy and operate the inline enforcement pipeline for AI traffic: an AI gateway chained with runtime data-protection and intent-based enforcement platforms, fronting LLMs, tools, and MCP servers across Azure AI Foundry, AWS Bedrock, GCP Vertex, Copilot Studio, Databricks, and self-hosted environments.",
+        "Harden the gateway layer for resilience : configure buffering and overload management, enforcement timeouts on external-processing filters, layered global/local rate limiting, and prompt-truncation filters to defend against token-exhaustion and \"reasoning overload\" denial-of-service attacks.",
+        "Integrate the wider AI security ecosystem into one coherent system : onboard AI asset-intelligence context (agent inventory, ownership, blast radius) into enforcement decisions; connect model-security and supply-chain telemetry and continuous red-team signals into SIEM correlation and SOC workflows; stream unified AI detections, decision logs, and policy events for forensics and audit.",
+        "Policy tuning — enforce without friction. Author and calibrate runtime policies: prompt-injection and jailbreak prevention, PII detection/redaction and data masking, intent-based filtering, tool-call validation, MCP access control, and agent permission boundaries (including \"lethal trifecta\" prevention for low-code agents). Balance detection versus hard-block modes to minimize false positives, and tune per AI archetype — embedded SaaS copilots, democratized low-code agents, homegrown agentic pipelines, device-based coding agents, and homegrown models.",
+        "Operate the closed loop : translate continuous adversarial-testing findings into runtime policy updates, new detection content, and guardrail tuning, then validate remediation through re-testing — so defenses evolve with attackers rather than remaining static.",
+        "L3 coverage — final escalation for the AI Security toolset. Lead deep investigations of AI-specific attacks (direct/indirect prompt injection, RAG poisoning, memory poisoning, agent hijacking, MCP/tool abuse, model manipulation, AI-driven data exfiltration), perform decision-replay forensics and root-cause analysis, drive automated containment (agent quarantine, permission revocation, kill switch) toward our sub-15-minute containment objectives, and mentor L2 analysts. Troubleshoot any incidents related to policies.",
+        "Evaluate and pilot AI security vendors : run structured proofs-of-concept for runtime defense, AIDR, AI-SPM, AI red-teaming, and model-security platforms, and provide technical recommendations as the stack matures.",
+        "Engineer and operate cloud security controls across Azure, AWS, and GCP — posture policies, detection tuning, and remediation of misconfigurations, excessive entitlements, and workload risks, including the Kubernetes estates (AKS/EKS) hosting the AI gateway layer.",
+        "Design and maintain secure multi-cloud patterns consistent with company approved architectural blueprint as well as zero-trust agent access: least-privilege identity for humans, service principals, and agents (Entra ID, AWS IAM, GCP IAM, PAM), conditional access for AI platforms, and least-privilege OAuth scopes for agent integrations.",
+        "Embed security into DevSecOps: Infrastructure-as-Code (Terraform) scanning, container/Kubernetes security, secrets management, CI/CD hardening, and pre-deployment AI security testing gates in Azure DevOps/GitHub Actions.",
+        "Support cloud workload vulnerability management (VMs, containers, registries, serverless) with risk-based prioritization, and act as escalation point for investigations spanning cloud, identity, endpoint, and AI telemetry.",
+        "Proven ability to integrate enterprise security platforms into one system : API/connector engineering, log ingestion and normalization, SIEM/SOAR integration, and multi-vendor inline architectures.",
+        "Strong AI/GenAI security depth : LLM and agentic-AI threat models (OWASP LLM Top 10 2025, OWASP Agentic Top 10, MITRE ATLAS), prompt-injection/jailbreak defense, RAG security, AI guardrails and gateways, MCP security, and the AI-SPM/AIDR/AI-red-teaming tooling categories. Hands-on experience with AI security technologies is highly valued; so is experience with open-source AI security tooling.",
+        "Multi-cloud security engineering across Azure, AWS, and GCP: CSPM/CWPP/CNAPP operations, cloud identity and entitlements, Kubernetes and container security, and secure architecture (hub-and-spoke, segmentation, baseline protection).",
+        "Proficiency in KQL, PowerShell, and Python for automation, detection engineering, and tooling; DevSecOps and IaC security (Terraform); CI/CD pipeline integration.",
+        "A pragmatic, enablement-first security mindset: comfortable with a default-allow culture where controls must be fast, precise, and low-friction rather than restrictive.",
+        "Excellent English communication — clear runbooks, integration documentation, and the ability to explain trade-offs to architects, engineers, and leadership across a globally distributed team and multiple time zones.",
+        "Excellent communication and collaboration skills",
+        "Ability to work effectively in a fast-paced, dynamic environment.",
+        "Significant hands-on engineering responsibility, including in cloud security (Azure/AWS/GCP) and demonstrable experience securing or operating AI/ML or LLM-based systems (or strongly evidenced, rapidly acquired hands-on AI-security capability).",
+        "Proven track record deploying, integrating, and tuning security platforms in complex enterprise environments and serving as an L3 / senior escalation point; experience running vendor proofs-of-concept is a plus.",
+        "Experience operating security tooling in Kubernetes-based environments (AKS/EKS) and integrating open-source components into enterprise stacks is an advantage.",
+        "Relevant certifications strengthen an application (none individually required): CISSP, CCSP, SC-100, AZ-500, AWS Certified Security – Specialty, Google Professional Cloud Security Engineer; AI red-team or AI-security credentials are a plus.",
+        "Bachelor's degree in Computer Science, Cybersecurity, Information Systems, or equivalent practical experience.",
+        "Willing to work nonstandard business hours for projects, business impact issues and incident response.",
+        "Some travel required.",
+        "Flexible remote work.",
+        "Elective Benefits: Our programs are tailored to your country to best accommodate your lifestyle.",
+        "Grow Your Career: Accelerate your path to success (and keep up with the future) with formal programs on leadership and professional development, and many more on-demand courses.",
+        "Elevate Your Personal Well-Being: Boost your financial, physical, and mental well-being through seminars, events, and our global Life Empowerment Assistance Program.",
+        "Diversity, Equity & Inclusion: It’s not just a phrase to us; valuing every voice is how we succeed. Join us in celebrating our global diversity through inclusive education, meaningful peer-to-peer conversations, and equitable growth and development opportunities.",
+        "Make the Most of our Global Organization : Network with other new co-workers within your first 30 days through our onboarding program.",
+        "Connect with Your Community: Participate in internal, peer-led inclusive communities and activities, including business resource groups, local volunteering events, and more environmental and social initiatives."
+      ],
+      "apply_url": "https://himalayas.app/companies/td-synnex/jobs/ai-and-cloud-security-engineer?utm_source=api",
+      "source_url": "https://himalayas.app/companies/td-synnex/jobs/ai-and-cloud-security-engineer",
+      "source_name": "Himalayas",
+      "api_employment_type": "Full Time",
+      "api_date_posted": 1795107901,
+      "api_valid_through": 1798061927,
+      "company": "TD SYNNEX",
+      "location": "Remote India",
+      "description": "Overview TD SYNNEX (NYSE: SNX) is the world's largest IT distributor, and we are accelerating AI adoption across Azure AI Foundry, AWS Bedrock, Copilot Studio, Databricks, and self-hosted agent environments. Our security philosophy is distinctive: rather than…",
+      "responsibilities": [
+        "Integration — build and own the AI runtime control plane. Engineer, deploy and operate the inline enforcement pipeline for AI traffic: an…",
+        "Harden the gateway layer for resilience : configure buffering and overload management, enforcement timeouts on external-processing filters…",
+        "Integrate the wider AI security ecosystem into one coherent system : onboard AI asset-intelligence context (agent inventory, ownership…"
+      ],
+      "requirements": [
+        "Strong AI/GenAI security depth : LLM and agentic-AI threat models (OWASP LLM Top 10 2025, OWASP Agentic Top 10, MITRE ATLAS)…",
+        "Significant hands-on engineering responsibility, including in cloud security (Azure/AWS/GCP) and demonstrable experience securing or…",
+        "Proven track record deploying, integrating, and tuning security platforms in complex enterprise environments and serving as an L3 / senior…"
+      ],
+      "skills": [
+        "SIEM",
+        "cloud security",
+        "AWS",
+        "Azure",
+        "GCP",
+        "EDR"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "Full Time",
+      "experience": "Not specified",
+      "date_posted": "2026-11-19",
+      "valid_through": "2026-12-23",
+      "source_domain": "himalayas.app",
+      "page_status": "Listed in Himalayas API",
+      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
+      "score": 67,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
         "Remote India eligibility indicated"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
