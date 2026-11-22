@@ -77,6 +77,19 @@ def enrich(row):
                 result["date_posted"]=clean(job.get("datePosted") or "Not specified")
                 result["valid_through"]=clean(job.get("validThrough") or "Not specified")
                 result["employment_type"]=clean(job.get("employmentType") or "Not specified")
+                jl=job.get("jobLocation")
+                if jl:
+                    locs=jl if isinstance(jl,list) else [jl]
+                    bits=[]
+                    for loc in locs:
+                        addr=loc.get("address",{}) if isinstance(loc,dict) else {}
+                        if isinstance(addr,dict):
+                            bits += [clean(addr.get(k)) for k in ["addressLocality","addressRegion","addressCountry"] if addr.get(k)]
+                    if bits: result["location"]=", ".join(dict.fromkeys(bits))
+                resp=job.get("responsibilities")
+                quals=job.get("qualifications") or job.get("skills")
+                if resp: result["responsibilities"]=[clean(resp if isinstance(resp,str) else json.dumps(resp))[:1200]]
+                if quals: result["requirements"]=[clean(quals if isinstance(quals,str) else json.dumps(quals))[:1200]]
                 exp=job.get("experienceRequirements")
                 if exp: result["experience"]=clean(exp if isinstance(exp,str) else json.dumps(exp))
                 sal=job.get("baseSalary")
