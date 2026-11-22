@@ -24,6 +24,9 @@ class LocationEligibilityTests(unittest.TestCase):
     def test_remote_india_is_allowed(self):
         self.assertTrue(location_allowed("Remote India"))
 
+    def test_remote_in_india_description_is_allowed(self):
+        self.assertTrue(location_allowed("Not specified", "Remote in India"))
+
     def test_remote_restricted_to_bengaluru_is_not_allowed(self):
         self.assertFalse(location_allowed("Remote (Bengaluru)"))
 
