@@ -22,7 +22,7 @@ HYDERABAD_WATCHLIST=[
     ("Providence India","Lead Cybersecurity Engineer / SIEM Lead Engineer","Hyderabad, Telangana, India","https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180","LinkedIn","Not specified","LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements."),
     ("HCLTech","Track Manager - Security Investigations, SIEM","Hyderabad, Telangana, India","https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/","Employer careers","Not specified","HCLTech employer careers listing; confirm active status and experience requirements."),
     ("S&P Global","Threat Detection Engineer","Hyderabad, Telangana, India","https://careers.spglobal.com/jobs/332493?lang=en-us","Employer careers","5+ years","S&P Global employer careers listing; confirm active status and full requirements."),
-    ("Gainsight","Staff Security Operations Engineer","Hyderabad / Bengaluru, India","https://jobs.ashbyhq.com/gainsight/928139de-b645-43b3-8101-0d74e73169d4","Employer ATS","8+ years","Gainsight ATS listing; hybrid Hyderabad/Bengaluru role; confirm active status and seniority fit.")
+
 ]
 BAD=re.compile(r"documentation|product overview|pricing|course|certification|interview questions|salary guide|what is |definition|linkedin\.com/(in|company)/",re.I)
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
@@ -258,8 +258,8 @@ def enrich(row):
         exp=re.search(r"(\d{1,2})\s*\+?\s*(?:years|yrs)",result["description"],re.I)
         if exp: result["experience"]=exp.group(1)+"+ years (from job description)"
         bullets=row.get("api_bullets") or []
-        result["requirements"]=[b for b in bullets if re.search(r"requirement|qualification|experience|years|must have|you have|we are looking for",b,re.I)][:10]
-        result["responsibilities"]=[b for b in bullets if b not in result["requirements"]][:10]
+        result["requirements"]=[concise(b,140) for b in [b for b in bullets if re.search(r"requirement|qualification|experience|years|must have|you have|we are looking for",b,re.I)][:3]]
+        result["responsibilities"]=[concise(b,140) for b in [b for b in bullets if b not in result["requirements"]][:3]]
         result["page_status"]="Listed in Himalayas API"
         result["verification_note"]="Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas."
         result["salary"]=normalize_salary(result.get("salary"))
@@ -268,6 +268,9 @@ def enrich(row):
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
         result["page_status"]=f"Fetched (HTTP {r.status_code})"
+        if r.status_code in (404,410):
+            result["page_status"]=f"Unavailable (HTTP {r.status_code})"
+            result["verification_note"]="The source page returned an unavailable/gone status; do not treat this as an active vacancy."
         if r.ok and "text/html" in r.headers.get("content-type",""):
             soup=BeautifulSoup(r.text[:1_500_000],"html.parser")
             job=None
@@ -277,6 +280,8 @@ def enrich(row):
                     if job: break
                 except Exception: pass
             if job:
+                result["page_status"]="Structured JobPosting found; check closing date"
+                result["verification_note"]="Structured JobPosting metadata was found. Confirm validThrough and the employer application page before applying."
                 org=job.get("hiringOrganization",{})
                 if isinstance(org,dict) and org.get("name"): result["company"]=clean(org["name"])
                 result["date_posted"]=clean(job.get("datePosted") or "Not specified")
@@ -293,8 +298,12 @@ def enrich(row):
                     if bits: result["location"]=", ".join(dict.fromkeys(bits))
                 resp=job.get("responsibilities")
                 quals=job.get("qualifications") or job.get("skills")
-                if resp: result["responsibilities"]=[clean(resp if isinstance(resp,str) else json.dumps(resp))[:1200]]
-                if quals: result["requirements"]=[clean(quals if isinstance(quals,str) else json.dumps(quals))[:1200]]
+                if resp:
+                    raw_resp=resp if isinstance(resp,list) else [resp]
+                    result["responsibilities"]=[concise(v,140) for v in raw_resp[:3]]
+                if quals:
+                    raw_quals=quals if isinstance(quals,list) else [quals]
+                    result["requirements"]=[concise(v,140) for v in raw_quals[:3]]
                 exp=job.get("experienceRequirements")
                 if exp:
                     exp_items=exp if isinstance(exp,list) else [exp]
@@ -305,6 +314,9 @@ def enrich(row):
                 if sal: result["salary"]=clean(json.dumps(sal,ensure_ascii=False))
                 desc=job.get("description")
                 if desc: result["description"]=clean(BeautifulSoup(str(desc),"html.parser").get_text(" ",strip=True))[:2400]
+            if not job and r.status_code==200:
+                result["page_status"]="HTTP 200; vacancy not independently verified"
+                result["verification_note"]="The page responds, but no structured JobPosting was found. Confirm that this is an individual, open vacancy before applying."
             for tag in soup(["script","style","noscript","svg"]): tag.decompose()
             text=clean(soup.get_text(" ",strip=True))
             for sel,field in [('meta[name="description"]','description'),('meta[property="og:description"]','description')]:
@@ -325,6 +337,8 @@ def enrich(row):
     except Exception as e: result["fetch_error"]=str(e)[:180]
     result["salary"]=normalize_salary(result.get("salary"))
     result["description"]=concise(result.get("description") or result.get("snippet"),260)
+    result["responsibilities"]=[concise(v,140) for v in (result.get("responsibilities") or [])[:3]]
+    result["requirements"]=[concise(v,140) for v in (result.get("requirements") or [])[:3]]
     return result
 def rank(x):
     t=x["title"].lower(); blob=(t+" "+x["description"]+" "+" ".join(x["skills"])).lower()
