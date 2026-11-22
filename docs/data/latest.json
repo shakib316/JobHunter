@@ -1,9 +1,9 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 06:46 UTC",
-  "generated_at_iso": "2026-11-22T06:46:08.750237+00:00",
-  "total_candidates": 0,
-  "count": 0,
+  "generated_at": "2026-11-22 06:55 UTC (web-assisted interim snapshot; automated multi-source run pending)",
+  "generated_at_iso": "2026-11-22T06:55:00Z",
+  "total_candidates": 10,
+  "count": 10,
   "profile": {
     "title": "Security Engineer",
     "experience_years": 7,
@@ -37,6 +37,395 @@
       "India"
     ]
   },
-  "results": [],
-  "disclaimer": "Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."
+  "source_health": {
+    "Web-assisted search": {
+      "status": "interim_snapshot",
+      "matching_jobs": 10,
+      "note": "Curated from live search results on 22 Nov 2026; not the scheduled API crawler run."
+    },
+    "RemoteOK": {
+      "status": "pending_run"
+    },
+    "Arbeitnow": {
+      "status": "pending_run"
+    },
+    "Jobicy": {
+      "status": "pending_run"
+    },
+    "Remotive": {
+      "status": "pending_run"
+    },
+    "DuckDuckGo": {
+      "status": "degraded",
+      "note": "Previous run experienced timeouts and connection resets."
+    }
+  },
+  "results": [
+    {
+      "score": 94,
+      "title": "MDR Security Engineer",
+      "company": "Varonis",
+      "location": "Remote India",
+      "salary": "Not disclosed",
+      "employment_type": "Full-time",
+      "experience": "Not specified",
+      "date_posted": "Recently listed",
+      "valid_through": "Not specified",
+      "url": "https://jobs.jobvite.com/varonis-internal/job/oJyCAfwd",
+      "apply_url": "https://jobs.jobvite.com/varonis-internal/job/oJyCAfwd",
+      "description": "Build and operate production-grade automation systems and SOAR playbooks for alert triage, enrichment, investigation and response. Fully remote position based in India.",
+      "skills": [
+        "SOAR",
+        "Security Operations",
+        "Automation",
+        "Incident Response"
+      ],
+      "fit_reasons": [
+        "Direct SOAR playbook and automation alignment",
+        "Remote India location",
+        "Security engineering responsibilities"
+      ],
+      "responsibilities": [
+        "Design and maintain SOAR playbooks, workflows and integrations",
+        "Automate alert triage, enrichment, investigation and response"
+      ],
+      "requirements": [
+        "Strong SOAR platform and security operations experience"
+      ],
+      "source_domain": "jobs.jobvite.com",
+      "page_status": "Live listing surfaced by web search",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Third-party/internal careers listing surfaced 22 Nov 2026; confirm vacancy is still accepting applications."
+    },
+    {
+      "score": 92,
+      "title": "Lead Cybersecurity Engineer / SIEM Lead Engineer",
+      "company": "Providence India",
+      "location": "Hyderabad, Telangana, India",
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "Not specified",
+      "date_posted": "22 Nov 2026 (reported 15 hours ago)",
+      "valid_through": "Not specified",
+      "url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "apply_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "description": "Lead Splunk-based SIEM alerting and monitoring engineering. Own detection tuning, enrichment and alert lifecycle; work with SOC, threat detection and security engineering teams.",
+      "skills": [
+        "Splunk",
+        "SIEM",
+        "Detection Engineering",
+        "Alert Enrichment"
+      ],
+      "fit_reasons": [
+        "Strong Splunk engineering alignment",
+        "Lead-level role",
+        "Hyderabad preferred location"
+      ],
+      "responsibilities": [
+        "Lead Splunk SIEM alerting and monitoring",
+        "Tune detections and correlation rules",
+        "Improve enrichment and alert fidelity"
+      ],
+      "requirements": [
+        "Splunk SIEM engineering experience; validate full experience requirements on listing"
+      ],
+      "source_domain": "linkedin.com",
+      "page_status": "Search result listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "LinkedIn listing surfaced today; open listing to confirm active status and full details."
+    },
+    {
+      "score": 90,
+      "title": "Security Engineer – AWS Security Incident Response, Cloud Security, AI Security, EDR & SIEM",
+      "company": "Alcon",
+      "location": "Bangalore, India",
+      "salary": "Not disclosed",
+      "employment_type": "Full-time",
+      "experience": "Intermediate level",
+      "date_posted": "Posted today (search result)",
+      "valid_through": "2026-12-11",
+      "url": "https://alcon.wd5.myworkdayjobs.com/en-US/careers_alcon/job/Bangalore-India/Security-Engineer---AWS-Security-Incident-Response--Cloud-Security--AI-Security--EDR---SIEM_R-2026-48840?q=India",
+      "apply_url": "https://alcon.wd5.myworkdayjobs.com/en-US/careers_alcon/job/Bangalore-India/Security-Engineer---AWS-Security-Incident-Response--Cloud-Security--AI-Security-EDR---SIEM_R-2026-48840?q=India",
+      "description": "Hands-on security engineer supporting cyber incident response and threat management across AWS cloud security, SIEM monitoring, EDR/XDR operations and cloud incident response.",
+      "skills": [
+        "AWS",
+        "SIEM",
+        "EDR",
+        "XDR",
+        "Cloud Security",
+        "Incident Response"
+      ],
+      "fit_reasons": [
+        "Direct Security Engineer title",
+        "SIEM and incident response overlap",
+        "Strong cloud security scope"
+      ],
+      "responsibilities": [
+        "Monitor and investigate security alerts",
+        "Respond to cloud and endpoint incidents"
+      ],
+      "requirements": [
+        "Intermediate security engineering experience; review full requirements"
+      ],
+      "source_domain": "alcon.wd5.myworkdayjobs.com",
+      "page_status": "Employer Workday listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Employer-hosted listing; confirm location and eligibility."
+    },
+    {
+      "score": 89,
+      "title": "Staff Security Operations Engineer",
+      "company": "Gainsight",
+      "location": "Hyderabad / Bengaluru, India",
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "6+ years",
+      "date_posted": "Recently listed",
+      "valid_through": "Not specified",
+      "url": "https://forthire.com/locations/india/security-operations/",
+      "apply_url": "https://forthire.com/locations/india/security-operations/",
+      "description": "Staff Security Operations Engineer listed for Hyderabad and Bengaluru. Security operations and detection/response role; open the listing for employer application details.",
+      "skills": [
+        "Security Operations",
+        "Detection & Response"
+      ],
+      "fit_reasons": [
+        "6+ years experience band",
+        "Hyderabad location option",
+        "Staff-level seniority"
+      ],
+      "responsibilities": [
+        "Security operations and response; confirm detailed scope"
+      ],
+      "requirements": [
+        "6+ years; verify detailed requirements"
+      ],
+      "source_domain": "forthire.com",
+      "page_status": "Aggregator listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Aggregator listing; verify vacancy on Gainsight careers site."
+    },
+    {
+      "score": 87,
+      "title": "Track Manager – Security Investigations, SIEM",
+      "company": "HCLTech",
+      "location": "Hyderabad, Telangana, India",
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "Not specified",
+      "date_posted": "Recently listed",
+      "valid_through": "Not specified",
+      "url": "https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/",
+      "apply_url": "https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/",
+      "description": "Lead advanced security event investigation and incident response operations. Optimize SIEM and SOAR workflows, develop playbooks and improve monitoring and response processes.",
+      "skills": [
+        "SIEM",
+        "SOAR",
+        "Incident Response",
+        "Playbooks"
+      ],
+      "fit_reasons": [
+        "Direct SIEM/SOAR alignment",
+        "Hyderabad location",
+        "Technical leadership responsibilities"
+      ],
+      "responsibilities": [
+        "Lead security event triage and investigations",
+        "Optimize SOAR workflows and playbooks",
+        "Oversee SIEM platform improvements"
+      ],
+      "requirements": [
+        "Validate required years and people-management expectations on employer page"
+      ],
+      "source_domain": "careers.hcltech.com",
+      "page_status": "Employer careers listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Employer-hosted listing; verify active status and seniority fit."
+    },
+    {
+      "score": 86,
+      "title": "Security Operations Responder",
+      "company": "Tide",
+      "location": "Hyderabad, India",
+      "salary": "Not disclosed",
+      "employment_type": "Full-time",
+      "experience": "Not specified",
+      "date_posted": "12 Nov 2026",
+      "valid_through": "Not specified",
+      "url": "https://www.ziprecruiter.in/jobs/644099486-security-operations-responder-at-careers-at-tide",
+      "apply_url": "https://www.ziprecruiter.in/jobs/644099486-security-operations-responder-at-careers-at-tide",
+      "description": "Threat Detection & Response team role focused on building detection and automation capabilities to improve security posture.",
+      "skills": [
+        "Threat Detection",
+        "Incident Response",
+        "Security Engineering"
+      ],
+      "fit_reasons": [
+        "Hyderabad location",
+        "Detection and response alignment",
+        "Security engineering team"
+      ],
+      "responsibilities": [
+        "Threat detection and response; review full role details"
+      ],
+      "requirements": [
+        "Confirm experience requirements and application status"
+      ],
+      "source_domain": "ziprecruiter.in",
+      "page_status": "Aggregator listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Aggregator listing; apply through Tide's official careers page if available."
+    },
+    {
+      "score": 84,
+      "title": "Cyber Security Engineer",
+      "company": "Hawk Sense Business Solution",
+      "location": "Hyderabad, India",
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "6–10 years",
+      "date_posted": "3 Nov 2026",
+      "valid_through": "Not specified",
+      "url": "https://www.hirist.tech/j/cyber-security-engineer-1682175?jobPos=15",
+      "apply_url": "https://www.hirist.tech/j/cyber-security-engineer-1682175?jobPos=15",
+      "description": "Cybersecurity engineer role spanning endpoint, network, application and data security, including SIEM/SOAR technologies. Implement, configure, monitor and troubleshoot enterprise security solutions.",
+      "skills": [
+        "SIEM",
+        "SOAR",
+        "Splunk",
+        "Network Security",
+        "Python",
+        "PowerShell"
+      ],
+      "fit_reasons": [
+        "6–10 years matches profile seniority",
+        "Hyderabad location",
+        "Splunk and SIEM/SOAR requirements"
+      ],
+      "responsibilities": [
+        "Implement and manage enterprise endpoint and network security",
+        "Monitor and troubleshoot security platforms"
+      ],
+      "requirements": [
+        "6–10 years; SIEM/SOAR and security engineering experience"
+      ],
+      "source_domain": "hirist.tech",
+      "page_status": "Job board listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Job board listing dated 3 Nov; verify recruiter and vacancy before sharing personal information."
+    },
+    {
+      "score": 83,
+      "title": "Senior Security Engineer",
+      "company": "Menlo Security",
+      "location": "Remote India",
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "5–8 years",
+      "date_posted": "Recently listed",
+      "valid_through": "Not specified",
+      "url": "https://thegenioprep.com/jobs/siem-jobs-remote-india",
+      "apply_url": "https://thegenioprep.com/jobs/siem-jobs-remote-india",
+      "description": "Senior Security Engineer listed among remote-in-India SIEM/security opportunities. Detailed job description and direct employer application link need confirmation.",
+      "skills": [
+        "Security Engineering",
+        "SIEM"
+      ],
+      "fit_reasons": [
+        "Remote India option",
+        "5–8 years experience band",
+        "Senior Security Engineer title"
+      ],
+      "responsibilities": [
+        "Not available in search summary"
+      ],
+      "requirements": [
+        "5–8 years; confirm detailed technical requirements"
+      ],
+      "source_domain": "thegenioprep.com",
+      "page_status": "Aggregator search result",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Aggregator summary only; confirm direct employer vacancy."
+    },
+    {
+      "score": 82,
+      "title": "Senior Security Engineer – Detection & Response",
+      "company": "Juniper Square",
+      "location": "Remote / India",
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "Staff-level",
+      "date_posted": "Recently posted",
+      "valid_through": "Not specified",
+      "url": "https://builtin.com/job/staff-security-engineer-detection-response-india/12337605",
+      "apply_url": "https://builtin.com/job/staff-security-engineer-detection-response-india/12337605",
+      "description": "Staff Security Engineer role leading digital forensics, incident response, threat hunting, adversary emulation, detection engineering and security automation. Mentions Google SecOps detections and telemetry improvements.",
+      "skills": [
+        "Google SecOps",
+        "Detection Engineering",
+        "Incident Response",
+        "Threat Hunting",
+        "Security Automation"
+      ],
+      "fit_reasons": [
+        "Google SecOps and detection engineering alignment",
+        "Remote India opportunity",
+        "Senior technical scope"
+      ],
+      "responsibilities": [
+        "Lead investigations and threat hunting",
+        "Build and tune Google SecOps detections",
+        "Improve telemetry and AI-assisted workflows"
+      ],
+      "requirements": [
+        "Staff-level scope; confirm years and location eligibility"
+      ],
+      "source_domain": "builtin.com",
+      "page_status": "Job board listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Job board listing; confirm active vacancy and India eligibility."
+    },
+    {
+      "score": 79,
+      "title": "Security Operations Center (SOC) Engineer",
+      "company": "UFT (client: Infosys)",
+      "location": "Hyderabad / Pune / Bengaluru, India (Hybrid)",
+      "salary": "Competitive; disclosed during interview",
+      "employment_type": "Contract",
+      "experience": "5+ years",
+      "date_posted": "20 Nov 2026",
+      "valid_through": "Not specified",
+      "url": "https://uftech.in/jobs/uft-1175",
+      "apply_url": "https://uftech.in/jobs/uft-1175",
+      "description": "Implement and maintain security tools, integrate log sources into SIEM, build detections, troubleshoot connectors, handle incident response and threat hunting, and automate workflows using PowerShell and APIs.",
+      "skills": [
+        "SIEM",
+        "SOAR",
+        "Splunk",
+        "QRadar",
+        "Sentinel",
+        "Incident Response",
+        "Python",
+        "PowerShell"
+      ],
+      "fit_reasons": [
+        "5+ years experience requirement",
+        "Hyderabad hybrid option",
+        "SIEM/SOAR, log onboarding and automation"
+      ],
+      "responsibilities": [
+        "Integrate SIEM log sources and build detections",
+        "Handle incident response and threat hunting",
+        "Automate workflows and troubleshoot connectors"
+      ],
+      "requirements": [
+        "5+ years SOC/security operations; SIEM and SOAR experience"
+      ],
+      "source_domain": "uftech.in",
+      "page_status": "Employer/recruiter listing",
+      "discovery_source": "Web-assisted interim search",
+      "verification_note": "Listing posted 20 Nov; contract role and client attribution should be confirmed."
+    }
+  ],
+  "disclaimer": "Interim curated search results, not a fully automated run. Some records are aggregator summaries; verify active status, direct employer listing, location eligibility and requirements before applying."
 }
