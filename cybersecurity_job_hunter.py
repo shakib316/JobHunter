@@ -154,11 +154,10 @@ def enrich(row):
             target=clean(row["target_employer"])
             if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery","API discovery"] and target.lower() in (row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc).lower():
                 result["company"]=target
-            m=re.search(r"(Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Gurgaon|Chennai|Mumbai|Noida|India|Remote)",text,re.I)
-            if m: result["location"]=m.group(1)
+            m=re.search(r"(Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Gurgaon|Chennai|Mumbai|Noida|India)",text,re.I)
+            if m and result["location"] in ["Not specified","Remote"]: result["location"]=m.group(1)
             sal=re.search(r"(?:₹|INR|USD|US\$|\$)\s?[\d,.]+\s?(?:k|K|LPA|lakh|lakhs|per annum|/year|/yr|annually)",text,re.I)
             if sal and not re.search(r"\$\s?0(?:\.0+)?\b",sal.group(0)): result["salary"]=sal.group(0)
-            if sal: result["salary"]=sal.group(0)
             for s in SKILLS:
                 if re.search(re.escape(s),text,re.I): result["skills"].append(s)
             result["description"]=result["description"] if len(result["description"])>180 else text[:1800]
