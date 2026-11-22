@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberJobHunter | Security Engineering Opportunities</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121d30;--muted:#9eb0c9;--line:#263750;--accent:#60a5fa}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#e8eef8;font:15px/1.55 system-ui, sans-serif}
+header{padding:38px max(22px,calc((100% - 1120px)/2));background:linear-gradient(120deg,#132642,#0b1220);border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:clamp(27px,5vw,42px)}header p{color:var(--muted);margin:8px 0}
+main{max-width:1120px;margin:28px auto;padding:0 20px}.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+input,select{background:var(--panel);border:1px solid var(--line);color:#fff;padding:11px;border-radius:9px}
+input{flex:1;min-width:220px}.stats{color:var(--muted)}.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px;margin:12px 0}
+.card h2{font-size:18px;margin:0 0 7px}.card a{color:#93c5fd;text-decoration:none}.card a:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:13px}.score{float:right;color:#bfdbfe;border:1px solid #31527c;border-radius:20px;padding:2px 9px;font-size:12px}
+footer{color:var(--muted);font-size:13px;margin:26px 0} .empty{padding:28px;text-align:center;color:var(--muted)}
+</style></head><body>
+<header><h1>CyberJobHunter</h1><p>Curated Security Engineer, SIEM, SOAR and Detection Engineering opportunities</p><p>Hyderabad first · Remote India · GCCs · Cybersecurity vendors</p></header>
+<main><div class="bar"><input id="q" placeholder="Search role, company, skill or location…"><select id="sort"><option value="score">Best match</option><option value="new">Latest run order</option></select></div>
+<div class="stats" id="status">Loading latest opportunities…</div><section id="results"></section>
+<footer>Automated discovery and ranking. Listings may be stale or incomplete; always confirm availability, location, compensation and eligibility on the employer's official careers site. No applications are submitted automatically.</footer></main>
+<script>
+let data={results:[]};const q=document.querySelector('#q'),root=document.querySelector('#results'),status=document.querySelector('#status');
+function render(){let term=q.value.toLowerCase();let rows=data.results.filter(x=>(x.title+' '+x.snippet+' '+x.url+' '+x.query).toLowerCase().includes(term));if(document.querySelector('#sort').value==='score')rows.sort((a,b)=>b.score-a.score);
+status.textContent=(data.count??rows.length)+' matched roles · Last refreshed: '+(data.generated_at||'not yet run');
+root.innerHTML=rows.length?rows.map(x=>'<article class="card"><span class="score">'+x.score+'/100 match</span><h2><a href="'+x.url.replace(/"/g,'&quot;')+'" target="_blank" rel="noopener">'+escapeHtml(x.title)+'</a></h2><p>'+escapeHtml(x.snippet||'No summary supplied by search source.')+'</p><div class="meta">'+escapeHtml(new URL(x.url).hostname)+' · <a href="'+x.url+'" target="_blank" rel="noopener">Open vacancy/source ↗</a></div></article>').join(''):'<div class="empty">No matching roles in the latest run.</div>'}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+q.addEventListener('input',render);document.querySelector('#sort').addEventListener('change',render);
+fetch('./data/latest.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{data=d;render()}).catch(()=>{status.textContent='No automated run has published results yet.';root.innerHTML='<div class="empty">The dashboard is ready. Trigger the workflow once to populate opportunities.</div>'});
+</script></body></html>
