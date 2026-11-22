@@ -6,10 +6,8 @@ on:
     paths:
       - "cybersecurity_job_hunter.py"
       - "requirements.txt"
-      - "docs/**"
+      - "docs/index.html"
       - ".github/workflows/jobhunter.yml"
-    paths-ignore:
-      - "docs/data/**"
   schedule:
     - cron: "30 3 * * 1,4"
 permissions:
