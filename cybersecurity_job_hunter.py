@@ -18,6 +18,12 @@ GCCS=["Deutsche Börse Group","Vanguard","Charles Schwab","UBS","HSBC","Voya Fin
 ROLES=["security engineer","cybersecurity engineer","cyber security engineer","siem engineer","soar engineer","detection engineer","security platform engineer","security operations engineer","security analyst","soc engineer","security architect","cloud security engineer","incident response","threat detection","security consultant","security lead","cyber security lead"]
 SKILLS=["Google SecOps","Chronicle","Splunk","Splunk ES","SOAR","SIEM","YARA-L","BindPlane","Cribl","Microsoft Sentinel","CrowdStrike","NG SIEM","detection engineering","detection rules","incident response","log ingestion","log parsing","normalization","alert tuning","vulnerability management","cloud infrastructure","cloud security","threat hunting","AWS","Azure","GCP","KQL","Python","EDR","XDR","Kubernetes"]
 LOCATIONS=["Hyderabad","Remote India","Remote","Bengaluru","Pune","Gurugram","Chennai","Mumbai","Noida","India"]
+HYDERABAD_WATCHLIST=[
+    ("Providence India","Lead Cybersecurity Engineer / SIEM Lead Engineer","Hyderabad, Telangana, India","https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180","LinkedIn","Not specified","LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements."),
+    ("HCLTech","Track Manager - Security Investigations, SIEM","Hyderabad, Telangana, India","https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/","Employer careers","Not specified","HCLTech employer careers listing; confirm active status and experience requirements."),
+    ("S&P Global","Threat Detection Engineer","Hyderabad, Telangana, India","https://careers.spglobal.com/jobs/332493?lang=en-us","Employer careers","5+ years","S&P Global employer careers listing; confirm active status and full requirements."),
+    ("Gainsight","Staff Security Operations Engineer","Hyderabad / Bengaluru, India","https://jobs.ashbyhq.com/gainsight/928139de-b645-43b3-8101-0d74e73169d4","Employer ATS","8+ years","Gainsight ATS listing; hybrid Hyderabad/Bengaluru role; confirm active status and seniority fit.")
+]
 BAD=re.compile(r"documentation|product overview|pricing|course|certification|interview questions|salary guide|what is |definition|linkedin\.com/(in|company)/",re.I)
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
 def search_queries():
@@ -111,6 +117,14 @@ def discover():
     except Exception as e:
         health["Himalayas"]={"status":"error","error":str(e)[:220]}
         print("Source Himalayas failed:",str(e)[:180])
+    # Direct Hyderabad employer-page watchlist complements remote-only feeds.
+    watch_count=0
+    for company,title,location,url,source,experience,note in HYDERABAD_WATCHLIST:
+        row=api_row(title,company,location,url,"Hyderabad security engineering opportunity; full role details are fetched from the listing.","Not disclosed",source)
+        if not row: continue
+        row.update({"source_url":url,"source_name":source,"api_experience":experience,"apply_url":url,"verification_note":note})
+        add(row); watch_count+=1
+    health["Hyderabad employer watchlist"]={"status":"configured","matching_jobs":watch_count,"note":"Direct Hyderabad listings are re-fetched and enriched each scheduled run."}
     # Search engine is supplementary. Rotate a small batch each run to avoid rate limits.
     try:
         with DDGS() as ddgs:
@@ -149,7 +163,7 @@ def find_jobposting(obj):
             if found: return found
     return None
 def enrich(row):
-    result={**row,"company":row.get("api_company") or "Employer not verified","location":row.get("api_location") or "Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":row.get("api_salary") or "Not disclosed","employment_type":row.get("api_employment_type") or "Not specified","experience":"Not specified","date_posted":datetime.fromtimestamp(row["api_date_posted"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_date_posted") else "Not specified","valid_through":datetime.fromtimestamp(row["api_valid_through"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_valid_through") else "Not specified","apply_url":row.get("apply_url") or row["url"],"source_url":row.get("source_url") or row["url"],"source_name":row.get("source_name") or row.get("discovery_source","Job source"),"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only","discovery_source":row.get("discovery_source","DuckDuckGo")}
+    result={**row,"company":row.get("api_company") or "Employer not verified","location":row.get("api_location") or "Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":row.get("api_salary") or "Not disclosed","employment_type":row.get("api_employment_type") or "Not specified","experience":row.get("api_experience") or "Not specified","date_posted":datetime.fromtimestamp(row["api_date_posted"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_date_posted") else "Not specified","valid_through":datetime.fromtimestamp(row["api_valid_through"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_valid_through") else "Not specified","apply_url":row.get("apply_url") or row["url"],"source_url":row.get("source_url") or row["url"],"source_name":row.get("source_name") or row.get("discovery_source","Job source"),"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only","discovery_source":row.get("discovery_source","DuckDuckGo")}
     if row.get("source_name")=="Himalayas":
         for skill in SKILLS:
             if re.search(re.escape(skill),result["description"],re.I): result["skills"].append(skill)
