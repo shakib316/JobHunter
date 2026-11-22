@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22 07:54 UTC",
+  "generated_at": "2026-11-22 08:03 UTC",
   "source_health": {
     "RemoteOK": {
       "status": "ok",
@@ -27,12 +27,743 @@
       "matching_jobs": 4,
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
+    "Employer-by-employer search": {
+      "status": "ok",
+      "companies_configured": 90,
+      "companies_checked": 90,
+      "companies_with_matches": 16,
+      "matching_jobs": 28,
+      "note": "Every configured vendor and GCC is queried on each scheduled run; a checked/no-match result does not prove no vacancy exists."
+    },
     "DuckDuckGo": {
       "status": "ok",
-      "matching_jobs": 1
+      "matching_jobs": 28,
+      "queries_attempted": 90
     }
   },
-  "candidate_count": 51,
-  "qualified_count": 33,
+  "employer_coverage": [
+    {
+      "company": "\"Palo Alto Networks\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"CrowdStrike\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Microsoft Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "\"Google Cloud Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"SentinelOne\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Darktrace\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Fortinet\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Cisco Security\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Check Point Software\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"IBM Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Zscaler\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Vectra AI\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"CyberArk\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Okta\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Cloudflare\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Proofpoint\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Trellix\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Sophos\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Rapid7\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Elastic\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Arctic Wolf\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"ReliaQuest\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Exabeam\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Securonix\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Abnormal Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "\"Recorded Future\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Tenable\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Qualys\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Wiz\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Akamai\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Bitdefender\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Trend Micro\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"BlackBerry Cylance\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Cybereason\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"eSentire\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Huntress\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Expel\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Dropzone AI\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Torq\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Simbian\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Prophet Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Radiant Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "\"Stellar Cyber\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Lakera\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Protect AI\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"HiddenLayer\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Mindgard\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Robust Intelligence\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Netskope\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"SparkCognition\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Deutsche Börse Group\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Vanguard\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Charles Schwab\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"UBS\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"HSBC\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Voya Financial\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"T-Mobile\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"DoorDash\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Billtrust\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Sanofi\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"JLL\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Acumatica\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Blackbaud\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Regeneron\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Amgen\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Eli Lilly\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Citizens Financial Group\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Nationwide\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"HCA Healthcare\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Western Union\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Costco\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Marriott\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"DAZN\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Agilent\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"McDonald's\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Micron\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Mattel\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"S&P Global\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"State Street\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Wells Fargo\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Synchrony\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Salesforce\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Google\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Amazon\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Microsoft\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "New Hyderabad GCCs",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 5,
+      "error": ""
+    },
+    {
+      "company": "New Hyderabad GCCs",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "Delhi NCR discovery",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "Delhi NCR GCC discovery",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "Hyderabad discovery",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 5,
+      "error": ""
+    }
+  ],
+  "candidate_count": 78,
+  "qualified_count": 39,
   "published_count": 15
 }

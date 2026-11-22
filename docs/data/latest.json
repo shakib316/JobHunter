@@ -1,8 +1,8 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 07:54 UTC",
-  "generated_at_iso": "2026-11-22T07:54:51.018133+00:00",
-  "total_candidates": 51,
+  "generated_at": "2026-11-22 08:03 UTC",
+  "generated_at_iso": "2026-11-22T08:03:14.902860+00:00",
+  "total_candidates": 60,
   "count": 15,
   "profile": {
     "title": "Security Engineer",
@@ -23,6 +23,8 @@
   "search_coverage": {
     "cybersecurity_vendors": 50,
     "named_gccs": 35,
+    "employer_searches_configured": 85,
+    "employer_searches_completed": 90,
     "broad_discovery_queries": 4,
     "locations_priority": [
       "Remote",
@@ -33,6 +35,728 @@
       "Noida"
     ]
   },
+  "employer_coverage": [
+    {
+      "company": "\"Palo Alto Networks\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"CrowdStrike\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Microsoft Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "\"Google Cloud Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"SentinelOne\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Darktrace\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Fortinet\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Cisco Security\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Check Point Software\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"IBM Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Zscaler\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Vectra AI\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"CyberArk\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Okta\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Cloudflare\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Proofpoint\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Trellix\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Sophos\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Rapid7\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Elastic\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Arctic Wolf\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"ReliaQuest\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Exabeam\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Securonix\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Abnormal Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "\"Recorded Future\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Tenable\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Qualys\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Wiz\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Akamai\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Bitdefender\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Trend Micro\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"BlackBerry Cylance\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Cybereason\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"eSentire\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Huntress\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Expel\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Dropzone AI\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Torq\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Simbian\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Prophet Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Radiant Security\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "\"Stellar Cyber\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Lakera\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Protect AI\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"HiddenLayer\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Mindgard\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Robust Intelligence\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Netskope\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"SparkCognition\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Deutsche Börse Group\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Vanguard\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Charles Schwab\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"UBS\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"HSBC\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Voya Financial\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"T-Mobile\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"DoorDash\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Billtrust\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Sanofi\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"JLL\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Acumatica\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Blackbaud\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Regeneron\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Amgen\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Eli Lilly\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Citizens Financial Group\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Nationwide\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"HCA Healthcare\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Western Union\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Costco\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Marriott\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"DAZN\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Agilent\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"McDonald's\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Micron\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Mattel\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"S&P Global\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"State Street\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Wells Fargo\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Synchrony\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Salesforce\"",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
+    },
+    {
+      "company": "\"Google\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Amazon\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "\"Microsoft\"",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "New Hyderabad GCCs",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 5,
+      "error": ""
+    },
+    {
+      "company": "New Hyderabad GCCs",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "Delhi NCR discovery",
+      "category": "GCC",
+      "status": "checked_no_match",
+      "results_seen": 5,
+      "matching_jobs": 0,
+      "error": ""
+    },
+    {
+      "company": "Delhi NCR GCC discovery",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 2,
+      "error": ""
+    },
+    {
+      "company": "Hyderabad discovery",
+      "category": "GCC",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 5,
+      "error": ""
+    }
+  ],
   "source_health": {
     "RemoteOK": {
       "status": "ok",
@@ -60,9 +784,18 @@
       "matching_jobs": 4,
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
+    "Employer-by-employer search": {
+      "status": "ok",
+      "companies_configured": 90,
+      "companies_checked": 90,
+      "companies_with_matches": 16,
+      "matching_jobs": 28,
+      "note": "Every configured vendor and GCC is queried on each scheduled run; a checked/no-match result does not prove no vacancy exists."
+    },
     "DuckDuckGo": {
       "status": "ok",
-      "matching_jobs": 1
+      "matching_jobs": 28,
+      "queries_attempted": 90
     }
   },
   "results": [
@@ -228,52 +961,49 @@
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
-      "title": "Lead Cybersecurity Engineer / SIEM Lead Engineer",
-      "url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
-      "target_employer": "Providence India",
-      "search_query": "LinkedIn",
-      "api_company": "Providence India",
-      "api_location": "Hyderabad, Telangana, India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "LinkedIn",
-      "source_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "source_name": "LinkedIn",
-      "api_experience": "Not specified",
-      "apply_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "verification_note": "LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements.",
-      "company": "Providence India",
-      "location": "Hyderabad, IN",
-      "description": "<strong>Job Description – SIEM Lead Engineer Role Overview<br><br></strong>The SIEM Lead Engineer is responsible for leading the design, development, and optimization of SIEM alerting, enrichment, and monitoring capabilities using Splunk. This role focuses on improving alert fidelity, contextual enrichment, detection engineering, and overall SOC effectiveness. The role acts as a technical lead and escalation point, working closely with SOC Analysts, Threat Detection, Security Engineering, and platform teams.<br><br><strong>Key Responsibilities<br><br></strong><ul><li>Lead engineering and optimization of Splunk-based SIEM alerting and monitoring.</li><li>Design, develop, and tune correlation rules and detections to reduce false positives.</li><li>Own alert lifecycle management including creation, tuning, validation, and retirement.</li><li>Design and implement alert enrichment using IAM, CMDB, vulnerability, and threat intelligence sources.</li><li>Ensure alerts are enriched with user, asset, privilege, and business context.</li><li>Engineer and maintain Splunk data ingestion, normalization, and CIM compliance.</li><li>Support onboarding of log sources across endpoint, network, cloud, and identity platforms.</li><li>Develop detection use cases mapped to MITRE ATT&amp;CK.</li><li>Act as L3 escalation for complex SIEM and detection issues.</li><li>Maintain SOPs, runbooks, and SIEM documentation.</li><li>Mentor SIEM engineers and provide technical guidance.<br><br><br></li></ul><strong>Required Skills &amp; Experience<br><br></strong><ul><li>6–10 years of experience in SIEM or security engineering roles.</li><li>Strong hands-on expertise with Splunk Enterprise / Splunk ES.</li><li>Proven experience in SIEM alert development, tuning, and enrichment.</li><li>Strong understanding of security telemetry across endpoint, network, cloud, and IAM.</li><li>Proficiency in SPL (Search Processing Language).</li><li>Experience with MITRE ATT&amp;CK and SOC workflows.</li><li>Experience integrating SIEM with IAM, CMDB, vulnerability, and threat intel platforms.<br><br><br></li></ul><strong>Preferred Qualifications<br><br></strong><ul><li>Experience in regulated environments such as healthcare or financial services.</li><li>Exposure to SOAR platforms and automated response workflows.</li><li>Scripting experience using Python or PowerShell.</li><li>Relevant security or Splunk c",
+      "title": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at ...",
+      "url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "snippet": "Oct 17, 2026 · Apply to TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at Hyderabad. Find related TC-CS-CDR-SIEM SOAR Platform Engineer-Senior and IT Services & Consulting Industry Jobs in Hyderabad 3 to 7 Yrs experience with security automation, orchestration, security operations, threat intelligence, communication skills,Palo Alto Cortex XSOAR, Python scripting, integration of security tools ...",
+      "target_employer": "Hyderabad discovery",
+      "search_query": "Hyderabad security engineer cloud security SIEM SOAR jobs",
+      "api_location": "India/remote eligibility to verify",
+      "search_query_location": "India priority",
+      "discovery_source": "DuckDuckGo",
+      "company": "EY",
+      "location": "Hyderabad, Telangana, IN",
+      "description": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Company: EY Job Location: Hyderabad, Telangana, India Employment Type: Full-time Experience Required: 3+ years Wed, 10/07/2026 - 00:43 At EY, youll have the chance to build a career as unique as you are, with the global scale, support, inclusive culture and technology to become the best version of you. And were counting on your unique voice and perspective to help EY become even better, too. Join us and build an exceptional experience for yourself, and a better working world for all. SIEM SOAR/Platform Engineer The ideal candidate will have extensive experience with Palo Alto Cortex XSOAR (formerly Demisto) and a strong background in security automation and orchestration. Key Responsibilities: Automation Development: Design, develop, and maintain security automation playbooks using XSOAR. Integration: Integrate various security tools and systems with XSOAR to enhance incident response capabilities. Incident Response: Collaborate with the SOC team to automate and streamline incident response processes. Custom Scripting: Develop custom scripts and integrations using Python or other relevant programming languages. Monitoring and Optimization: Continuously monitor and optimize XSOAR playbooks and integrations for performance and effectiveness. Documentation: Create and maintain comprehensive documentation for all automation processes and playbooks. Training: Provide training and support to SOC analysts on the use of XSOAR and automated workflows. Skills and Qualifications: Experience: 3+ years of experience in security automation and orchestration, with a focus on XSOAR. Technical Expertise: Proficiency in Palo Alto Cortex XSOAR, Python scripting, and integration of security tools. Security Knowledge: Strong understanding of security operations, incident response, and threat intelligence. Problem-Solving: Excellent analytical and problem-solving skills with the ability to troubleshoot complex issues. Communication: Strong verbal and written communication skills to effectively collaborate with team members and stakeholders. Preferred Qualifications: Experience with other SOAR platforms and SIEM tools. Relevant certifications such as CISSP, CEH, or Palo Alto Networks certifications. Knowledge of cloud security services and environments (AWS, Azure, GCP). Additional Information: Willing to work from ODC as and when requi",
       "responsibilities": [],
-      "requirements": [],
+      "requirements": [
+        "[\"security automation\", \"orchestration\", \"security operations\", \"threat intelligence\", \"communication skills\", \"Palo Alto Cortex XSOAR\", \"Python scripting\", \"integration of security tools\", \"incident response\", \"problemsolving skills\"]"
+      ],
       "skills": [
-        "Splunk",
-        "Splunk ES",
         "SOAR",
         "SIEM",
-        "NG SIEM",
-        "detection engineering",
-        "normalization",
+        "incident response",
         "cloud security",
+        "AWS",
+        "Azure",
+        "GCP",
         "Python"
       ],
       "salary": "Not disclosed",
       "employment_type": "FULL_TIME",
-      "experience": "6+ years",
-      "date_posted": "2026-11-20T15:20:23.000Z",
-      "valid_through": "2027-03-07T12:35:06.000Z",
-      "source_domain": "in.linkedin.com",
+      "experience": "3+ years",
+      "date_posted": "2026-10-17T12:53:46+05:30",
+      "valid_through": "2026-12-16T12:53:44+05:30",
+      "apply_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "source_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "source_name": "DuckDuckGo",
+      "source_domain": "www.shine.com",
       "page_status": "Fetched (HTTP 200)",
-      "score": 90,
+      "score": 89,
       "fit_reasons": [
         "Direct SIEM/SOAR platform alignment",
         "Detection, investigation and response engineering alignment",
-        "Log onboarding and telemetry engineering alignment",
-        "Preferred Hyderabad location",
-        "Experience band aligns with a 7-year profile"
+        "Preferred Hyderabad location"
       ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security",
+      "verification_note": "Discovery result only; confirm the role is active and apply on the employer's official careers site."
     },
     {
       "title": "Threat Detection Engineer",
