@@ -26,6 +26,37 @@ HYDERABAD_WATCHLIST=[
 ]
 BAD=re.compile(r"documentation|product overview|pricing|course|certification|interview questions|salary guide|what is |definition|linkedin\.com/(in|company)/",re.I)
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
+def concise(text, limit=260):
+    text=clean(BeautifulSoup(str(text or ""), "html.parser").get_text(" ", strip=True))
+    if len(text)<=limit: return text
+    return text[:limit].rsplit(" ",1)[0].rstrip(" ,;:-")+"…"
+def normalize_salary(value):
+    value=clean(value)
+    if not value or value.lower() in {"none","null","0","0.0","not disclosed","not specified"}: return "Not disclosed"
+    if "monetaryamount" in value.lower() or "quantitativevalue" in value.lower():
+        try:
+            obj=json.loads(value); vals=[]
+            def walk(node):
+                if isinstance(node,dict):
+                    for k,v in node.items():
+                        if k.lower() in {"value","minvalue","maxvalue"} and isinstance(v,(int,float)) and v>0: vals.append(v)
+                        walk(v)
+                elif isinstance(node,list):
+                    for v in node: walk(v)
+            walk(obj)
+            if vals: return "–".join(f"{v:g}" for v in vals[:2])
+        except Exception: pass
+        return "Not disclosed"
+    if re.search(r"(?:₹|INR|USD|US\$|\$)\s?0(?:\.0+)?\b",value,re.I): return "Not disclosed"
+    return value
+GENERIC_PAGE=re.compile(r"^\s*\d+\s+.*\b(?:jobs?|vacancies)\b.*\b20\d{2}\b",re.I)
+def valid_search_hit(title,url):
+    title=clean(title); path=urlparse(url).path.lower().rstrip("/")
+    if not title or GENERIC_PAGE.search(title): return False
+    if re.search(r"/(?:jobs?|careers?|search|job-search|job-categories|category)$",path): return False
+    if re.search(r"(?:jobs-in-|job-search|search-results|category=|/category/)",path): return False
+    return True
+
 def search_queries():
     qs=[]
     role=' OR '.join('"'+r+'"' for r in ROLES[:9])
@@ -170,7 +201,7 @@ def discover():
                     for hit in hits or []:
                         seen+=1
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
-                        if not url or not title or BAD.search(title+" "+url): continue
+                        if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
                         if not re.search(r"Remote|worldwide|anywhere|global|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
                         add({"title":title,"url":url,"snippet":snippet,"target_employer":"Market discovery","search_query":q,"api_location":"India/remote eligibility to verify","search_query_location":"India priority","discovery_source":"Broad search"})
