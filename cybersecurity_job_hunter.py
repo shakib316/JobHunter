@@ -50,6 +50,20 @@ def normalize_salary(value):
     if re.search(r"(?:₹|INR|USD|US\$|\$)\s?0(?:\.0+)?\b",value,re.I): return "Not disclosed"
     return value
 GENERIC_PAGE=re.compile(r"^\s*\d+\s+.*\b(?:jobs?|vacancies)\b.*\b20\d{2}\b",re.I)
+REMOTE_RESTRICTED_CITIES = ["Pune","Baroda","Vadodara","Mumbai","Bengaluru","Bangalore","Chennai","Kolkata","Ahmedabad","Jaipur","Kochi","Indore","Bhopal","Nagpur","Lucknow","Chandigarh","Coimbatore","Mysuru","Mysore","Surat","Gurugram","Gurgaon","Delhi","Noida","Hyderabad"]
+def location_allowed(location, description=""):
+    loc=clean(location).lower()
+    desc=clean(description)
+    allowed_cities=r"hyderabad|gurugram|gurgaon|delhi|new delhi|noida"
+    if re.search(rf"\\b(?:{allowed_cities})\\b",loc,re.I): return True
+    if not re.search(r"\\b(remote|worldwide|anywhere|global|open to all|all countries)\\b",loc,re.I): return False
+    if re.search(r"not confirmed|unconfirmed|eligibility unknown",loc,re.I): return False
+    # A remote label restricted to another city is not eligible for this search.
+    explicit=re.search(r"(?:location|work location|job location)\\s*:\\s*(?:fully\\s+)?remote\\s*[-–—:]\\s*([^.;]+)",desc,re.I)
+    remote_tail=explicit.group(1) if explicit else loc
+    if re.search(r"\\b(?:Pune|Baroda|Vadodara|Mumbai|Bengaluru|Bangalore|Chennai|Kolkata|Ahmedabad|Jaipur|Kochi|Indore|Bhopal|Nagpur|Lucknow|Chandigarh|Coimbatore|Mysuru|Mysore|Surat)\\b",remote_tail,re.I):
+        return False
+    return bool(re.search(r"\\b(?:India|worldwide|anywhere|global|all countries|open to all)\\b",loc,re.I) or re.search(r"\\b(?:worldwide|anywhere|global|all countries|open to all)\\b",remote_tail,re.I))
 def valid_search_hit(title,url):
     title=clean(title); path=urlparse(url).path.lower().rstrip("/")
     if not title or GENERIC_PAGE.search(title) or re.search(r"\\b(?:jobs?|vacancies)\\s+(?:in|for|at)\\b",title,re.I): return False
@@ -84,7 +98,7 @@ def api_row(title, company, location, url, description="", salary="Not disclosed
     # do not label US/Europe-only vacancies as "Remote India".
     loc=location.lower()
     # Only the six requested location buckets are eligible; generic India and other cities are excluded.
-    allowed=bool(re.search(r"remote|worldwide|anywhere|global|all countries|open to all|hyderabad|gurugram|gurgaon|delhi|new delhi|noida",loc))
+    allowed=location_allowed(location,description)
     if not allowed: return None
     return {"title":title,"url":url,"snippet":clean(description)[:4500],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":location or "Not specified","api_salary":clean(salary) or "Not disclosed","discovery_source":source}
 
@@ -361,8 +375,7 @@ def main():
     # Enrich only the strongest 60 leads to keep scheduled runs predictable.
     raw=sorted(raw,key=rough_score,reverse=True)[:60]
     enriched=[rank(enrich(x)) for x in raw]
-    allowed_location=re.compile(r"remote|worldwide|anywhere|global|all countries|open to all|hyderabad|gurugram|gurgaon|delhi|new delhi|noida",re.I)
-    enriched=[x for x in enriched if allowed_location.search(x.get("location",""))]
+    enriched=[x for x in enriched if location_allowed(x.get("location",""),x.get("description",""))]
     today=now.date()
     def is_current(x):
         if re.search(r"HTTP (?:404|410)",x.get("page_status","")): return False
