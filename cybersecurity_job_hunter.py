@@ -17,7 +17,7 @@ VENDORS=["Palo Alto Networks","CrowdStrike","Microsoft Security","Google Cloud S
 GCCS=["Deutsche Börse Group","Vanguard","Charles Schwab","UBS","HSBC","Voya Financial","T-Mobile","DoorDash","Billtrust","Sanofi","JLL","Acumatica","Blackbaud","Regeneron","Amgen","Eli Lilly","Citizens Financial Group","Nationwide","HCA Healthcare","Western Union","Costco","Marriott","DAZN","Agilent","McDonald's","Micron","Mattel","S&P Global","State Street","Wells Fargo","Synchrony","Salesforce","Google","Amazon","Microsoft"]
 ROLES=["security engineer","cybersecurity engineer","cyber security engineer","siem engineer","soar engineer","detection engineer","security platform engineer","security operations engineer","security analyst","soc engineer","security architect","cloud security engineer","incident response","threat detection","security consultant","security lead","cyber security lead"]
 SKILLS=["Google SecOps","Chronicle","Splunk","Splunk ES","SOAR","SIEM","YARA-L","BindPlane","Cribl","Microsoft Sentinel","CrowdStrike","NG SIEM","detection engineering","detection rules","incident response","log ingestion","log parsing","normalization","alert tuning","vulnerability management","cloud infrastructure","cloud security","threat hunting","AWS","Azure","GCP","KQL","Python","EDR","XDR","Kubernetes"]
-LOCATIONS=["Hyderabad","Remote India","Remote","Bengaluru","Pune","Gurugram","Chennai","Mumbai","Noida","India"]
+LOCATIONS=["Hyderabad","Remote India","Remote","Bengaluru","Pune","Gurugram","Gurgaon","Noida","Delhi","Chennai","Mumbai","India"]
 HYDERABAD_WATCHLIST=[
     ("Providence India","Lead Cybersecurity Engineer / SIEM Lead Engineer","Hyderabad, Telangana, India","https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180","LinkedIn","Not specified","LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements."),
     ("HCLTech","Track Manager - Security Investigations, SIEM","Hyderabad, Telangana, India","https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/","Employer careers","Not specified","HCLTech employer careers listing; confirm active status and experience requirements."),
@@ -34,6 +34,8 @@ def search_queries():
     qs += [("New Hyderabad GCCs",'new GCC Hyderabad 2026 cybersecurity security engineer SIEM SOAR jobs'),
            ("New Hyderabad GCCs",'Hyderabad global capability centre expansion information security careers 2026'),
            ("India discovery",'India remote security engineer SIEM SOAR detection engineer jobs'),
+           ("Delhi NCR discovery",'Delhi OR Gurgaon OR Gurugram OR Noida security engineer SIEM SOAR detection engineer cybersecurity jobs'),
+           ("Delhi NCR GCC discovery",'Delhi NCR Gurgaon Gurugram Noida GCC security operations SIEM SOAR detection careers'),
            ("Hyderabad discovery",'Hyderabad security engineer cloud security SIEM SOAR jobs')]
     return qs
 def api_row(title, company, location, url, description="", salary="Not disclosed", source="API"):
@@ -44,7 +46,7 @@ def api_row(title, company, location, url, description="", salary="Not disclosed
     # This dashboard prioritises India. Accept explicitly India-based roles and truly worldwide remote roles;
     # do not label US/Europe-only vacancies as "Remote India".
     loc=location.lower()
-    india=bool(re.search(r"india|hyderabad|bengaluru|bangalore|pune|gurugram|gurgaon|chennai|mumbai|noida",loc))
+    india=bool(re.search(r"india|hyderabad|bengaluru|bangalore|pune|gurugram|gurgaon|delhi|new delhi|chennai|mumbai|noida",loc))
     worldwide=bool(re.search(r"worldwide|anywhere|global|all countries|open to all",loc))
     if not (india or worldwide): return None
     return {"title":title,"url":url,"snippet":clean(description)[:4500],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":location or "Not specified","api_salary":clean(salary) or "Not disclosed","discovery_source":source}
@@ -246,7 +248,7 @@ def rank(x):
     skill_terms=["google secops","chronicle","splunk","soar","siem","yara-l","bindplane","cribl","sentinel","crowdstrike","detection engineering","detection rules","incident response","log ingestion","log parsing","alert tuning","vulnerability management","cloud infrastructure","cloud security","threat hunting","aws","azure","gcp"]
     skill=min(35,sum(4 for k in skill_terms if k in blob))
     loc=x["location"].lower()
-    location=20 if "hyderabad" in loc else 18 if "remote india" in loc else 15 if "india" in loc else 12 if "remote" in loc else 3
+    location=20 if "hyderabad" in loc else 18 if "remote india" in loc else 16 if any(k in loc for k in ["delhi","gurgaon","gurugram","noida"]) else 15 if "india" in loc else 12 if "remote" in loc else 3
     seniority=5 if re.search(r"senior|lead|staff|principal",t) else 2
     experience=5 if re.search(r"6\+? years|7\+? years|8\+? years|6-\d+ years|7-\d+ years",x.get("experience","").lower()) or re.search(r"\b(?:6|7|8)\+?\s*(?:years|yrs)",blob) else 0
     employer=5 if x["company"]!="Employer not verified" else 0
