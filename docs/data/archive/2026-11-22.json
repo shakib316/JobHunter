@@ -1,8 +1,8 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 09:26 UTC",
-  "generated_at_iso": "2026-11-22T09:26:33.898602+00:00",
-  "total_candidates": 46,
+  "generated_at": "2026-11-22 09:29 UTC",
+  "generated_at_iso": "2026-11-22T09:29:13.132164+00:00",
+  "total_candidates": 60,
   "count": 15,
   "profile": {
     "title": "Security Engineer",
@@ -41,1321 +41,981 @@
     {
       "company": "Palo Alto Networks",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "CrowdStrike",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Microsoft Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 3,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Google Cloud Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "SentinelOne",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Darktrace",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Fortinet",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Cisco Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Check Point Software",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "IBM Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Zscaler",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Vectra AI",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "CyberArk",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Okta",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Cloudflare",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Proofpoint",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Trellix",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Sophos",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Rapid7",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Elastic",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Arctic Wolf",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "ReliaQuest",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 6,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Securonix",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Abnormal Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Recorded Future",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Tenable",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Qualys",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 5,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Wiz",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 4,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Akamai",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 4,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Bitdefender",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 11,
+      "matching_jobs": 7,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Trend Micro",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "BlackBerry Cylance",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Cybereason",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "eSentire",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 8,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Huntress",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 4,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Expel",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Dropzone AI",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Torq",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 3,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Simbian",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Prophet Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 9,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Radiant Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Stellar Cyber",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Lakera",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Protect AI",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "HiddenLayer",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 9,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Mindgard",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Robust Intelligence",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Netskope",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 6,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "SparkCognition",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Deutsche Börse Group",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Vanguard",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Charles Schwab",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "UBS",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "HSBC",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Voya Financial",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "T-Mobile",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "DoorDash",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Billtrust",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Sanofi",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "JLL",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Acumatica",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Blackbaud",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 8,
+      "matching_jobs": 3,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Regeneron",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Amgen",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Eli Lilly",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Citizens Financial Group",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Nationwide",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "HCA Healthcare",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Western Union",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Costco",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Marriott",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "DAZN",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Agilent",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "McDonald's",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Micron",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Mattel",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "S&P Global",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "State Street",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Wells Fargo",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Synchrony",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Salesforce",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Google",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Amazon",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Microsoft",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     }
   ],
   "broad_search_coverage": [
     {
       "query": "New Hyderabad GCCs",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe."
+      "status": "match",
+      "results_seen": 11,
+      "matching_jobs": 3,
+      "error": ""
     },
     {
       "query": "New Hyderabad GCCs",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 11,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe."
+      "error": ""
     },
     {
       "query": "Delhi NCR discovery",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe."
+      "error": ""
     },
     {
       "query": "Delhi NCR GCC discovery",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe."
+      "error": ""
     },
     {
       "query": "Hyderabad discovery",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe."
+      "status": "match",
+      "results_seen": 11,
+      "matching_jobs": 3,
+      "error": ""
     },
     {
       "query": "Pan-India discovery",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe."
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": ""
     }
   ],
   "source_health": {
@@ -1377,7 +1037,7 @@
     },
     "Himalayas": {
       "status": "ok",
-      "matching_jobs": 42,
+      "matching_jobs": 44,
       "note": "India-filtered remote listings; Apply uses the provider-supplied applicationLink."
     },
     "Hyderabad employer watchlist": {
@@ -1386,94 +1046,54 @@
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
     "Employer-by-employer search": {
-      "status": "degraded",
+      "status": "ok",
       "companies_configured": 85,
-      "companies_checked": 0,
-      "companies_with_matches": 0,
-      "matching_jobs": 0,
-      "raw_results_seen": 0,
-      "selected_backend": null,
+      "companies_checked": 85,
+      "companies_with_matches": 37,
+      "matching_jobs": 97,
+      "raw_results_seen": 821,
+      "selected_backend": "Bing RSS",
       "backend_probe": {
-        "status": "error",
-        "selected_backend": null,
-        "results_seen": 0,
+        "status": "ok",
+        "selected_backend": "Bing RSS",
+        "probe_query": "security engineer jobs India",
+        "results_seen": 3,
         "attempts": [
           {
-            "backend": "auto",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "bing",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "brave",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "google",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "yahoo",
-            "status": "error",
-            "error": "No results found."
+            "backend": "Bing RSS",
+            "status": "ok",
+            "results_seen": 3
           }
-        ],
-        "error": "No DDGS backend returned results for the connectivity probe."
+        ]
       },
-      "note": "A successful connectivity probe proves the search backend responds; no_results_returned means that employer query returned no raw hits, not proof that the employer has no vacancy."
+      "note": "A successful probe proves the provider responds. no_results_returned means an employer query returned no raw hits, not proof that the employer has no vacancy."
     },
     "Employer metasearch": {
-      "status": "degraded",
-      "raw_results_seen": 0,
-      "matching_jobs": 0,
+      "status": "ok",
+      "raw_results_seen": 821,
+      "matching_jobs": 97,
       "queries_attempted": 85,
-      "selected_backend": null,
+      "selected_backend": "Bing RSS",
       "backend_probe": {
-        "status": "error",
-        "selected_backend": null,
-        "results_seen": 0,
+        "status": "ok",
+        "selected_backend": "Bing RSS",
+        "probe_query": "security engineer jobs India",
+        "results_seen": 3,
         "attempts": [
           {
-            "backend": "auto",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "bing",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "brave",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "google",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "yahoo",
-            "status": "error",
-            "error": "No results found."
+            "backend": "Bing RSS",
+            "status": "ok",
+            "results_seen": 3
           }
-        ],
-        "error": "No DDGS backend returned results for the connectivity probe."
+        ]
       }
     },
     "Broad market discovery": {
-      "status": "degraded",
+      "status": "ok",
       "queries_attempted": 6,
-      "raw_results_seen": 0,
-      "matching_jobs": 0,
-      "selected_backend": null
+      "raw_results_seen": 57,
+      "matching_jobs": 8,
+      "selected_backend": "Bing RSS"
     }
   },
   "results": [
@@ -1632,6 +1252,140 @@
         "Log onboarding and telemetry engineering alignment",
         "Preferred Hyderabad location",
         "Experience band aligns with a 7-year profile"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior - Shine.com",
+      "url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "snippet": "Apply to TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at Hyderabad. Find related TC-CS-CDR-SIEM SOAR Platform Engineer-Senior and IT Services & Consulting Industry Jobs in Hyderabad 3 to 7 Yrs experience with security automation, orchestration, security operations, threat intelligence, communication skills,Palo Alto Cortex XSOAR, Python scripting, integration of security tools ...",
+      "target_employer": "Hyderabad discovery",
+      "search_query": "Hyderabad security engineer cloud security SIEM SOAR jobs",
+      "api_location": "Not specified",
+      "search_query_location": "India priority; full page location check",
+      "discovery_source": "Broad search",
+      "company": "EY",
+      "location": "Hyderabad, Telangana, IN",
+      "description": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Company: EY Job Location: Hyderabad, Telangana, India Employment Type: Full-time Experience Required: 3+ years Wed, 10/07/2026 - 00:43 At EY, youll have the chance to build a career as unique as you are, with the…",
+      "responsibilities": [],
+      "requirements": [
+        "security automation",
+        "orchestration",
+        "security operations"
+      ],
+      "skills": [
+        "SOAR",
+        "SIEM",
+        "incident response",
+        "cloud security",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Python"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "FULL_TIME",
+      "experience": "3+ years",
+      "date_posted": "2026-10-17T12:53:46+05:30",
+      "valid_through": "2026-12-16T12:53:44+05:30",
+      "apply_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "source_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "source_name": "Broad search",
+      "source_domain": "www.shine.com",
+      "page_status": "Structured JobPosting found; check closing date",
+      "verification_note": "Structured JobPosting metadata was found. Confirm validThrough and the employer application page before applying.",
+      "score": 89,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Preferred Hyderabad location"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior (Big4jobs)",
+      "url": "https://www.jobaaj.com/job/ey-big4job-tc-cs-cdr-siem-soar-platform-engineer-senior-hyderabad-tg-india-5-to-10-years-1861135",
+      "snippet": "You can apply now for TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job at Hyderabad, TG, India and explore the world of opportunities with Jobaaj. Only thing required is having expreience in IT / Software Development & Related and easily target good salary in the IT / Software Development & Related domain.",
+      "target_employer": "Hyderabad discovery",
+      "search_query": "Hyderabad security engineer cloud security SIEM SOAR jobs",
+      "api_location": "Not specified",
+      "search_query_location": "India priority; full page location check",
+      "discovery_source": "Broad search",
+      "company": "Employer not verified",
+      "location": "Hyderabad",
+      "description": "You can apply now for TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job at Hyderabad, TG, India and explore the world of opportunities with Jobaaj. Only thing required is having expreience in IT / Software Development & Related and easily target good salary in…",
+      "responsibilities": [],
+      "requirements": [],
+      "skills": [
+        "SOAR",
+        "SIEM",
+        "incident response",
+        "cloud security",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Python"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "Not specified",
+      "date_posted": "Not specified",
+      "valid_through": "Not specified",
+      "apply_url": "https://www.jobaaj.com/job/ey-big4job-tc-cs-cdr-siem-soar-platform-engineer-senior-hyderabad-tg-india-5-to-10-years-1861135",
+      "source_url": "https://www.jobaaj.com/job/ey-big4job-tc-cs-cdr-siem-soar-platform-engineer-senior-hyderabad-tg-india-5-to-10-years-1861135",
+      "source_name": "Broad search",
+      "source_domain": "www.jobaaj.com",
+      "page_status": "HTTP 200; vacancy not independently verified",
+      "verification_note": "The page responds, but no structured JobPosting was found. Confirm that this is an individual, open vacancy before applying.",
+      "score": 84,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Preferred Hyderabad location"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "SOAR Engineer - netenrich.com",
+      "url": "https://netenrich.com/careers/individual-job-soar-engineer",
+      "snippet": "Job Summary As a SOAR Engineer at Netenrich Technologies, You will be responsible for leveraging your expertise in SOAR, Threat Hunting, Chronicle, SIEM, and Writing Rules, Play books to detect and mitigate threats, analyze security data, and develop strategies to strengthen our cybersecurity infrastructure.",
+      "target_employer": "New Hyderabad GCCs",
+      "search_query": "new GCC Hyderabad 2026 cybersecurity security engineer SIEM SOAR jobs",
+      "api_location": "Not specified",
+      "search_query_location": "India priority; full page location check",
+      "discovery_source": "Broad search",
+      "company": "Employer not verified",
+      "location": "Hyderabad",
+      "description": "Job Summary As a SOAR Engineer at Netenrich Technologies, You will be responsible for leveraging your expertise in SOAR, Threat Hunting, Chronicle, SIEM, and Writing Rules, Play books to detect and mitigate threats, analyze security data, and develop…",
+      "responsibilities": [],
+      "requirements": [],
+      "skills": [
+        "Google SecOps",
+        "Chronicle",
+        "Splunk",
+        "SOAR",
+        "SIEM",
+        "incident response",
+        "threat hunting",
+        "AWS",
+        "Python"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "Not specified",
+      "experience": "Not specified",
+      "date_posted": "Not specified",
+      "valid_through": "Not specified",
+      "apply_url": "https://netenrich.com/careers/individual-job-soar-engineer",
+      "source_url": "https://netenrich.com/careers/individual-job-soar-engineer",
+      "source_name": "Broad search",
+      "source_domain": "netenrich.com",
+      "page_status": "HTTP 200; vacancy not independently verified",
+      "verification_note": "The page responds, but no structured JobPosting was found. Confirm that this is an individual, open vacancy before applying.",
+      "score": 80,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Preferred Hyderabad location"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
@@ -2425,226 +2179,6 @@
         "Detection, investigation and response engineering alignment",
         "Remote India eligibility indicated",
         "Experience band aligns with a 7-year profile"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "Cloud Security Engineer",
-      "url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer",
-      "snippet": "About the role You’ll be the engineer our managed services clients rely on when something looks wrong in their AWS accounts or on their endpoints, and the one who makes sure it doesn’t happen twice.You will run AWS-native security services and enterprise EDR/XDR platforms across many client environments, lead incident response from the first alert to the root cause, manage devices through Microsoft Intune, and keep the controls and evidence clients need for SOC 2. The stack you’ll own: Five layers, many client environments. These are the services and tools you’ll work with every week. AWS foundation Accounts, identity, encryption and network edges AWS Organizations & SCPs Control Tower IAM & IAM Identity Center IAM Access Analyzer KMS Secrets Manager VPC & Network Firewall AWS WAF & Shield Cloud workloads EC2, containers and serverless, protected by AWS-native and thirdparty tools CrowdStrike Falcon Cloud Security Trend Micro Vision One / Cloud One Workload Security Bitdefender GravityZone Amazon Inspector GuardDuty Runtime Monitoring Systems Manager Patch Manager ECR image scanning Amazon EKS Endpoints, mobile and email Laptops, servers, phones and the mailboxes people use on them CrowdStrike Falcon SentinelOne Singularity Microsoft Defender for Endpoint Bitdefender GravityZone Microsoft Intune Intune app protection (MAM) Microsoft Entra ID Conditional Access Microsoft Defender for Office 365 SPF, DKIM & DMARC Detection and response EDR, XDR and MDR working as one service Amazon GuardDuty AWS Security Hub Amazon Detective AWS Security Incident Response Microsoft Sentinel Microsoft Defender XDR MDR partners Compliance and evidence Proof that controls work, ready for auditors SOC 2 Trust Services Criteria AWS Config conformance packs AWS Audit Manager AWS CloudTrail CIS Benchmarks Key responsibilities: AWS cloud security Design and run a multi-account security architecture for each client: a dedicated security tooling account with delegated administration for GuardDuty, Security Hub, Inspector, Macie and Detective, and an organization-wide CloudTrail delivered to a locked-down log archive account. Enable and tune GuardDuty protection plans (S3, EKS, Runtime Monitoring, Malware Protection, RDS and Lambda), maintain suppression rules, and route findings by severity to the right queue and on-call engineer. nClouds : Cloud Security Engineer Page 2 of 7 Operate Security Hub with central configuration across the organization: enable standards (AWS Foundational Security Best Practices, CIS, PCI DSS and NIST SP800-53), build automation rules and custom insights, and keep findings deduplicated. Own identity security: IAM Identity Center permission sets, service control and resource control policies, permission boundaries, cross-account role trust reviews, root account protection, MFA enforcement, access key rotation, and IAM Access Analyzer findings for external and unused access. Protect data with KMS key policies and rotation, S3 Block Public Access and bucket policy reviews, default EBS and RDS encryption, Secrets Manager rotation and Macie sensitive data discovery. Harden networks through security group and NACL reviews, AWS Network Firewall, Route 53 Resolver DNS Firewall, VPC endpoints, WAF managed and rate-based rules, Shield Advanced and VPC Flow Log analysis. Secure containers and serverless: EKS cluster hardening, EKS Pod Identity or IRSA, Kubernetes RBAC and audit logs, ECR enhanced scanning, and least-privilege Lambda execution roles. Build auto-remediation for common risks, such as public S3 buckets, security groups open to the internet on SSH or RDP, disabled logging and exposed access keys, using AWS Config rules, EventBridge, Lambda and Systems Manager Automation. Centralize security logs (CloudTrail, VPC Flow Logs, DNS, WAF and load balancer logs) in Amazon Security Lake or the client’s SIEM, with retention set to meet compliance needs. Run security posture reviews against the CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices and the Well-Architected Security pillar, then drive remediation with the client. Review Terraform and CloudFormation changes for security misconfigurations before they reach production. Third-party cloud and workload security on AWS Deploy and manage third-party cloud security platforms alongside AWS-native services, including CrowdStrike Falcon Cloud Security, Trend Micro Vision One and Bitdefender GravityZone, covering workload protection, cloud posture (CSPM) and",
-      "target_employer": "nClouds",
-      "search_query": "Himalayas",
-      "api_company": "nClouds",
-      "api_location": "Remote India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "Himalayas",
-      "api_bullets": [],
-      "apply_url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer?utm_source=api",
-      "source_url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer",
-      "source_name": "Himalayas",
-      "api_employment_type": "Full Time",
-      "api_date_posted": 1795106433,
-      "api_valid_through": 1800127849,
-      "company": "nClouds",
-      "location": "Remote India",
-      "description": "About the role You’ll be the engineer our managed services clients rely on when something looks wrong in their AWS accounts or on their endpoints, and the one who makes sure it doesn’t happen twice.You will run AWS-native security services and enterprise…",
-      "responsibilities": [],
-      "requirements": [],
-      "skills": [
-        "SIEM",
-        "Microsoft Sentinel",
-        "CrowdStrike",
-        "incident response",
-        "cloud security",
-        "AWS",
-        "EDR",
-        "XDR",
-        "Kubernetes"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "Full Time",
-      "experience": "Not specified",
-      "date_posted": "2026-11-19",
-      "valid_through": "2027-01-16",
-      "source_domain": "himalayas.app",
-      "page_status": "Listed in Himalayas API",
-      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
-      "score": 71,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Detection, investigation and response engineering alignment",
-        "Remote India eligibility indicated"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "Sr Security Engineer",
-      "url": "https://himalayas.app/companies/circana/jobs/sr-security-engineer",
-      "snippet": "Sr Security Engineer – Security Operations Center - SOC ( India) Let’s be unstoppable together! Circana is a leading provider of technology, AI, and data solutions for consumer packaged goods companies, manufacturers, and retailers. Our predictive analytics and Liquid Data® platform help clients measure market share, uncover consumer behavior, and drive growth—powered by six decades of expertise and an expansive, high-quality data set. At Circana , we are fueled by our passion for continuous learning and growth, we seek and share feedback freely, and we celebrate victories both big and small in an environment that is flexible and accommodating to our work and personal lives. We have a global commitment to diversity, equity, and inclusion as we believe in the undeniable strength that diversity brings to our business, employees, clients, and communities (with us you can always bring your full self to work). Join our inclusive, committed team to be a challenger, own outcomes, and stay curious together. Learn more at www.circana.com. What will you be doing? This role will be part of a highly energetic, experienced SOC team for various IT Security platforms and practices. You will work directly with the entire Security, IT and business teams to enforce and safeguard cybersecurity at Circana . You will play a critical role in maintaining a strong defensive posture, including Incident Response. As part of the SOC First Responders Team, you will monitor, assess, handle and resolve active security alerts and escalate as needed while still being involved. The idea candidate will have the ability to communicate both clearly and effectively with all levels of global colleagues across Circana . You will be a valued contributor to suggest, enhance and utilize IT Security solutions to ensure assets are properly safeguarded. Job Responsibilities First responders in monitoring, investigating and handling events / alerts. Perform threat detection, investigation, and response to security incidents. Maintain and manage endpoint protection platforms including Antivirus and EDR Perform security audits of internal systems for compliance Perform , report and track active vulnerability scanning processes and remediation Work with the Security Compliance, Risk, Audit and Governance Teams to ensure security, regulatory and compliance best practices are followed. Proactively utilize all IT Security tools to guard against , identify and remediate threats. Contribute to the on-going review and expansion of IT Security tools, policies, and processes Utilize Security solutions to ensure assets are properly safeguarded Proactively assess safeguards to identify potential risks and perform trend analysis Compile and validate statistical data to be used to determine the viability of implementing specific Ability to handle sensitive matters with discretion and maintain confidentiality. Strong verbal and written English language skills Ability to multi-task with attention to detail Requirements Bachelor’s or Master’s degree in Information Technology, Computer Science, or equivalent experience 4 to 6 years experience in IT Systems or Network Engineering / Administration. Min 4+ years relevant experience in an IT Security Analyst or IT Security Administration role Cloud security experience is additional and preferable. Knowledgeable of the following information security disciplines: Data loss prevention (DLP), intrusion detection system (IDS) monitoring, security information and event management (SIEM), incident response, IT Security best practices, system hardening, vulnerability assessment, management and remediation, EDR, antivirus, firewalls, and techniques for analyzing TCP/IP network traffic and event logs Strong hands-on experience with: TrendMicro Deep Security(Antivirus), CrowdStrike(EDR) , Tenable Nessus (Vulnerability Scan) and Knowledge of SIEM tools (ExaBeam) Relevant certifications preferred (e.g., CEH, Security+,) Excellent Interpersonal Skills - Team player and Self Starter. Independent Thinker and Collaborator. Circana Behaviors As well as the technical skills, experience and attributes that are required for the role, our shared behaviors sit at the core of our organization. Therefore, we always look for people who can continuously champion these behaviors throughout the business within their day-to-day role: Stay Curious: Being hungry to learn and grow, always asking the big questions Seek Clarity: Embracing complexity to create clarity a",
-      "target_employer": "Circana",
-      "search_query": "Himalayas",
-      "api_company": "Circana",
-      "api_location": "Remote India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "Himalayas",
-      "api_bullets": [
-        "First responders in monitoring, investigating and handling events / alerts.",
-        "Perform threat detection, investigation, and response to security incidents.",
-        "Maintain and manage endpoint protection platforms including Antivirus and EDR",
-        "Perform security audits of internal systems for compliance",
-        "Perform , report and track active vulnerability scanning processes and remediation",
-        "Work with the Security Compliance, Risk, Audit and Governance Teams to ensure security, regulatory and compliance best practices are followed.",
-        "Proactively utilize all IT Security tools to guard against , identify and remediate threats.",
-        "Contribute to the on-going review and expansion of IT Security tools, policies, and processes",
-        "Utilize Security solutions to ensure assets are properly safeguarded",
-        "Proactively assess safeguards to identify potential risks and perform trend analysis",
-        "Compile and validate statistical data to be used to determine the viability of implementing specific",
-        "Ability to handle sensitive matters with discretion and maintain confidentiality.",
-        "Strong verbal and written English language skills",
-        "Ability to multi-task with attention to detail",
-        "Bachelor’s or Master’s degree in Information Technology, Computer Science, or equivalent experience",
-        "4 to 6 years experience in IT Systems or Network Engineering / Administration.",
-        "Min 4+ years relevant experience in an IT Security Analyst or IT Security Administration role",
-        "Cloud security experience is additional and preferable.",
-        "Knowledgeable of the following information security disciplines: Data loss prevention (DLP), intrusion detection system (IDS) monitoring, security information and event management (SIEM), incident response, IT Security best practices, system hardening, vulnerability assessment, management and remediation, EDR, antivirus, firewalls, and techniques for analyzing TCP/IP network traffic and event logs",
-        "Strong hands-on experience with: TrendMicro Deep Security(Antivirus), CrowdStrike(EDR) , Tenable Nessus (Vulnerability Scan) and Knowledge of SIEM tools (ExaBeam)",
-        "Relevant certifications preferred (e.g., CEH, Security+,)",
-        "Excellent Interpersonal Skills - Team player and Self Starter. Independent Thinker and Collaborator.",
-        "Stay Curious: Being hungry to learn and grow, always asking the big questions",
-        "Seek Clarity: Embracing complexity to create clarity and inspire action",
-        "Own the Outcome: Being accountable for decisions and taking ownership of our choices",
-        "Center on the Client: Relentlessly adding value for our customers",
-        "Be a Challenger: Never complacent, always striving for continuous improvement",
-        "Champion Inclusivity: Fostering trust in relationships engaging with empathy, respect and integrity",
-        "Commit to each other: Contributing to making Circana a great place to work for everyone"
-      ],
-      "apply_url": "https://himalayas.app/companies/circana/jobs/sr-security-engineer?utm_source=api",
-      "source_url": "https://himalayas.app/companies/circana/jobs/sr-security-engineer",
-      "source_name": "Himalayas",
-      "api_employment_type": "Full Time",
-      "api_date_posted": 1795106402,
-      "api_valid_through": 1800106075,
-      "company": "Circana",
-      "location": "Remote India",
-      "description": "Sr Security Engineer – Security Operations Center - SOC ( India) Let’s be unstoppable together! Circana is a leading provider of technology, AI, and data solutions for consumer packaged goods companies, manufacturers, and retailers. Our predictive analytics…",
-      "responsibilities": [
-        "First responders in monitoring, investigating and handling events / alerts.",
-        "Perform threat detection, investigation, and response to security incidents.",
-        "Maintain and manage endpoint protection platforms including Antivirus and EDR"
-      ],
-      "requirements": [
-        "Bachelor’s or Master’s degree in Information Technology, Computer Science, or equivalent experience",
-        "4 to 6 years experience in IT Systems or Network Engineering / Administration.",
-        "Min 4+ years relevant experience in an IT Security Analyst or IT Security Administration role"
-      ],
-      "skills": [
-        "SIEM",
-        "CrowdStrike",
-        "incident response",
-        "cloud security",
-        "EDR"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "Full Time",
-      "experience": "6+ years (from job description)",
-      "date_posted": "2026-11-19",
-      "valid_through": "2027-01-16",
-      "source_domain": "himalayas.app",
-      "page_status": "Listed in Himalayas API",
-      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
-      "score": 68,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Detection, investigation and response engineering alignment",
-        "Remote India eligibility indicated",
-        "Experience band aligns with a 7-year profile"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "AI and Cloud Security Engineer",
-      "url": "https://himalayas.app/companies/td-synnex/jobs/ai-and-cloud-security-engineer",
-      "snippet": "Overview TD SYNNEX (NYSE: SNX) is the world's largest IT distributor, and we are accelerating AI adoption across Azure AI Foundry, AWS Bedrock, Copilot Studio, Databricks, and self-hosted agent environments. Our security philosophy is distinctive: rather than slowing innovation with pre-approval gatekeeping, we operate a runtime-first, default-allow security posture — every AI interaction is intercepted, analyzed, and enforced at the moment of execution. In our architecture, the traditional network perimeter no longer defines the defensive boundary: the AI agent is the perimeter. The AI & Cloud Security team is chartered to make that vision operational. We are seeking senior technical owner of the AI security runtime control plane and detection fabric. You will build and integrate the inline enforcement pipeline (AI gateway → runtime data protection → intent-based enforcement), tune the policies that keep it fast and low-friction, and serve as the final escalation point for the most complex AI and cloud security incidents. You will also help implement and participate in operation of a closed-loop defensive system in which continuous red-team findings automatically improve runtime policies, detection logic, and SOC threat models. You join a team of two AI & Cloud Security Architects and will be the engineering force that turns strategy into operating controls — across a multi-cloud estate (Azure, AWS, GCP). This role involves collaborating with cross-functional teams to ensure the security of AI and cloud environments, AI applications and infrastructure, addressing potential threats, and maintaining compliance with regulatory standards. The ideal candidate will have a strong background in AI technologies and their implementation as well as cloud security, security principles and cybersecurity best practices. The ability to develop automation in both AI and cloud environments with infrastructure as code (IaC) or policy as code principles is required. The engineer will report to AI & Cloud Security leadership and have strong working relationships with IT and application development leadership. Responsibilities Integration — build and own the AI runtime control plane. Engineer, deploy and operate the inline enforcement pipeline for AI traffic: an AI gateway chained with runtime data-protection and intent-based enforcement platforms, fronting LLMs, tools, and MCP servers across Azure AI Foundry, AWS Bedrock, GCP Vertex, Copilot Studio, Databricks, and self-hosted environments. Harden the gateway layer for resilience : configure buffering and overload management, enforcement timeouts on external-processing filters, layered global/local rate limiting, and prompt-truncation filters to defend against token-exhaustion and \"reasoning overload\" denial-of-service attacks. Integrate the wider AI security ecosystem into one coherent system : onboard AI asset-intelligence context (agent inventory, ownership, blast radius) into enforcement decisions; connect model-security and supply-chain telemetry and continuous red-team signals into SIEM correlation and SOC workflows; stream unified AI detections, decision logs, and policy events for forensics and audit. Policy tuning — enforce without friction. Author and calibrate runtime policies: prompt-injection and jailbreak prevention, PII detection/redaction and data masking, intent-based filtering, tool-call validation, MCP access control, and agent permission boundaries (including \"lethal trifecta\" prevention for low-code agents). Balance detection versus hard-block modes to minimize false positives, and tune per AI archetype — embedded SaaS copilots, democratized low-code agents, homegrown agentic pipelines, device-based coding agents, and homegrown models. Operate the closed loop : translate continuous adversarial-testing findings into runtime policy updates, new detection content, and guardrail tuning, then validate remediation through re-testing — so defenses evolve with attackers rather than remaining static. L3 coverage — final escalation for the AI Security toolset. Lead deep investigations of AI-specific attacks (direct/indirect prompt injection, RAG poisoning, memory poisoning, agent hijacking, MCP/tool abuse, model manipulation, AI-driven data exfiltration), perform decision-replay forensics and root-cause analysis, drive automated containment (agent quarantine, permission revocation, kill switch) toward our sub-15-minute containment objectives, and mentor L2 analysts. Troubles",
-      "target_employer": "TD SYNNEX",
-      "search_query": "Himalayas",
-      "api_company": "TD SYNNEX",
-      "api_location": "Remote India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "Himalayas",
-      "api_bullets": [
-        "Integration — build and own the AI runtime control plane. Engineer, deploy and operate the inline enforcement pipeline for AI traffic: an AI gateway chained with runtime data-protection and intent-based enforcement platforms, fronting LLMs, tools, and MCP servers across Azure AI Foundry, AWS Bedrock, GCP Vertex, Copilot Studio, Databricks, and self-hosted environments.",
-        "Harden the gateway layer for resilience : configure buffering and overload management, enforcement timeouts on external-processing filters, layered global/local rate limiting, and prompt-truncation filters to defend against token-exhaustion and \"reasoning overload\" denial-of-service attacks.",
-        "Integrate the wider AI security ecosystem into one coherent system : onboard AI asset-intelligence context (agent inventory, ownership, blast radius) into enforcement decisions; connect model-security and supply-chain telemetry and continuous red-team signals into SIEM correlation and SOC workflows; stream unified AI detections, decision logs, and policy events for forensics and audit.",
-        "Policy tuning — enforce without friction. Author and calibrate runtime policies: prompt-injection and jailbreak prevention, PII detection/redaction and data masking, intent-based filtering, tool-call validation, MCP access control, and agent permission boundaries (including \"lethal trifecta\" prevention for low-code agents). Balance detection versus hard-block modes to minimize false positives, and tune per AI archetype — embedded SaaS copilots, democratized low-code agents, homegrown agentic pipelines, device-based coding agents, and homegrown models.",
-        "Operate the closed loop : translate continuous adversarial-testing findings into runtime policy updates, new detection content, and guardrail tuning, then validate remediation through re-testing — so defenses evolve with attackers rather than remaining static.",
-        "L3 coverage — final escalation for the AI Security toolset. Lead deep investigations of AI-specific attacks (direct/indirect prompt injection, RAG poisoning, memory poisoning, agent hijacking, MCP/tool abuse, model manipulation, AI-driven data exfiltration), perform decision-replay forensics and root-cause analysis, drive automated containment (agent quarantine, permission revocation, kill switch) toward our sub-15-minute containment objectives, and mentor L2 analysts. Troubleshoot any incidents related to policies.",
-        "Evaluate and pilot AI security vendors : run structured proofs-of-concept for runtime defense, AIDR, AI-SPM, AI red-teaming, and model-security platforms, and provide technical recommendations as the stack matures.",
-        "Engineer and operate cloud security controls across Azure, AWS, and GCP — posture policies, detection tuning, and remediation of misconfigurations, excessive entitlements, and workload risks, including the Kubernetes estates (AKS/EKS) hosting the AI gateway layer.",
-        "Design and maintain secure multi-cloud patterns consistent with company approved architectural blueprint as well as zero-trust agent access: least-privilege identity for humans, service principals, and agents (Entra ID, AWS IAM, GCP IAM, PAM), conditional access for AI platforms, and least-privilege OAuth scopes for agent integrations.",
-        "Embed security into DevSecOps: Infrastructure-as-Code (Terraform) scanning, container/Kubernetes security, secrets management, CI/CD hardening, and pre-deployment AI security testing gates in Azure DevOps/GitHub Actions.",
-        "Support cloud workload vulnerability management (VMs, containers, registries, serverless) with risk-based prioritization, and act as escalation point for investigations spanning cloud, identity, endpoint, and AI telemetry.",
-        "Proven ability to integrate enterprise security platforms into one system : API/connector engineering, log ingestion and normalization, SIEM/SOAR integration, and multi-vendor inline architectures.",
-        "Strong AI/GenAI security depth : LLM and agentic-AI threat models (OWASP LLM Top 10 2025, OWASP Agentic Top 10, MITRE ATLAS), prompt-injection/jailbreak defense, RAG security, AI guardrails and gateways, MCP security, and the AI-SPM/AIDR/AI-red-teaming tooling categories. Hands-on experience with AI security technologies is highly valued; so is experience with open-source AI security tooling.",
-        "Multi-cloud security engineering across Azure, AWS, and GCP: CSPM/CWPP/CNAPP operations, cloud identity and entitlements, Kubernetes and container security, and secure architecture (hub-and-spoke, segmentation, baseline protection).",
-        "Proficiency in KQL, PowerShell, and Python for automation, detection engineering, and tooling; DevSecOps and IaC security (Terraform); CI/CD pipeline integration.",
-        "A pragmatic, enablement-first security mindset: comfortable with a default-allow culture where controls must be fast, precise, and low-friction rather than restrictive.",
-        "Excellent English communication — clear runbooks, integration documentation, and the ability to explain trade-offs to architects, engineers, and leadership across a globally distributed team and multiple time zones.",
-        "Excellent communication and collaboration skills",
-        "Ability to work effectively in a fast-paced, dynamic environment.",
-        "Significant hands-on engineering responsibility, including in cloud security (Azure/AWS/GCP) and demonstrable experience securing or operating AI/ML or LLM-based systems (or strongly evidenced, rapidly acquired hands-on AI-security capability).",
-        "Proven track record deploying, integrating, and tuning security platforms in complex enterprise environments and serving as an L3 / senior escalation point; experience running vendor proofs-of-concept is a plus.",
-        "Experience operating security tooling in Kubernetes-based environments (AKS/EKS) and integrating open-source components into enterprise stacks is an advantage.",
-        "Relevant certifications strengthen an application (none individually required): CISSP, CCSP, SC-100, AZ-500, AWS Certified Security – Specialty, Google Professional Cloud Security Engineer; AI red-team or AI-security credentials are a plus.",
-        "Bachelor's degree in Computer Science, Cybersecurity, Information Systems, or equivalent practical experience.",
-        "Willing to work nonstandard business hours for projects, business impact issues and incident response.",
-        "Some travel required.",
-        "Flexible remote work.",
-        "Elective Benefits: Our programs are tailored to your country to best accommodate your lifestyle.",
-        "Grow Your Career: Accelerate your path to success (and keep up with the future) with formal programs on leadership and professional development, and many more on-demand courses.",
-        "Elevate Your Personal Well-Being: Boost your financial, physical, and mental well-being through seminars, events, and our global Life Empowerment Assistance Program.",
-        "Diversity, Equity & Inclusion: It’s not just a phrase to us; valuing every voice is how we succeed. Join us in celebrating our global diversity through inclusive education, meaningful peer-to-peer conversations, and equitable growth and development opportunities.",
-        "Make the Most of our Global Organization : Network with other new co-workers within your first 30 days through our onboarding program.",
-        "Connect with Your Community: Participate in internal, peer-led inclusive communities and activities, including business resource groups, local volunteering events, and more environmental and social initiatives."
-      ],
-      "apply_url": "https://himalayas.app/companies/td-synnex/jobs/ai-and-cloud-security-engineer?utm_source=api",
-      "source_url": "https://himalayas.app/companies/td-synnex/jobs/ai-and-cloud-security-engineer",
-      "source_name": "Himalayas",
-      "api_employment_type": "Full Time",
-      "api_date_posted": 1795107901,
-      "api_valid_through": 1798061927,
-      "company": "TD SYNNEX",
-      "location": "Remote India",
-      "description": "Overview TD SYNNEX (NYSE: SNX) is the world's largest IT distributor, and we are accelerating AI adoption across Azure AI Foundry, AWS Bedrock, Copilot Studio, Databricks, and self-hosted agent environments. Our security philosophy is distinctive: rather than…",
-      "responsibilities": [
-        "Integration — build and own the AI runtime control plane. Engineer, deploy and operate the inline enforcement pipeline for AI traffic: an…",
-        "Harden the gateway layer for resilience : configure buffering and overload management, enforcement timeouts on external-processing filters…",
-        "Integrate the wider AI security ecosystem into one coherent system : onboard AI asset-intelligence context (agent inventory, ownership…"
-      ],
-      "requirements": [
-        "Strong AI/GenAI security depth : LLM and agentic-AI threat models (OWASP LLM Top 10 2025, OWASP Agentic Top 10, MITRE ATLAS)…",
-        "Significant hands-on engineering responsibility, including in cloud security (Azure/AWS/GCP) and demonstrable experience securing or…",
-        "Proven track record deploying, integrating, and tuning security platforms in complex enterprise environments and serving as an L3 / senior…"
-      ],
-      "skills": [
-        "SIEM",
-        "cloud security",
-        "AWS",
-        "Azure",
-        "GCP",
-        "EDR"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "Full Time",
-      "experience": "Not specified",
-      "date_posted": "2026-11-19",
-      "valid_through": "2026-12-23",
-      "source_domain": "himalayas.app",
-      "page_status": "Listed in Himalayas API",
-      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
-      "score": 67,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Remote India eligibility indicated"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22 09:26 UTC",
+  "generated_at": "2026-11-22 09:29 UTC",
   "source_health": {
     "RemoteOK": {
       "status": "ok",
@@ -19,7 +19,7 @@
     },
     "Himalayas": {
       "status": "ok",
-      "matching_jobs": 42,
+      "matching_jobs": 44,
       "note": "India-filtered remote listings; Apply uses the provider-supplied applicationLink."
     },
     "Hyderabad employer watchlist": {
@@ -28,1374 +28,994 @@
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
     "Employer-by-employer search": {
-      "status": "degraded",
+      "status": "ok",
       "companies_configured": 85,
-      "companies_checked": 0,
-      "companies_with_matches": 0,
-      "matching_jobs": 0,
-      "raw_results_seen": 0,
-      "selected_backend": null,
+      "companies_checked": 85,
+      "companies_with_matches": 37,
+      "matching_jobs": 97,
+      "raw_results_seen": 821,
+      "selected_backend": "Bing RSS",
       "backend_probe": {
-        "status": "error",
-        "selected_backend": null,
-        "results_seen": 0,
+        "status": "ok",
+        "selected_backend": "Bing RSS",
+        "probe_query": "security engineer jobs India",
+        "results_seen": 3,
         "attempts": [
           {
-            "backend": "auto",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "bing",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "brave",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "google",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "yahoo",
-            "status": "error",
-            "error": "No results found."
+            "backend": "Bing RSS",
+            "status": "ok",
+            "results_seen": 3
           }
-        ],
-        "error": "No DDGS backend returned results for the connectivity probe."
+        ]
       },
-      "note": "A successful connectivity probe proves the search backend responds; no_results_returned means that employer query returned no raw hits, not proof that the employer has no vacancy."
+      "note": "A successful probe proves the provider responds. no_results_returned means an employer query returned no raw hits, not proof that the employer has no vacancy."
     },
     "Employer metasearch": {
-      "status": "degraded",
-      "raw_results_seen": 0,
-      "matching_jobs": 0,
+      "status": "ok",
+      "raw_results_seen": 821,
+      "matching_jobs": 97,
       "queries_attempted": 85,
-      "selected_backend": null,
+      "selected_backend": "Bing RSS",
       "backend_probe": {
-        "status": "error",
-        "selected_backend": null,
-        "results_seen": 0,
+        "status": "ok",
+        "selected_backend": "Bing RSS",
+        "probe_query": "security engineer jobs India",
+        "results_seen": 3,
         "attempts": [
           {
-            "backend": "auto",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "bing",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "brave",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "google",
-            "status": "error",
-            "error": "No results found."
-          },
-          {
-            "backend": "yahoo",
-            "status": "error",
-            "error": "No results found."
+            "backend": "Bing RSS",
+            "status": "ok",
+            "results_seen": 3
           }
-        ],
-        "error": "No DDGS backend returned results for the connectivity probe."
+        ]
       }
     },
     "Broad market discovery": {
-      "status": "degraded",
+      "status": "ok",
       "queries_attempted": 6,
-      "raw_results_seen": 0,
-      "matching_jobs": 0,
-      "selected_backend": null
+      "raw_results_seen": 57,
+      "matching_jobs": 8,
+      "selected_backend": "Bing RSS"
     }
   },
   "employer_coverage": [
     {
       "company": "Palo Alto Networks",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "CrowdStrike",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Microsoft Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 3,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Google Cloud Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "SentinelOne",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Darktrace",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Fortinet",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Cisco Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Check Point Software",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "IBM Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Zscaler",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Vectra AI",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "CyberArk",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Okta",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Cloudflare",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Proofpoint",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Trellix",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Sophos",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Rapid7",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Elastic",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Arctic Wolf",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "ReliaQuest",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 6,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Securonix",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Abnormal Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Recorded Future",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Tenable",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Qualys",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 5,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Wiz",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 4,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Akamai",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 4,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Bitdefender",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 11,
+      "matching_jobs": 7,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Trend Micro",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "BlackBerry Cylance",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Cybereason",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "eSentire",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 8,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Huntress",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 4,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Expel",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Dropzone AI",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Torq",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 3,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Simbian",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Prophet Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 9,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Radiant Security",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Stellar Cyber",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Lakera",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Protect AI",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "HiddenLayer",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 9,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Mindgard",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Robust Intelligence",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Netskope",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 6,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "SparkCognition",
       "category": "Cybersecurity vendor",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Deutsche Börse Group",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Vanguard",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Charles Schwab",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "UBS",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "HSBC",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Voya Financial",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "T-Mobile",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "DoorDash",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Billtrust",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Sanofi",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "JLL",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Acumatica",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Blackbaud",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 8,
+      "matching_jobs": 3,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Regeneron",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Amgen",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Eli Lilly",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Citizens Financial Group",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Nationwide",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "HCA Healthcare",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Western Union",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Costco",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Marriott",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "DAZN",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Agilent",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "McDonald's",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Micron",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 10,
+      "matching_jobs": 1,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Mattel",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "S&P Global",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "State Street",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 2,
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Wells Fargo",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Synchrony",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Salesforce",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Google",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Amazon",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 10,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     },
     {
       "company": "Microsoft",
       "category": "GCC",
-      "status": "search_unavailable",
-      "results_seen": 0,
+      "status": "results_filtered_out",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "No DDGS backend returned results for the connectivity probe.",
+      "error": "",
       "backends_tested": [
-        "auto",
-        "bing",
-        "brave",
-        "google",
-        "yahoo"
+        "Bing RSS"
       ]
     }
   ],
-  "candidate_count": 46,
-  "qualified_count": 30,
+  "candidate_count": 153,
+  "qualified_count": 32,
   "published_count": 15
 }
