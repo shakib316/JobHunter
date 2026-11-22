@@ -30,21 +30,58 @@ def search_queries():
            ("India discovery",'India remote security engineer SIEM SOAR detection engineer jobs'),
            ("Hyderabad discovery",'Hyderabad security engineer cloud security SIEM SOAR jobs')]
     return qs
+def api_row(title, company, location, url, description="", salary="Not disclosed", source="API"):
+    title=clean(title); url=clean(url)
+    if not title or not url or BAD.search(title+" "+url): return None
+    if not re.search(r"security|siem|soar|detection|threat|incident|soc|cyber",title+" "+description,re.I): return None
+    return {"title":title,"url":url,"snippet":clean(description)[:1800],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":clean(location),"api_salary":clean(salary),"discovery_source":source}
+
 def discover():
-    rows={}
-    with DDGS() as ddgs:
-        for employer,q in search_queries():
-            try:
-                for hit in ddgs.text(q,max_results=8):
-                    url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
-                    if not url or not title or BAD.search(title+" "+url): continue
-                    if not re.search(r"security|siem|soar|detection|threat|incident|soc|cyber",title,re.I): continue
-                    if "linkedin.com" in urlparse(url).netloc and re.search(r"/(in|company)/",url): continue
-                    key=url.split("?")[0].rstrip("/").lower()
-                    rows.setdefault(key,{"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q})
-            except Exception as e: print("Search error:",str(e)[:180])
-            time.sleep(.25)
-    return list(rows.values())
+    rows={}; health={}
+    def add(row):
+        if not row: return
+        key=row["url"].split("?")[0].rstrip("/").lower()
+        rows.setdefault(key,row)
+    # Public job feeds; each source is isolated so one outage cannot stop discovery.
+    feeds=[
+      ("RemoteOK","https://remoteok.com/api",lambda j: api_row(j.get("position"),j.get("company"),j.get("location") or "Remote",j.get("url"),j.get("description") or " ".join(j.get("tags") or []),j.get("salary") or "Not disclosed","RemoteOK")),
+      ("Arbeitnow","https://www.arbeitnow.com/api/job-board-api?page=1",lambda j: api_row(j.get("title"),j.get("company_name"),j.get("location") or ("Remote" if j.get("remote") else ""),j.get("url"),j.get("description") or "", "Not disclosed","Arbeitnow")),
+      ("Jobicy","https://jobicy.com/api/v2/remote-jobs?count=50&tag=security",lambda j: api_row(j.get("jobTitle"),j.get("companyName"),j.get("jobGeo") or "Remote",j.get("url"),j.get("jobDescription") or "",j.get("annualSalaryTo") or "Not disclosed","Jobicy")),
+      ("Remotive","https://remotive.com/api/remote-jobs?search=security&limit=50",lambda j: api_row(j.get("title"),j.get("company_name"),j.get("candidate_required_location") or "Remote",j.get("url"),j.get("description") or "",j.get("salary") or "Not disclosed","Remotive"))
+    ]
+    session=requests.Session(); session.headers.update(HEADERS)
+    for name,url,mapper in feeds:
+        try:
+            response=session.get(url,timeout=18); response.raise_for_status(); body=response.json()
+            items=body if isinstance(body,list) else body.get("data",body.get("jobs",[]))
+            count=0
+            for item in items:
+                row=mapper(item)
+                if row: add(row); count+=1
+            health[name]={"status":"ok","matching_jobs":count}
+        except Exception as e:
+            health[name]={"status":"error","error":str(e)[:220]}
+            print(f"Source {name} failed: {str(e)[:180]}")
+    # Search engine is supplementary, not the sole dependency. Reduce query count and pace requests.
+    try:
+        with DDGS() as ddgs:
+            queries=search_queries()
+            for employer,q in queries:
+                try:
+                    for hit in ddgs.text(q,max_results=6):
+                        url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
+                        if not url or not title or BAD.search(title+" "+url): continue
+                        if not re.search(r"security|siem|soar|detection|threat|incident|soc|cyber",title,re.I): continue
+                        add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"discovery_source":"DuckDuckGo"})
+                except Exception as e:
+                    print("Search query failed:",str(e)[:160])
+                time.sleep(.7)
+        health["DuckDuckGo"]={"status":"ok" if any(x.get("discovery_source")=="DuckDuckGo" for x in rows.values()) else "degraded","matching_jobs":sum(x.get("discovery_source")=="DuckDuckGo" for x in rows.values())}
+    except Exception as e:
+        health["DuckDuckGo"]={"status":"error","error":str(e)[:220]}
+        print("DuckDuckGo unavailable:",str(e)[:180])
+    print("Source health:",json.dumps(health,ensure_ascii=False))
+    return list(rows.values()),health
 def find_jobposting(obj):
     if isinstance(obj,dict):
         kind=obj.get("@type",[])
@@ -59,10 +96,10 @@ def find_jobposting(obj):
             if found: return found
     return None
 def enrich(row):
-    result={**row,"company":"Employer not verified","location":"Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":"Not disclosed","employment_type":"Not specified","experience":"Not specified","date_posted":"Not specified","valid_through":"Not specified","responsibilities":[],"requirements":[],"apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only"}
+    result={**row,"company":row.get("api_company") or "Employer not verified","location":row.get("api_location") or "Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":row.get("api_salary") or "Not disclosed","employment_type":"Not specified","experience":"Not specified","date_posted":"Not specified","valid_through":"Not specified","responsibilities":[],"requirements":[],"apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only","discovery_source":row.get("discovery_source","DuckDuckGo")}
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
-        result["page_status"]=f"Fetched (HTTP {r.status_code})"
+        result["page_status","discovery_source"]=f"Fetched (HTTP {r.status_code})"
         if r.ok and "text/html" in r.headers.get("content-type",""):
             soup=BeautifulSoup(r.text[:1_500_000],"html.parser")
             job=None
@@ -104,7 +141,7 @@ def enrich(row):
             title=soup.title.string if soup.title and soup.title.string else ""
             if title and len(title)>len(result["title"]) and re.search(r"security|siem|soar|detection|cyber",title,re.I): result["title"]=clean(title)[:180]
             target=clean(row["target_employer"])
-            if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery"] and target.lower() in (row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc).lower():
+            if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery","API discovery"] and target.lower() in (row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc).lower():
                 result["company"]=target
             m=re.search(r"(Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Gurgaon|Chennai|Mumbai|Noida|India|Remote)",text,re.I)
             if m: result["location"]=m.group(1)
@@ -153,7 +190,7 @@ def main():
         seen.add(k); chosen.append(x)
         if len(chosen)>=MAX_RESULTS: break
     stamp=now.strftime("%Y-%m-%d %H:%M UTC")
-    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"broad_discovery_queries":4,"locations_priority":LOCATIONS},"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
+    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"broad_discovery_queries":4,"locations_priority":LOCATIONS},"source_health":source_health,"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
     DATA.mkdir(parents=True,exist_ok=True); ARCHIVE.mkdir(parents=True,exist_ok=True)
     (DATA/"latest.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
     dated=now.strftime("%Y-%m-%d")
