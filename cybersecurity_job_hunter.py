@@ -183,80 +183,94 @@ def discover():
         row.update({"source_url":url,"source_name":source,"api_experience":experience,"apply_url":url,"verification_note":note})
         add(row); watch_count+=1
     health["Hyderabad employer watchlist"]={"status":"configured","matching_jobs":watch_count,"note":"Direct Hyderabad listings are re-fetched and enriched each scheduled run."}
-    # Search all 85 named employers each run using multiple independent search backends.
-    # A legitimate zero-result response is a checked_no_match, not a source error.
+    # Search all 85 named employers. First prove that at least one DDGS backend
+    # returns results, then use that working backend consistently. This avoids
+    # multiplying slow backend retries across every employer.
     employer_coverage=[]
     broad_coverage=[]
     all_queries=search_queries()
+    backend_order=["auto","bing","brave","google","yahoo"]
+    selected_backend=None
+    backend_probe={"status":"not_tested","selected_backend":None,"results_seen":0,"attempts":[]}
     try:
-        with DDGS(timeout=12) as ddgs:
-            for employer,q in all_queries:
-                category="Cybersecurity vendor" if employer in VENDORS else "GCC"
-                seen=0; matched=0; error=""
-                # DDGS' comma-separated backend mode was returning empty generators for every
-                # employer. Probe independent backends separately and retry with a simpler query.
-                query_variants=[
-                    f'"{employer}" security jobs India',
-                    f'"{employer}" (SIEM OR SOAR OR "security engineer" OR "detection engineer") careers',
-                ]
-                backend_results=[]
-                backend_errors=[]
-                for backend in ["auto","bing","brave","google","yahoo"]:
-                    try:
-                        provider_hits=[]
-                        for search_q in query_variants:
-                            try:
-                                batch=list(ddgs.text(search_q,max_results=10,region="in-en",backend=backend) or [])
-                                provider_hits.extend(batch)
-                                if batch: break
-                            except Exception as search_error:
-                                msg=str(search_error)[:180]
-                                if "no results found" not in msg.lower():
-                                    backend_errors.append(f"{backend}: {msg}")
-                        if provider_hits:
-                            backend_results=provider_hits
-                            break
-                    except Exception as search_error:
-                        backend_errors.append(f"{backend}: {str(search_error)[:180]}")
-                seen=len(backend_results)
-                error="; ".join(backend_errors[:3]) if not backend_results and backend_errors else ""
-                for hit in backend_results:
-                    url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
-                    if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
-                    # Search-result snippets are incomplete. Do not reject on location here;
-                    # enrich the page first and apply the definitive location filter afterwards.
-                    if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title+" "+snippet,re.I): continue
-                    tokens=[t for t in re.findall(r"[a-z0-9]+",employer.lower()) if len(t)>3 and t not in {"group","security","cloud","software","technologies","technology","company","holdings"}]
-                    evidence=(title+" "+snippet+" "+urlparse(url).netloc).lower()
-                    if tokens and not any(t in evidence for t in tokens): continue
-                    add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"Not specified","search_query_location":"India priority; full page location check","discovery_source":"Employer search"})
-                    matched+=1
-                employer_coverage.append({"company":employer,"category":category,"status":"error" if error else ("match" if matched else ("no_results_returned" if seen==0 else "results_filtered_out")),"results_seen":seen,"matching_jobs":matched,"error":error,"backends_tested":["auto","bing","brave","google","yahoo"]})
-                time.sleep(.6)
-            for label,q in broad_search_queries():
-                seen=0; matched=0; error=""
+        with DDGS(timeout=6) as ddgs:
+            probe_query="security engineer jobs India"
+            for backend in backend_order:
+                attempt={"backend":backend,"status":"no_results"}
                 try:
-                    hits=ddgs.text(q,max_results=10,region="in-en",backend="bing,brave,google,yahoo")
-                    for hit in hits or []:
-                        seen+=1
+                    probe_hits=list(ddgs.text(probe_query,max_results=5,region="in-en",backend=backend) or [])
+                    attempt["results_seen"]=len(probe_hits)
+                    if probe_hits:
+                        attempt["status"]="ok"
+                        selected_backend=backend
+                        backend_probe={"status":"ok","selected_backend":backend,"probe_query":probe_query,"results_seen":len(probe_hits),"attempts":backend_probe["attempts"]+[attempt]}
+                        break
+                except Exception as probe_error:
+                    attempt["status"]="error"
+                    attempt["error"]=str(probe_error)[:180]
+                backend_probe["attempts"].append(attempt)
+            if not selected_backend:
+                backend_probe["status"]="error" if any(x["status"]=="error" for x in backend_probe["attempts"]) else "no_results"
+                backend_probe["error"]="No DDGS backend returned results for the connectivity probe."
+                for employer,q in all_queries:
+                    category="Cybersecurity vendor" if employer in VENDORS else "GCC"
+                    employer_coverage.append({"company":employer,"category":category,"status":"search_unavailable","results_seen":0,"matching_jobs":0,"error":backend_probe["error"],"backends_tested":backend_order})
+                for label,q in broad_search_queries():
+                    broad_coverage.append({"query":label,"status":"search_unavailable","results_seen":0,"matching_jobs":0,"error":backend_probe["error"]})
+            else:
+                for employer,q in all_queries:
+                    category="Cybersecurity vendor" if employer in VENDORS else "GCC"
+                    hits=[]; provider_errors=[]
+                    query_variants=[
+                        f'"{employer}" security jobs India',
+                        f'{employer} security engineer careers India'
+                    ]
+                    for search_q in query_variants:
+                        try:
+                            hits=list(ddgs.text(search_q,max_results=10,region="in-en",backend=selected_backend) or [])
+                            if hits: break
+                        except Exception as search_error:
+                            message=str(search_error)[:180]
+                            if "no results found" not in message.lower():
+                                provider_errors.append(message)
+                    seen=len(hits); matched=0
+                    error="; ".join(provider_errors[:2]) if not hits and provider_errors else ""
+                    for hit in hits:
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
                         if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
-                        if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
-                        if not re.search(r"Remote|worldwide|anywhere|global|Pan India|All India|across India|India-wide|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
-                        add({"title":title,"url":url,"snippet":snippet,"target_employer":"Market discovery","search_query":q,"api_location":"Not specified","search_query_location":"India priority","discovery_source":"Broad search"})
+                        # Do not reject based on short-snippet location or employer tokens.
+                        # The individual page is enriched before final location eligibility.
+                        if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title+" "+snippet,re.I): continue
+                        add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"Not specified","search_query_location":"India priority; full page location check","discovery_source":"Employer search"})
                         matched+=1
-                except Exception as e:
-                    message=str(e)[:180]
-                    if "no results found" not in message.lower(): error=message
-                broad_coverage.append({"query":label,"status":"error" if error else ("match" if matched else "checked_no_match"),"results_seen":seen,"matching_jobs":matched,"error":error})
-                time.sleep(.6)
-        checked=sum(1 for x in employer_coverage if x["status"]!="error")
-        health["Employer-by-employer search"]={"status":"degraded" if sum(x["results_seen"] for x in employer_coverage)==0 else ("ok" if checked==len(all_queries) else ("partial" if checked else "error")),"companies_configured":len(all_queries),"companies_checked":checked,"companies_with_matches":sum(1 for x in employer_coverage if x["matching_jobs"]),"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"note":"Each employer is retried across independent DDGS backends and simplified queries. no_results_returned means the search provider returned zero raw hits; results_filtered_out means hits existed but none qualified. Neither proves no vacancy exists."}
-        health["Employer metasearch"]={"status":"degraded" if sum(x["results_seen"] for x in employer_coverage)==0 else ("ok" if checked else "error"),"raw_results_seen":sum(x["results_seen"] for x in employer_coverage),"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"queries_attempted":len(employer_coverage),"backends":"Bing, Brave, Google, Yahoo"}
-        health["Broad market discovery"]={"status":"ok" if all(x["status"]!="error" for x in broad_coverage) else "partial","queries_attempted":len(broad_coverage),"matching_jobs":sum(x["matching_jobs"] for x in broad_coverage)}
+                    status="error" if error else ("match" if matched else ("no_results_returned" if seen==0 else "results_filtered_out"))
+                    employer_coverage.append({"company":employer,"category":category,"status":status,"results_seen":seen,"matching_jobs":matched,"error":error,"backends_tested":[selected_backend]})
+                    time.sleep(.12)
+                for label,q in broad_search_queries():
+                    seen=0; matched=0; error=""
+                    try:
+                        hits=list(ddgs.text(q,max_results=10,region="in-en",backend=selected_backend) or [])
+                        seen=len(hits)
+                        for hit in hits:
+                            url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
+                            if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
+                            if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title+" "+snippet,re.I): continue
+                            add({"title":title,"url":url,"snippet":snippet,"target_employer":label,"search_query":q,"api_location":"Not specified","search_query_location":"India priority; full page location check","discovery_source":"Broad search"})
+                            matched+=1
+                    except Exception as search_error:
+                        message=str(search_error)[:180]
+                        if "no results found" not in message.lower(): error=message
+                    broad_coverage.append({"query":label,"status":"error" if error else ("match" if matched else ("no_results_returned" if seen==0 else "results_filtered_out")),"results_seen":seen,"matching_jobs":matched,"error":error})
+                    time.sleep(.12)
+        checked=sum(1 for x in employer_coverage if x["status"] not in {"error","search_unavailable"})
+        raw_seen=sum(x["results_seen"] for x in employer_coverage)
+        provider_ready=selected_backend is not None
+        health["Employer-by-employer search"]={"status":"ok" if provider_ready and checked==len(all_queries) else ("partial" if provider_ready else "degraded"),"companies_configured":len(all_queries),"companies_checked":checked,"companies_with_matches":sum(1 for x in employer_coverage if x["matching_jobs"]),"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"raw_results_seen":raw_seen,"selected_backend":selected_backend,"backend_probe":backend_probe,"note":"A successful connectivity probe proves the search backend responds; no_results_returned means that employer query returned no raw hits, not proof that the employer has no vacancy."}
+        health["Employer metasearch"]={"status":"ok" if provider_ready else "degraded","raw_results_seen":raw_seen,"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"queries_attempted":len(employer_coverage),"selected_backend":selected_backend,"backend_probe":backend_probe}
+        health["Broad market discovery"]={"status":"ok" if provider_ready and all(x["status"] not in {"error","search_unavailable"} for x in broad_coverage) else "degraded","queries_attempted":len(broad_coverage),"raw_results_seen":sum(x["results_seen"] for x in broad_coverage),"matching_jobs":sum(x["matching_jobs"] for x in broad_coverage),"selected_backend":selected_backend}
     except Exception as e:
-        health["Employer metasearch"]={"status":"error","error":str(e)[:220]}
-        health["Employer-by-employer search"]={"status":"error","companies_configured":len(all_queries),"companies_checked":0,"error":str(e)[:220]}
+        health["Employer metasearch"]={"status":"error","error":str(e)[:220],"backend_probe":backend_probe}
+        health["Employer-by-employer search"]={"status":"error","companies_configured":len(all_queries),"companies_checked":0,"raw_results_seen":0,"error":str(e)[:220],"backend_probe":backend_probe}
         print("Employer search unavailable:",str(e)[:180])
     health["_broad_coverage"]=broad_coverage
     health["_employer_coverage"]=employer_coverage
@@ -349,7 +363,9 @@ def enrich(row):
                 tag=soup.select_one(sel)
                 if tag and tag.get("content") and len(tag["content"])>len(result[field]): result[field]=clean(tag["content"])
             target=clean(row["target_employer"])
-            if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery","API discovery"] and target.lower() in (row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc).lower():
+            target_tokens=[t for t in re.findall(r"[a-z0-9]+",target.lower()) if len(t)>3 and t not in {"group","security","cloud","software","technologies","technology","company","holdings"}]
+            page_evidence=(row["title"]+" "+row["snippet"]+" "+urlparse(row["url"]).netloc+" "+text).lower()
+            if result["company"]=="Employer not verified" and target not in ["New Hyderabad GCCs","India discovery","Hyderabad discovery","API discovery","Delhi NCR discovery","Delhi NCR GCC discovery","Pan-India discovery"] and any(t in page_evidence for t in target_tokens):
                 result["company"]=target
             m=re.search(r"(Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida)",text,re.I)
             if m and result["location"] in ["Not specified","Remote"]: result["location"]=m.group(1)
