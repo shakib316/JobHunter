@@ -126,29 +126,43 @@ def discover():
         row.update({"source_url":url,"source_name":source,"api_experience":experience,"apply_url":url,"verification_note":note})
         add(row); watch_count+=1
     health["Hyderabad employer watchlist"]={"status":"configured","matching_jobs":watch_count,"note":"Direct Hyderabad listings are re-fetched and enriched each scheduled run."}
-    # Search engine is supplementary. Rotate a small batch each run to avoid rate limits.
+    # Search every configured employer on every run. Each company gets an independent
+    # query result so the dashboard can distinguish checked/no-match/source-error.
+    employer_coverage=[]
     try:
         with DDGS() as ddgs:
             all_queries=search_queries()
-            run_slot=(datetime.now(timezone.utc).isocalendar().week*2 + (1 if datetime.now(timezone.utc).weekday() >= 3 else 0))*6
-            start=run_slot % len(all_queries)
-            queries=[all_queries[(start+i) % len(all_queries)] for i in range(min(6,len(all_queries)))]
-            for employer,q in queries:
+            for employer,q in all_queries:
+                category="Cybersecurity vendor" if employer in VENDORS else "GCC"
+                seen=0; matched=0; error=""
                 try:
-                    for hit in ddgs.text(q,max_results=6):
+                    for hit in ddgs.text(q,max_results=5):
+                        seen+=1
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
                         if not url or not title or BAD.search(title+" "+url): continue
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
                         if not re.search(r"Remote|worldwide|anywhere|global|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
+                        # Avoid attributing a generic vacancy to an employer unless the
+                        # employer is visible in the result text or its host name.
+                        tokens=[t for t in re.findall(r"[a-z0-9]+",employer.lower()) if len(t)>3 and t not in {"group","security","cloud","software","technologies","technology","company","holdings"}]
+                        evidence=(title+" "+snippet+" "+urlparse(url).netloc).lower()
+                        if tokens and not any(t in evidence for t in tokens): continue
                         add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"India/remote eligibility to verify","search_query_location":"India priority","discovery_source":"DuckDuckGo"})
+                        matched+=1
                 except Exception as e:
-                    print("Search query failed:",str(e)[:160])
-                time.sleep(.7)
-        health["DuckDuckGo"]={"status":"ok" if any(x.get("discovery_source")=="DuckDuckGo" for x in rows.values()) else "degraded","matching_jobs":sum(x.get("discovery_source")=="DuckDuckGo" for x in rows.values())}
+                    error=str(e)[:180]
+                    print(f"Employer search failed for {employer}: {error}")
+                employer_coverage.append({"company":employer,"category":category,"status":"error" if error else ("match" if matched else "checked_no_match"),"results_seen":seen,"matching_jobs":matched,"error":error})
+                time.sleep(.45)
+        checked=sum(1 for x in employer_coverage if x["status"]!="error")
+        health["Employer-by-employer search"]={"status":"ok" if checked==len(all_queries) else ("partial" if checked else "error"),"companies_configured":len(all_queries),"companies_checked":checked,"companies_with_matches":sum(1 for x in employer_coverage if x["matching_jobs"]),"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"note":"Every configured vendor and GCC is queried on each scheduled run; a checked/no-match result does not prove no vacancy exists."}
+        health["DuckDuckGo"]={"status":"ok" if checked else "error","matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"queries_attempted":len(employer_coverage)}
     except Exception as e:
         health["DuckDuckGo"]={"status":"error","error":str(e)[:220]}
+        health["Employer-by-employer search"]={"status":"error","companies_configured":len(search_queries()),"companies_checked":0,"error":str(e)[:220]}
         print("DuckDuckGo unavailable:",str(e)[:180])
-    print("Source health:",json.dumps(health,ensure_ascii=False))
+    health["_employer_coverage"]=employer_coverage
+    print("Source health:",json.dumps({k:v for k,v in health.items() if k!="_employer_coverage"},ensure_ascii=False))
     return list(rows.values()),health
 def find_jobposting(obj):
     if isinstance(obj,dict):
@@ -272,7 +286,8 @@ def main():
     now=datetime.now(timezone.utc); print("Searching target vendors, GCCs and wider India market…")
     raw,source_health=discover(); print(f"Discovered {len(raw)} candidate links")
     DATA.mkdir(parents=True,exist_ok=True); ARCHIVE.mkdir(parents=True,exist_ok=True)
-    health_payload={"generated_at":now.strftime("%Y-%m-%d %H:%M UTC"),"source_health":source_health,"candidate_count":len(raw),"qualified_count":0,"published_count":0}
+    employer_coverage=source_health.pop("_employer_coverage",[])
+    health_payload={"generated_at":now.strftime("%Y-%m-%d %H:%M UTC"),"source_health":source_health,"employer_coverage":employer_coverage,"candidate_count":len(raw),"qualified_count":0,"published_count":0}
     (DATA/"health.json").write_text(json.dumps(health_payload,indent=2,ensure_ascii=False),encoding="utf-8")
     if not raw:
         print("No job candidates returned; preserving the last published snapshot.")
@@ -307,7 +322,7 @@ def main():
     stamp=now.strftime("%Y-%m-%d %H:%M UTC")
     health_payload["qualified_count"]=len(enriched); health_payload["published_count"]=len(chosen)
     (DATA/"health.json").write_text(json.dumps(health_payload,indent=2,ensure_ascii=False),encoding="utf-8")
-    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"broad_discovery_queries":4,"locations_priority":LOCATIONS},"source_health":source_health,"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
+    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"employer_searches_configured":len(VENDORS)+len(GCCS),"employer_searches_completed":sum(1 for x in employer_coverage if x["status"]!="error"),"broad_discovery_queries":4,"locations_priority":LOCATIONS},"employer_coverage":employer_coverage,"source_health":source_health,"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
     DATA.mkdir(parents=True,exist_ok=True); ARCHIVE.mkdir(parents=True,exist_ok=True)
     (DATA/"latest.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
     dated=now.strftime("%Y-%m-%d")
