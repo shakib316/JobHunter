@@ -156,7 +156,8 @@ def enrich(row):
                 result["company"]=target
             m=re.search(r"(Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Gurgaon|Chennai|Mumbai|Noida|India|Remote)",text,re.I)
             if m: result["location"]=m.group(1)
-            sal=re.search(r"(?:₹|INR|USD|\$)\s?[\d,.]+\s?(?:LPA|LPA|per annum|/year|to\s+(?:₹|INR|USD|\$)?\s?[\d,.]+)?",text,re.I)
+            sal=re.search(r"(?:₹|INR|USD|US\$|\$)\s?[\d,.]+\s?(?:k|K|LPA|lakh|lakhs|per annum|/year|/yr|annually)",text,re.I)
+            if sal and not re.search(r"\$\s?0(?:\.0+)?\b",sal.group(0)): result["salary"]=sal.group(0)
             if sal: result["salary"]=sal.group(0)
             for s in SKILLS:
                 if re.search(re.escape(s),text,re.I): result["skills"].append(s)
