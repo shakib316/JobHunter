@@ -4,7 +4,8 @@ from __future__ import annotations
 import csv, json, re, time, hashlib, html
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse, urlencode
+from urllib.parse import urlparse, urlencode, parse_qs, unquote
+import xml.etree.ElementTree as ET
 import requests
 from bs4 import BeautifulSoup
 from ddgs import DDGS
@@ -54,6 +55,7 @@ REMOTE_RESTRICTED_CITIES = ["Pune","Baroda","Vadodara","Mumbai","Bengaluru","Ban
 def location_allowed(location, description=""):
     loc=clean(location).lower()
     desc=clean(description)
+    if re.search(r"\\b(?:remote|work from anywhere)\\s*(?:in|within|from)?\\s*india\\b|\\bindia[- ]based remote\\b",loc+" "+desc,re.I): return True
     allowed_cities=r"hyderabad|gurugram|gurgaon|delhi|new delhi|noida"
     # Keep multi-location roles if at least one location matches the user's list.
     if re.search(rf"\b(?:{allowed_cities})\b",loc,re.I): return True
@@ -93,6 +95,39 @@ def broad_search_queries():
         ("Hyderabad discovery",'Hyderabad security engineer cloud security SIEM SOAR jobs'),
         ("Pan-India discovery",'"Pan India" OR "All India" security engineer SIEM SOAR detection jobs')
     ]
+
+def bing_rss_search(session, query, timeout=8):
+    response=session.get("https://www.bing.com/search",params={"q":query,"format":"rss"},timeout=timeout)
+    response.raise_for_status()
+    try:
+        root=ET.fromstring(response.content)
+    except ET.ParseError:
+        return []
+    out=[]
+    for item in root.findall(".//item"):
+        title=clean(item.findtext("title"))
+        url=clean(item.findtext("link"))
+        snippet=clean(item.findtext("description"))
+        if title and url:
+            out.append({"title":title,"href":url,"body":snippet})
+    return out
+
+def duckduckgo_html_search(session, query, timeout=8):
+    response=session.get("https://html.duckduckgo.com/html/",params={"q":query},timeout=timeout)
+    response.raise_for_status()
+    soup=BeautifulSoup(response.text,"html.parser")
+    out=[]
+    for anchor in soup.select("a.result__a"):
+        href=clean(anchor.get("href"))
+        if not href: continue
+        parsed=parse_qs(urlparse(href).query)
+        href=unquote(parsed.get("uddg",[href])[0])
+        parent=anchor.find_parent(class_="result")
+        snippet=clean(parent.select_one(".result__snippet").get_text(" ",strip=True)) if parent and parent.select_one(".result__snippet") else ""
+        title=clean(anchor.get_text(" ",strip=True))
+        if title and href.startswith("http"):
+            out.append({"title":title,"href":href,"body":snippet})
+    return out
 
 def api_row(title, company, location, url, description="", salary="Not disclosed", source="API"):
     title=clean(title); url=clean(url); location=clean(location)
@@ -183,38 +218,47 @@ def discover():
         row.update({"source_url":url,"source_name":source,"api_experience":experience,"apply_url":url,"verification_note":note})
         add(row); watch_count+=1
     health["Hyderabad employer watchlist"]={"status":"configured","matching_jobs":watch_count,"note":"Direct Hyderabad listings are re-fetched and enriched each scheduled run."}
-    # Search all 85 named employers. First prove that at least one DDGS backend
-    # returns results, then use that working backend consistently. This avoids
-    # multiplying slow backend retries across every employer.
+    # Search all 85 named employers. Probe independent HTTP search endpoints
+    # first; DDGS is a last-resort fallback because all of its backends recently
+    # returned "No results found" even for a broad connectivity query.
     employer_coverage=[]
     broad_coverage=[]
     all_queries=search_queries()
-    backend_order=["auto","bing","brave","google","yahoo"]
+    provider_order=["Bing RSS","DuckDuckGo HTML","DDGS auto","DDGS bing","DDGS brave","DDGS google","DDGS yahoo"]
     selected_backend=None
     backend_probe={"status":"not_tested","selected_backend":None,"results_seen":0,"attempts":[]}
     try:
         with DDGS(timeout=6) as ddgs:
+            def run_provider(provider, query):
+                if provider=="Bing RSS": return bing_rss_search(session,query)
+                if provider=="DuckDuckGo HTML": return duckduckgo_html_search(session,query)
+                backend=provider.split(" ",1)[1]
+                return list(ddgs.text(query,max_results=10,region="in-en",backend=backend) or [])
             probe_query="security engineer jobs India"
-            for backend in backend_order:
-                attempt={"backend":backend,"status":"no_results"}
+            for provider in provider_order:
+                attempt={"backend":provider,"status":"no_results"}
                 try:
-                    probe_hits=list(ddgs.text(probe_query,max_results=5,region="in-en",backend=backend) or [])
+                    probe_hits=run_provider(provider,probe_query)
                     attempt["results_seen"]=len(probe_hits)
                     if probe_hits:
                         attempt["status"]="ok"
-                        selected_backend=backend
-                        backend_probe={"status":"ok","selected_backend":backend,"probe_query":probe_query,"results_seen":len(probe_hits),"attempts":backend_probe["attempts"]+[attempt]}
+                        selected_backend=provider
+                        backend_probe={"status":"ok","selected_backend":provider,"probe_query":probe_query,"results_seen":len(probe_hits),"attempts":backend_probe["attempts"]+[attempt]}
                         break
                 except Exception as probe_error:
-                    attempt["status"]="error"
-                    attempt["error"]=str(probe_error)[:180]
+                    message=str(probe_error)[:180]
+                    if "no results found" in message.lower():
+                        attempt["status"]="no_results"
+                    else:
+                        attempt["status"]="error"
+                        attempt["error"]=message
                 backend_probe["attempts"].append(attempt)
             if not selected_backend:
                 backend_probe["status"]="error" if any(x["status"]=="error" for x in backend_probe["attempts"]) else "no_results"
-                backend_probe["error"]="No DDGS backend returned results for the connectivity probe."
+                backend_probe["error"]="No HTTP or DDGS search provider returned results for the connectivity probe."
                 for employer,q in all_queries:
                     category="Cybersecurity vendor" if employer in VENDORS else "GCC"
-                    employer_coverage.append({"company":employer,"category":category,"status":"search_unavailable","results_seen":0,"matching_jobs":0,"error":backend_probe["error"],"backends_tested":backend_order})
+                    employer_coverage.append({"company":employer,"category":category,"status":"search_unavailable","results_seen":0,"matching_jobs":0,"error":backend_probe["error"],"backends_tested":provider_order})
                 for label,q in broad_search_queries():
                     broad_coverage.append({"query":label,"status":"search_unavailable","results_seen":0,"matching_jobs":0,"error":backend_probe["error"]})
             else:
@@ -223,23 +267,21 @@ def discover():
                     hits=[]; provider_errors=[]
                     query_variants=[
                         f'"{employer}" security jobs India',
-                        f'{employer} security engineer careers India'
+                        f'{employer} cybersecurity careers India'
                     ]
                     for search_q in query_variants:
                         try:
-                            hits=list(ddgs.text(search_q,max_results=10,region="in-en",backend=selected_backend) or [])
+                            hits=run_provider(selected_backend,search_q)
                             if hits: break
                         except Exception as search_error:
                             message=str(search_error)[:180]
-                            if "no results found" not in message.lower():
-                                provider_errors.append(message)
+                            if "no results found" not in message.lower(): provider_errors.append(message)
                     seen=len(hits); matched=0
                     error="; ".join(provider_errors[:2]) if not hits and provider_errors else ""
                     for hit in hits:
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
                         if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
-                        # Do not reject based on short-snippet location or employer tokens.
-                        # The individual page is enriched before final location eligibility.
+                        # Search snippets are incomplete: defer employer/location confirmation to page enrichment.
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title+" "+snippet,re.I): continue
                         add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"Not specified","search_query_location":"India priority; full page location check","discovery_source":"Employer search"})
                         matched+=1
@@ -249,7 +291,7 @@ def discover():
                 for label,q in broad_search_queries():
                     seen=0; matched=0; error=""
                     try:
-                        hits=list(ddgs.text(q,max_results=10,region="in-en",backend=selected_backend) or [])
+                        hits=run_provider(selected_backend,q)
                         seen=len(hits)
                         for hit in hits:
                             url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
@@ -265,7 +307,7 @@ def discover():
         checked=sum(1 for x in employer_coverage if x["status"] not in {"error","search_unavailable"})
         raw_seen=sum(x["results_seen"] for x in employer_coverage)
         provider_ready=selected_backend is not None
-        health["Employer-by-employer search"]={"status":"ok" if provider_ready and checked==len(all_queries) else ("partial" if provider_ready else "degraded"),"companies_configured":len(all_queries),"companies_checked":checked,"companies_with_matches":sum(1 for x in employer_coverage if x["matching_jobs"]),"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"raw_results_seen":raw_seen,"selected_backend":selected_backend,"backend_probe":backend_probe,"note":"A successful connectivity probe proves the search backend responds; no_results_returned means that employer query returned no raw hits, not proof that the employer has no vacancy."}
+        health["Employer-by-employer search"]={"status":"ok" if provider_ready and checked==len(all_queries) else ("partial" if provider_ready else "degraded"),"companies_configured":len(all_queries),"companies_checked":checked,"companies_with_matches":sum(1 for x in employer_coverage if x["matching_jobs"]),"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"raw_results_seen":raw_seen,"selected_backend":selected_backend,"backend_probe":backend_probe,"note":"A successful probe proves the provider responds. no_results_returned means an employer query returned no raw hits, not proof that the employer has no vacancy."}
         health["Employer metasearch"]={"status":"ok" if provider_ready else "degraded","raw_results_seen":raw_seen,"matching_jobs":sum(x["matching_jobs"] for x in employer_coverage),"queries_attempted":len(employer_coverage),"selected_backend":selected_backend,"backend_probe":backend_probe}
         health["Broad market discovery"]={"status":"ok" if provider_ready and all(x["status"] not in {"error","search_unavailable"} for x in broad_coverage) else "degraded","queries_attempted":len(broad_coverage),"raw_results_seen":sum(x["results_seen"] for x in broad_coverage),"matching_jobs":sum(x["matching_jobs"] for x in broad_coverage),"selected_backend":selected_backend}
     except Exception as e:
@@ -371,6 +413,7 @@ def enrich(row):
             if m and result["location"] in ["Not specified","Remote"]: result["location"]=m.group(1)
             if result["location"] in ["Not specified","India"] and re.search(r"\b(?:pan[ -]?india|all[ -]?india|across india|anywhere in india|india[ -]wide|multiple locations across india|open across india)\b",text,re.I):
                 result["location"]="Pan-India"
+            if result["location"] in ["Not specified","India","Remote"] and re.search(r"\\b(?:remote|work from anywhere)\\s*(?:in|within|from)?\\s*india\\b|\\bindia[- ]based remote\\b",text,re.I): result["location"]="Remote India"
             sal=re.search(r"(?:₹|INR|USD|US\$|\$)\s?[\d,.]+\s?(?:k|K|LPA|lakh|lakhs|per annum|/year|/yr|annually)",text,re.I)
             if sal and not re.search(r"\$\s?0(?:\.0+)?\b",sal.group(0)): result["salary"]=sal.group(0)
             for s in SKILLS:
