@@ -1,8 +1,8 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 08:10 UTC",
-  "generated_at_iso": "2026-11-22T08:10:43.022504+00:00",
-  "total_candidates": 50,
+  "generated_at": "2026-11-22 08:17 UTC",
+  "generated_at_iso": "2026-11-22T08:17:05.578140+00:00",
+  "total_candidates": 60,
   "count": 15,
   "profile": {
     "title": "Security Engineer",
@@ -24,8 +24,8 @@
     "cybersecurity_vendors": 50,
     "named_gccs": 35,
     "employer_searches_configured": 85,
-    "employer_searches_completed": 0,
-    "broad_discovery_queries": 4,
+    "employer_searches_completed": 85,
+    "broad_discovery_queries": 5,
     "locations_priority": [
       "Remote",
       "Hyderabad",
@@ -37,724 +37,721 @@
   },
   "employer_coverage": [
     {
-      "company": "\"Palo Alto Networks\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Palo Alto Networks",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"CrowdStrike\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "CrowdStrike",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Microsoft Security\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Microsoft Security",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Google Cloud Security\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Google Cloud Security",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"SentinelOne\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "SentinelOne",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Darktrace\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Darktrace",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Fortinet\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Fortinet",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Cisco Security\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Cisco Security",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Check Point Software\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Check Point Software",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"IBM Security\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "IBM Security",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Zscaler\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Zscaler",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Vectra AI\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Vectra AI",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"CyberArk\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "CyberArk",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Okta\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Okta",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Cloudflare\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Cloudflare",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Proofpoint\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Proofpoint",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Trellix\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Trellix",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Sophos\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Sophos",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Rapid7\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Rapid7",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Elastic\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Elastic",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Arctic Wolf\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Arctic Wolf",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"ReliaQuest\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "ReliaQuest",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Exabeam\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Exabeam",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Securonix\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Securonix",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Abnormal Security\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Abnormal Security",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 3,
+      "error": ""
     },
     {
-      "company": "\"Recorded Future\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Recorded Future",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Tenable\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Tenable",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Qualys\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Qualys",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Wiz\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Wiz",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Akamai\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Akamai",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Bitdefender\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Bitdefender",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Trend Micro\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Trend Micro",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"BlackBerry Cylance\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "BlackBerry Cylance",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Cybereason\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Cybereason",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"eSentire\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "eSentire",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Huntress\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Huntress",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Expel\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Expel",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Dropzone AI\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Dropzone AI",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Torq\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Torq",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Simbian\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Simbian",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Prophet Security\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Prophet Security",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Radiant Security\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Radiant Security",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Stellar Cyber\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "company": "Stellar Cyber",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Lakera\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Lakera",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Protect AI\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Protect AI",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"HiddenLayer\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "HiddenLayer",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Mindgard\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Mindgard",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Robust Intelligence\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Robust Intelligence",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Netskope\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "Netskope",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"SparkCognition\"",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "company": "SparkCognition",
+      "category": "Cybersecurity vendor",
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Deutsche Börse Group\"",
+      "company": "Deutsche Börse Group",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Vanguard\"",
+      "company": "Vanguard",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Charles Schwab\"",
+      "company": "Charles Schwab",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"UBS\"",
+      "company": "UBS",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"HSBC\"",
+      "company": "HSBC",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Voya Financial\"",
+      "company": "Voya Financial",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"T-Mobile\"",
+      "company": "T-Mobile",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"DoorDash\"",
+      "company": "DoorDash",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Billtrust\"",
+      "company": "Billtrust",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Sanofi\"",
+      "company": "Sanofi",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"JLL\"",
+      "company": "JLL",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Acumatica\"",
+      "company": "Acumatica",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Blackbaud\"",
+      "company": "Blackbaud",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Regeneron\"",
+      "company": "Regeneron",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Amgen\"",
+      "company": "Amgen",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Eli Lilly\"",
+      "company": "Eli Lilly",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Citizens Financial Group\"",
+      "company": "Citizens Financial Group",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Nationwide\"",
+      "company": "Nationwide",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"HCA Healthcare\"",
+      "company": "HCA Healthcare",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Western Union\"",
+      "company": "Western Union",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Costco\"",
+      "company": "Costco",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Marriott\"",
+      "company": "Marriott",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"DAZN\"",
+      "company": "DAZN",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Agilent\"",
+      "company": "Agilent",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"McDonald's\"",
+      "company": "McDonald's",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Micron\"",
+      "company": "Micron",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Mattel\"",
+      "company": "Mattel",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"S&P Global\"",
+      "company": "S&P Global",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"State Street\"",
+      "company": "State Street",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "No results found."
+      "status": "match",
+      "results_seen": 5,
+      "matching_jobs": 1,
+      "error": ""
     },
     {
-      "company": "\"Wells Fargo\"",
+      "company": "Wells Fargo",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "No results found."
+      "error": ""
     },
     {
-      "company": "\"Synchrony\"",
+      "company": "Synchrony",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "RequestError: RequestError('error sending request for url (https://html.duckduckgo.com/html/) > connection reset')"
+      "error": ""
     },
     {
-      "company": "\"Salesforce\"",
+      "company": "Salesforce",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "error": ""
     },
     {
-      "company": "\"Google\"",
+      "company": "Google",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "error": ""
     },
     {
-      "company": "\"Amazon\"",
+      "company": "Amazon",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "error": ""
     },
     {
-      "company": "\"Microsoft\"",
+      "company": "Microsoft",
       "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "status": "checked_no_match",
+      "results_seen": 5,
       "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
-    },
+      "error": ""
+    }
+  ],
+  "broad_search_coverage": [
     {
-      "company": "New Hyderabad GCCs",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "query": "New Hyderabad GCCs",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 6,
+      "error": ""
     },
     {
-      "company": "New Hyderabad GCCs",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "query": "New Hyderabad GCCs",
+      "status": "checked_no_match",
+      "results_seen": 8,
       "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "error": ""
     },
     {
-      "company": "Delhi NCR discovery",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
+      "query": "Delhi NCR discovery",
+      "status": "checked_no_match",
+      "results_seen": 7,
       "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "error": ""
     },
     {
-      "company": "Delhi NCR GCC discovery",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "query": "Delhi NCR GCC discovery",
+      "status": "match",
+      "results_seen": 7,
+      "matching_jobs": 7,
+      "error": ""
     },
     {
-      "company": "Hyderabad discovery",
-      "category": "GCC",
-      "status": "error",
-      "results_seen": 0,
-      "matching_jobs": 0,
-      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
+      "query": "Hyderabad discovery",
+      "status": "match",
+      "results_seen": 8,
+      "matching_jobs": 7,
+      "error": ""
     }
   ],
   "source_health": {
@@ -785,17 +782,23 @@
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
     "Employer-by-employer search": {
-      "status": "error",
-      "companies_configured": 90,
-      "companies_checked": 0,
-      "companies_with_matches": 0,
-      "matching_jobs": 0,
-      "note": "Every configured vendor and GCC is queried on each scheduled run; a checked/no-match result does not prove no vacancy exists."
+      "status": "ok",
+      "companies_configured": 85,
+      "companies_checked": 85,
+      "companies_with_matches": 16,
+      "matching_jobs": 18,
+      "note": "All 50 vendors and 35 GCCs are queried each run. checked_no_match means providers returned no qualifying result, not proof that no vacancy exists."
     },
-    "DuckDuckGo": {
-      "status": "error",
-      "matching_jobs": 0,
-      "queries_attempted": 90
+    "Employer metasearch": {
+      "status": "ok",
+      "matching_jobs": 18,
+      "queries_attempted": 85,
+      "backends": "Bing, Brave, Google, Yahoo"
+    },
+    "Broad market discovery": {
+      "status": "ok",
+      "queries_attempted": 5,
+      "matching_jobs": 20
     }
   },
   "results": [
@@ -1009,6 +1012,51 @@
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
+      "title": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at ...",
+      "url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "snippet": "Oct 17, 2026 · Apply to TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at Hyderabad.",
+      "target_employer": "Market discovery",
+      "search_query": "Hyderabad security engineer cloud security SIEM SOAR jobs",
+      "api_location": "India/remote eligibility to verify",
+      "search_query_location": "India priority",
+      "discovery_source": "Broad search",
+      "company": "EY",
+      "location": "Hyderabad, Telangana, IN",
+      "description": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Company: EY Job Location: Hyderabad, Telangana, India Employment Type: Full-time Experience Required: 3+ years Wed, 10/07/2026 - 00:43 At EY, youll have the chance to build a career as unique as you are, with the global scale, support, inclusive culture and technology to become the best version of you. And were counting on your unique voice and perspective to help EY become even better, too. Join us and build an exceptional experience for yourself, and a better working world for all. SIEM SOAR/Platform Engineer The ideal candidate will have extensive experience with Palo Alto Cortex XSOAR (formerly Demisto) and a strong background in security automation and orchestration. Key Responsibilities: Automation Development: Design, develop, and maintain security automation playbooks using XSOAR. Integration: Integrate various security tools and systems with XSOAR to enhance incident response capabilities. Incident Response: Collaborate with the SOC team to automate and streamline incident response processes. Custom Scripting: Develop custom scripts and integrations using Python or other relevant programming languages. Monitoring and Optimization: Continuously monitor and optimize XSOAR playbooks and integrations for performance and effectiveness. Documentation: Create and maintain comprehensive documentation for all automation processes and playbooks. Training: Provide training and support to SOC analysts on the use of XSOAR and automated workflows. Skills and Qualifications: Experience: 3+ years of experience in security automation and orchestration, with a focus on XSOAR. Technical Expertise: Proficiency in Palo Alto Cortex XSOAR, Python scripting, and integration of security tools. Security Knowledge: Strong understanding of security operations, incident response, and threat intelligence. Problem-Solving: Excellent analytical and problem-solving skills with the ability to troubleshoot complex issues. Communication: Strong verbal and written communication skills to effectively collaborate with team members and stakeholders. Preferred Qualifications: Experience with other SOAR platforms and SIEM tools. Relevant certifications such as CISSP, CEH, or Palo Alto Networks certifications. Knowledge of cloud security services and environments (AWS, Azure, GCP). Additional Information: Willing to work from ODC as and when requi",
+      "responsibilities": [],
+      "requirements": [
+        "[\"security automation\", \"orchestration\", \"security operations\", \"threat intelligence\", \"communication skills\", \"Palo Alto Cortex XSOAR\", \"Python scripting\", \"integration of security tools\", \"incident response\", \"problemsolving skills\"]"
+      ],
+      "skills": [
+        "SOAR",
+        "SIEM",
+        "incident response",
+        "cloud security",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Python"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "FULL_TIME",
+      "experience": "3+ years",
+      "date_posted": "2026-10-17T12:53:46+05:30",
+      "valid_through": "2026-12-16T12:53:44+05:30",
+      "apply_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "source_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
+      "source_name": "Broad search",
+      "source_domain": "www.shine.com",
+      "page_status": "Fetched (HTTP 200)",
+      "score": 89,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Preferred Hyderabad location"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security",
+      "verification_note": "Discovery result only; confirm the role is active and apply on the employer's official careers site."
+    },
+    {
       "title": "Threat Detection Engineer",
       "url": "https://careers.spglobal.com/jobs/332493?lang=en-us",
       "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
@@ -1047,6 +1095,57 @@
         "Preferred Hyderabad location"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "52 Cybersecurity Engineer Jobs in Gurugram 2026 | GCC ERA",
+      "url": "https://gccera.com/gcc-jobs/role/cybersecurity-engineer/gurugram",
+      "snippet": "Oct 29, 2026 · Live Cybersecurity Engineer jobs at Global Capability Centres in Gurugram, India. Typical pay band: ₹5 LPA – ₹2.25 Cr.",
+      "target_employer": "Market discovery",
+      "search_query": "Delhi NCR Gurgaon Gurugram Noida GCC security operations SIEM SOAR detection careers",
+      "api_location": "India/remote eligibility to verify",
+      "search_query_location": "India priority",
+      "discovery_source": "Broad search",
+      "company": "Oaknorth India Pvt Ltd",
+      "location": "Gurugram, Haryana, IN",
+      "description": "Role overview The Application Security Engineer is a hands-on, full-stack security role focused on fixing the hardest application and AI security problems; particularly those that cross team boundaries or involve architecture, authentication, and authorisation that automation cannot yet safely resolve. You'll take remediation load away from engineering teams so they can stay focused on delivery, working closely with the teams that detect, prioritise, and track vulnerabilities. You'll also contribute to the development of OakNorth's internal coding agent platforms, so security fixes can scale safely. Key responsibilities - Fix complex application security vulnerabilities directly, including architectural weaknesses and issues in legacy technology that automated remediation cannot yet handle safely - Lead remediation of problems that cross team and system boundaries, coordinating changes across multiple owners and services and seeing them through to resolution - Resolve authentication and authorisation weaknesses, including identity, access control, session and token handling, service-to-service trust and permission models - Act as a dedicated delivery vehicle for security remediation, reducing the fix burden on engineering teams so they can focus on product delivery - Interpret the output of security tooling (e.g., SAST, DAST, SCA, secrets, container and IaC scanning), validate findings, identify root causes and implement the right fix rather than only triaging - Secure agentic and AI-enabled systems, assessing and mitigating risks such as those in the OWASP Top 10 for Agentic Applications, including prompt injection, excessive agent permissions, tool misuse, insecure agent-to-agent communication and unsafe handling of agent outputs - Contribute to the development of our internal coding agent platforms, including remediation agents, by supplying specialist fixes, remediation patterns, evaluation cases and feedback on where agents succeed or fail - Define and build guardrails for agent-generated and human-written changes (e.g., least-privilege agent access, human approval points, secure defaults, shared libraries, pipeline checks and policy-as-code) so that changes are safe and vulnerabilities do not recur - Build and secure GitHub workflows and release pipelines, including GitHub Actions hardening, secrets and token handling, branch protection, dependency and",
+      "responsibilities": [],
+      "requirements": [],
+      "skills": [
+        "Splunk",
+        "SOAR",
+        "SIEM",
+        "Microsoft Sentinel",
+        "incident response",
+        "log parsing",
+        "normalization",
+        "vulnerability management",
+        "cloud security",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Python",
+        "EDR",
+        "XDR",
+        "Kubernetes"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "FULL_TIME",
+      "experience": "Not specified",
+      "date_posted": "2026-10-26",
+      "valid_through": "2026-11-27T00:00:00.000Z",
+      "apply_url": "https://gccera.com/gcc-jobs/role/cybersecurity-engineer/gurugram",
+      "source_url": "https://gccera.com/gcc-jobs/role/cybersecurity-engineer/gurugram",
+      "source_name": "Broad search",
+      "source_domain": "gccera.com",
+      "page_status": "Fetched (HTTP 200)",
+      "score": 80,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Log onboarding and telemetry engineering alignment"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security",
+      "verification_note": "Discovery result only; confirm the role is active and apply on the employer's official careers site."
     },
     {
       "title": "Security operations analyst",
@@ -1847,141 +1946,6 @@
         "Detection, investigation and response engineering alignment",
         "Remote India eligibility indicated",
         "Experience band aligns with a 7-year profile"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "Security Engineer",
-      "url": "https://himalayas.app/companies/drivetrain/jobs/security-engineer",
-      "snippet": "Drivetrain is on a mission to empower businesses to make better decisions. Our financial planning & decision-making platform helps companies scale and achieve their targets predictably. Drivetrain is a remote-first company headquartered in the San Francisco Bay Area. Founded in 2021 by a couple of ex-Googlers, Drivetrain is a fast-growing company on a trajectory for success with backing from leading venture capital firms. Drivetrain provides a great culture for its employees to thrive in and be happy. 💜 Remote-friendly: Drivetrain brings together the best and the brightest, no matter where they are and provides them a great degree of autonomy. We trust our people. 🗣️ Open & transparent: We know that when our creators have access to all the information they need, their best work will emerge. 👏 Idea-friendly: We provide an environment to explore new ideas, to take risks, to make mistakes, and to learn, so you can succeed. Anyone in the company can come up with great ideas and become a catalyst for positive change. We let the best ideas win. 👥 Customer-centric: We follow a product-led growth strategy, continuously  learning from our customers and collaborating to build the amazing software that Drivetrain is. The Role You will own Drivetrain 's security posture across our product, cloud infrastructure and internal systems. Working closely with Engineering, DevOps and Compliance, you will make sure security is built into how we ship, not added after the fact. This is a hands-on role for someone who likes building systems, automating controls and using AI to scale a small security function well beyond its size. High-stakes work: you will protect the data that finance leaders at enterprise companies rely on. What You'll Do Secure our cloud infrastructure (AWS), including IAM, network security, secrets management, logging and monitoring. Embed security into the SDLC through threat modeling, secure code reviews, and SAST, DAST and dependency scanning in CI/CD. Lead vulnerability management end to end, from discovery and triage to remediation with engineering teams. Own detection and incident response: build alerting, write runbooks, and lead investigations when something goes wrong. Drive compliance programs such as SOC 2 Type II, ISO 27001 and GDPR, and automate evidence collection wherever possible. Answer customer security questionnaires and join security reviews with enterprise prospects alongside the sales team. Manage third-party and vendor risk, including reviews of the AI and data vendors we integrate with. Assess and secure the use of LLMs in our product, covering prompt injection, data leakage and model access controls. Run security awareness for the team and make secure practices the easy default. What You Bring 4 to 7 years of hands-on experience in security engineering, cloud security or application security, ideally at a B2B SaaS company. Strong working knowledge of AWS security services and Infrastructure as Code (Terraform or similar). Experience securing web applications and APIs, with a solid grasp of the OWASP Top 10. Comfort writing code or scripts (Python, Go or similar) to automate security tasks. Experience supporting SOC 2 or ISO 27001 audits. AI fluency is a must, not a nice-to-have. You use AI tools every day to speed up your work, whether that is triaging alerts, reviewing code, drafting policies or automating compliance evidence, and you can show us how. Clear communication, so you can explain risk to engineers, leadership and enterprise customers alike. Nice to Have Experience securing LLM-powered features or AI agent workflows. Exposure to fintech or other products that handle sensitive financial data. Hands-on experience with tools such as Vanta, Drata, Wiz, Snyk or similar. Certifications such as OSCP, AWS Security Specialty, CISSP or CCSP. Experience as the first or founding security hire at a startup. Sounds exciting? Apply at . It may just be the next best decision you’ve ever made! Originally posted on Himalayas",
-      "target_employer": "Drivetrain",
-      "search_query": "Himalayas",
-      "api_company": "Drivetrain",
-      "api_location": "Remote India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "Himalayas",
-      "api_bullets": [
-        "Secure our cloud infrastructure (AWS), including IAM, network security, secrets management, logging and monitoring.",
-        "Embed security into the SDLC through threat modeling, secure code reviews, and SAST, DAST and dependency scanning in CI/CD.",
-        "Lead vulnerability management end to end, from discovery and triage to remediation with engineering teams.",
-        "Own detection and incident response: build alerting, write runbooks, and lead investigations when something goes wrong.",
-        "Drive compliance programs such as SOC 2 Type II, ISO 27001 and GDPR, and automate evidence collection wherever possible.",
-        "Answer customer security questionnaires and join security reviews with enterprise prospects alongside the sales team.",
-        "Manage third-party and vendor risk, including reviews of the AI and data vendors we integrate with.",
-        "Assess and secure the use of LLMs in our product, covering prompt injection, data leakage and model access controls.",
-        "Run security awareness for the team and make secure practices the easy default.",
-        "4 to 7 years of hands-on experience in security engineering, cloud security or application security, ideally at a B2B SaaS company.",
-        "Strong working knowledge of AWS security services and Infrastructure as Code (Terraform or similar).",
-        "Experience securing web applications and APIs, with a solid grasp of the OWASP Top 10.",
-        "Comfort writing code or scripts (Python, Go or similar) to automate security tasks.",
-        "Experience supporting SOC 2 or ISO 27001 audits.",
-        "AI fluency is a must, not a nice-to-have. You use AI tools every day to speed up your work, whether that is triaging alerts, reviewing code, drafting policies or automating compliance evidence, and you can show us how.",
-        "Clear communication, so you can explain risk to engineers, leadership and enterprise customers alike.",
-        "Experience securing LLM-powered features or AI agent workflows.",
-        "Exposure to fintech or other products that handle sensitive financial data.",
-        "Hands-on experience with tools such as Vanta, Drata, Wiz, Snyk or similar.",
-        "Certifications such as OSCP, AWS Security Specialty, CISSP or CCSP.",
-        "Experience as the first or founding security hire at a startup."
-      ],
-      "apply_url": "https://himalayas.app/companies/drivetrain/jobs/security-engineer?utm_source=api",
-      "source_url": "https://himalayas.app/companies/drivetrain/jobs/security-engineer",
-      "source_name": "Himalayas",
-      "api_employment_type": "Full Time",
-      "api_date_posted": 1795106590,
-      "api_valid_through": 1799748607,
-      "company": "Drivetrain",
-      "location": "Remote India",
-      "description": "Drivetrain is on a mission to empower businesses to make better decisions. Our financial planning & decision-making platform helps companies scale and achieve their targets predictably. Drivetrain is a remote-first company headquartered in the San Francisco Bay Area. Founded in 2021 by a couple of ex-Googlers, Drivetrain is a fast-growing company on a trajectory for success with backing from leading venture capital firms. Drivetrain provides a great culture for its employees to thrive in and be happy. 💜 Remote-friendly: Drivetrain brings together the best and the brightest, no matter where they are and provides them a great degree of autonomy. We trust our people. 🗣️ Open & transparent: We know that when our creators have access to all the information they need, their best work will emerge. 👏 Idea-friendly: We provide an environment to explore new ideas, to take risks, to make mistakes, and to learn, so you can succeed. Anyone in the company can come up with great ideas and become a catalyst for positive change. We let the best ideas win. 👥 Customer-centric: We follow a product-led growth strategy, continuously  learning from our customers and collaborating to build the amazing software that Drivetrain is. The Role You will own Drivetrain 's security posture across our product, cloud infrastructure and internal systems. Working closely with Engineering, DevOps and Compliance, you will make sure security is built into how we ship, not added after the fact. This is a hands-on role for someone who likes building systems, automating controls and using AI to scale a small security function well beyond its size. High-stakes work: you will protect the data that finance leaders at enterprise companies rely on. What You'll Do Secure our cloud infrastructure (AWS), including IAM, network security, secrets management, logging and monitoring. Embed security into the SDLC through threat modeling, secure code reviews, and SAST, DAST and dependency scanning in CI/CD. Lead vulnerability management end to end, from discovery and triage to remediation with engineering teams. Own detection and incident response: build alerting, write runbooks, and lead investigations when something goes wrong. Drive compliance programs such as SOC 2 Type II, ISO 27001 and GDPR, and automate evidence collection wherever possible. Answer customer security questionnaires and join security reviews with enterprise prospects alongside the sales team. Manage third-party and vendor risk, including reviews of the AI and data vendors we integrate with. Assess and secure the use of LLMs in our product, covering prompt injection, data leakage and model access controls. Run security awareness for the team and make secure practices the easy default. What You Bring 4 to 7 years of hands-on experience in security engineering, cloud security or application security, ideally at a B2B SaaS company. Strong working knowledge of AWS security services and Infrastructure as Code (Terraform or similar). Experience securing web applications and APIs, with a solid grasp of the OWASP Top 10. Comfort writing code or scripts (Python, Go or similar) to automate security tasks. Experience supporting SOC 2 or ISO 27001 audits. AI fluency is a must, not a nice-to-have. You use AI tools every day to speed up your work, whether that is triaging alerts, reviewing code, drafting policies or automating compliance evidence, and you can show us how. Clear communication, so you can explain risk to engineers, leadership and enterprise customers alike. Nice to Have Experience securing LLM-powered features or AI agent workflows. Exposure to fintech or other products that handle sensitive financial data. Hands-on experience with tools such as Vanta, Drata, Wiz, Snyk or similar. Certifications such as OSCP, AWS Security Specialty, CISSP or CCSP. Experience as the first or founding security hire at a startup. Sounds exciting? Apply at . It may just be the next best decision you’ve ever made! Originally posted on Himalayas",
-      "responsibilities": [
-        "Secure our cloud infrastructure (AWS), including IAM, network security, secrets management, logging and monitoring.",
-        "Embed security into the SDLC through threat modeling, secure code reviews, and SAST, DAST and dependency scanning in CI/CD.",
-        "Lead vulnerability management end to end, from discovery and triage to remediation with engineering teams.",
-        "Own detection and incident response: build alerting, write runbooks, and lead investigations when something goes wrong.",
-        "Drive compliance programs such as SOC 2 Type II, ISO 27001 and GDPR, and automate evidence collection wherever possible.",
-        "Answer customer security questionnaires and join security reviews with enterprise prospects alongside the sales team.",
-        "Manage third-party and vendor risk, including reviews of the AI and data vendors we integrate with.",
-        "Assess and secure the use of LLMs in our product, covering prompt injection, data leakage and model access controls.",
-        "Run security awareness for the team and make secure practices the easy default.",
-        "Strong working knowledge of AWS security services and Infrastructure as Code (Terraform or similar)."
-      ],
-      "requirements": [
-        "4 to 7 years of hands-on experience in security engineering, cloud security or application security, ideally at a B2B SaaS company.",
-        "Experience securing web applications and APIs, with a solid grasp of the OWASP Top 10.",
-        "Experience supporting SOC 2 or ISO 27001 audits.",
-        "Experience securing LLM-powered features or AI agent workflows.",
-        "Hands-on experience with tools such as Vanta, Drata, Wiz, Snyk or similar.",
-        "Experience as the first or founding security hire at a startup."
-      ],
-      "skills": [
-        "incident response",
-        "vulnerability management",
-        "cloud infrastructure",
-        "cloud security",
-        "AWS",
-        "Python"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "Full Time",
-      "experience": "7+ years (from job description)",
-      "date_posted": "2026-11-19",
-      "valid_through": "2027-01-12",
-      "source_domain": "himalayas.app",
-      "page_status": "Listed in Himalayas API",
-      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
-      "score": 72,
-      "fit_reasons": [
-        "Detection, investigation and response engineering alignment",
-        "Remote India eligibility indicated",
-        "Experience band aligns with a 7-year profile"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "Cloud Security Engineer",
-      "url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer",
-      "snippet": "About the role You’ll be the engineer our managed services clients rely on when something looks wrong in their AWS accounts or on their endpoints, and the one who makes sure it doesn’t happen twice.You will run AWS-native security services and enterprise EDR/XDR platforms across many client environments, lead incident response from the first alert to the root cause, manage devices through Microsoft Intune, and keep the controls and evidence clients need for SOC 2. The stack you’ll own: Five layers, many client environments. These are the services and tools you’ll work with every week. AWS foundation Accounts, identity, encryption and network edges AWS Organizations & SCPs Control Tower IAM & IAM Identity Center IAM Access Analyzer KMS Secrets Manager VPC & Network Firewall AWS WAF & Shield Cloud workloads EC2, containers and serverless, protected by AWS-native and thirdparty tools CrowdStrike Falcon Cloud Security Trend Micro Vision One / Cloud One Workload Security Bitdefender GravityZone Amazon Inspector GuardDuty Runtime Monitoring Systems Manager Patch Manager ECR image scanning Amazon EKS Endpoints, mobile and email Laptops, servers, phones and the mailboxes people use on them CrowdStrike Falcon SentinelOne Singularity Microsoft Defender for Endpoint Bitdefender GravityZone Microsoft Intune Intune app protection (MAM) Microsoft Entra ID Conditional Access Microsoft Defender for Office 365 SPF, DKIM & DMARC Detection and response EDR, XDR and MDR working as one service Amazon GuardDuty AWS Security Hub Amazon Detective AWS Security Incident Response Microsoft Sentinel Microsoft Defender XDR MDR partners Compliance and evidence Proof that controls work, ready for auditors SOC 2 Trust Services Criteria AWS Config conformance packs AWS Audit Manager AWS CloudTrail CIS Benchmarks Key responsibilities: AWS cloud security Design and run a multi-account security architecture for each client: a dedicated security tooling account with delegated administration for GuardDuty, Security Hub, Inspector, Macie and Detective, and an organization-wide CloudTrail delivered to a locked-down log archive account. Enable and tune GuardDuty protection plans (S3, EKS, Runtime Monitoring, Malware Protection, RDS and Lambda), maintain suppression rules, and route findings by severity to the right queue and on-call engineer. nClouds : Cloud Security Engineer Page 2 of 7 Operate Security Hub with central configuration across the organization: enable standards (AWS Foundational Security Best Practices, CIS, PCI DSS and NIST SP800-53), build automation rules and custom insights, and keep findings deduplicated. Own identity security: IAM Identity Center permission sets, service control and resource control policies, permission boundaries, cross-account role trust reviews, root account protection, MFA enforcement, access key rotation, and IAM Access Analyzer findings for external and unused access. Protect data with KMS key policies and rotation, S3 Block Public Access and bucket policy reviews, default EBS and RDS encryption, Secrets Manager rotation and Macie sensitive data discovery. Harden networks through security group and NACL reviews, AWS Network Firewall, Route 53 Resolver DNS Firewall, VPC endpoints, WAF managed and rate-based rules, Shield Advanced and VPC Flow Log analysis. Secure containers and serverless: EKS cluster hardening, EKS Pod Identity or IRSA, Kubernetes RBAC and audit logs, ECR enhanced scanning, and least-privilege Lambda execution roles. Build auto-remediation for common risks, such as public S3 buckets, security groups open to the internet on SSH or RDP, disabled logging and exposed access keys, using AWS Config rules, EventBridge, Lambda and Systems Manager Automation. Centralize security logs (CloudTrail, VPC Flow Logs, DNS, WAF and load balancer logs) in Amazon Security Lake or the client’s SIEM, with retention set to meet compliance needs. Run security posture reviews against the CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices and the Well-Architected Security pillar, then drive remediation with the client. Review Terraform and CloudFormation changes for security misconfigurations before they reach production. Third-party cloud and workload security on AWS Deploy and manage third-party cloud security platforms alongside AWS-native services, including CrowdStrike Falcon Cloud Security, Trend Micro Vision One and Bitdefender GravityZone, covering workload protection, cloud posture (CSPM) and",
-      "target_employer": "nClouds",
-      "search_query": "Himalayas",
-      "api_company": "nClouds",
-      "api_location": "Remote India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "Himalayas",
-      "api_bullets": [],
-      "apply_url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer?utm_source=api",
-      "source_url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer",
-      "source_name": "Himalayas",
-      "api_employment_type": "Full Time",
-      "api_date_posted": 1795106433,
-      "api_valid_through": 1800127849,
-      "company": "nClouds",
-      "location": "Remote India",
-      "description": "About the role You’ll be the engineer our managed services clients rely on when something looks wrong in their AWS accounts or on their endpoints, and the one who makes sure it doesn’t happen twice.You will run AWS-native security services and enterprise EDR/XDR platforms across many client environments, lead incident response from the first alert to the root cause, manage devices through Microsoft Intune, and keep the controls and evidence clients need for SOC 2. The stack you’ll own: Five layers, many client environments. These are the services and tools you’ll work with every week. AWS foundation Accounts, identity, encryption and network edges AWS Organizations & SCPs Control Tower IAM & IAM Identity Center IAM Access Analyzer KMS Secrets Manager VPC & Network Firewall AWS WAF & Shield Cloud workloads EC2, containers and serverless, protected by AWS-native and thirdparty tools CrowdStrike Falcon Cloud Security Trend Micro Vision One / Cloud One Workload Security Bitdefender GravityZone Amazon Inspector GuardDuty Runtime Monitoring Systems Manager Patch Manager ECR image scanning Amazon EKS Endpoints, mobile and email Laptops, servers, phones and the mailboxes people use on them CrowdStrike Falcon SentinelOne Singularity Microsoft Defender for Endpoint Bitdefender GravityZone Microsoft Intune Intune app protection (MAM) Microsoft Entra ID Conditional Access Microsoft Defender for Office 365 SPF, DKIM & DMARC Detection and response EDR, XDR and MDR working as one service Amazon GuardDuty AWS Security Hub Amazon Detective AWS Security Incident Response Microsoft Sentinel Microsoft Defender XDR MDR partners Compliance and evidence Proof that controls work, ready for auditors SOC 2 Trust Services Criteria AWS Config conformance packs AWS Audit Manager AWS CloudTrail CIS Benchmarks Key responsibilities: AWS cloud security Design and run a multi-account security architecture for each client: a dedicated security tooling account with delegated administration for GuardDuty, Security Hub, Inspector, Macie and Detective, and an organization-wide CloudTrail delivered to a locked-down log archive account. Enable and tune GuardDuty protection plans (S3, EKS, Runtime Monitoring, Malware Protection, RDS and Lambda), maintain suppression rules, and route findings by severity to the right queue and on-call engineer. nClouds : Cloud Security Engineer Page 2 of 7 Operate Security Hub with central configuration across the organization: enable standards (AWS Foundational Security Best Practices, CIS, PCI DSS and NIST SP800-53), build automation rules and custom insights, and keep findings deduplicated. Own identity security: IAM Identity Center permission sets, service control and resource control policies, permission boundaries, cross-account role trust reviews, root account protection, MFA enforcement, access key rotation, and IAM Access Analyzer findings for external and unused access. Protect data with KMS key policies and rotation, S3 Block Public Access and bucket policy reviews, default EBS and RDS encryption, Secrets Manager rotation and Macie sensitive data discovery. Harden networks through security group and NACL reviews, AWS Network Firewall, Route 53 Resolver DNS Firewall, VPC endpoints, WAF managed and rate-based rules, Shield Advanced and VPC Flow Log analysis. Secure containers and serverless: EKS cluster hardening, EKS Pod Identity or IRSA, Kubernetes RBAC and audit logs, ECR enhanced scanning, and least-privilege Lambda execution roles. Build auto-remediation for common risks, such as public S3 buckets, security groups open to the internet on SSH or RDP, disabled logging and exposed access keys, using AWS Config rules, EventBridge, Lambda and Systems Manager Automation. Centralize security logs (CloudTrail, VPC Flow Logs, DNS, WAF and load balancer logs) in Amazon Security Lake or the client’s SIEM, with retention set to meet compliance needs. Run security posture reviews against the CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices and the Well-Architected Security pillar, then drive remediation with the client. Review Terraform and CloudFormation changes for security misconfigurations before they reach production. Third-party cloud and workload security on AWS Deploy and manage third-party cloud security platforms alongside AWS-native services, including CrowdStrike Falcon Cloud Security, Trend Micro Vision One and Bitdefender GravityZone, covering workload protection, cloud posture (CSPM) and",
-      "responsibilities": [],
-      "requirements": [],
-      "skills": [
-        "SIEM",
-        "Microsoft Sentinel",
-        "CrowdStrike",
-        "incident response",
-        "cloud security",
-        "AWS",
-        "EDR",
-        "XDR",
-        "Kubernetes"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "Full Time",
-      "experience": "Not specified",
-      "date_posted": "2026-11-19",
-      "valid_through": "2027-01-16",
-      "source_domain": "himalayas.app",
-      "page_status": "Listed in Himalayas API",
-      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
-      "score": 71,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Detection, investigation and response engineering alignment",
-        "Remote India eligibility indicated"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     }
