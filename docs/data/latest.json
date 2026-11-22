@@ -1,7 +1,7 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 07:13 UTC",
-  "generated_at_iso": "2026-11-22T07:13:59.307002+00:00",
+  "generated_at": "2026-11-22 07:14 UTC",
+  "generated_at_iso": "2026-11-22T07:14:47.508279+00:00",
   "total_candidates": 50,
   "count": 15,
   "profile": {
@@ -195,7 +195,7 @@
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
-      "title": "Staff Security Operations Engineer @ Gainsight",
+      "title": "Staff Security Operations Engineer",
       "url": "https://jobs.ashbyhq.com/gainsight/928139de-b645-43b3-8101-0d74e73169d4",
       "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
       "target_employer": "Gainsight",
@@ -232,7 +232,55 @@
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
-      "title": "Threat Detection Engineer in Hyderabad, India | S&P Global",
+      "title": "Lead Cybersecurity Engineer / SIEM Lead Engineer",
+      "url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
+      "target_employer": "Providence India",
+      "search_query": "LinkedIn",
+      "api_company": "Providence India",
+      "api_location": "Hyderabad, Telangana, India",
+      "api_salary": "Not disclosed",
+      "discovery_source": "LinkedIn",
+      "source_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "source_name": "LinkedIn",
+      "api_experience": "Not specified",
+      "apply_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
+      "verification_note": "LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements.",
+      "company": "Providence India",
+      "location": "Hyderabad, IN",
+      "description": "<strong>Job Description – SIEM Lead Engineer Role Overview<br><br></strong>The SIEM Lead Engineer is responsible for leading the design, development, and optimization of SIEM alerting, enrichment, and monitoring capabilities using Splunk. This role focuses on improving alert fidelity, contextual enrichment, detection engineering, and overall SOC effectiveness. The role acts as a technical lead and escalation point, working closely with SOC Analysts, Threat Detection, Security Engineering, and platform teams.<br><br><strong>Key Responsibilities<br><br></strong><ul><li>Lead engineering and optimization of Splunk-based SIEM alerting and monitoring.</li><li>Design, develop, and tune correlation rules and detections to reduce false positives.</li><li>Own alert lifecycle management including creation, tuning, validation, and retirement.</li><li>Design and implement alert enrichment using IAM, CMDB, vulnerability, and threat intelligence sources.</li><li>Ensure alerts are enriched with user, asset, privilege, and business context.</li><li>Engineer and maintain Splunk data ingestion, normalization, and CIM compliance.</li><li>Support onboarding of log sources across endpoint, network, cloud, and identity platforms.</li><li>Develop detection use cases mapped to MITRE ATT&amp;CK.</li><li>Act as L3 escalation for complex SIEM and detection issues.</li><li>Maintain SOPs, runbooks, and SIEM documentation.</li><li>Mentor SIEM engineers and provide technical guidance.<br><br><br></li></ul><strong>Required Skills &amp; Experience<br><br></strong><ul><li>6–10 years of experience in SIEM or security engineering roles.</li><li>Strong hands-on expertise with Splunk Enterprise / Splunk ES.</li><li>Proven experience in SIEM alert development, tuning, and enrichment.</li><li>Strong understanding of security telemetry across endpoint, network, cloud, and IAM.</li><li>Proficiency in SPL (Search Processing Language).</li><li>Experience with MITRE ATT&amp;CK and SOC workflows.</li><li>Experience integrating SIEM with IAM, CMDB, vulnerability, and threat intel platforms.<br><br><br></li></ul><strong>Preferred Qualifications<br><br></strong><ul><li>Experience in regulated environments such as healthcare or financial services.</li><li>Exposure to SOAR platforms and automated response workflows.</li><li>Scripting experience using Python or PowerShell.</li><li>Relevant security or Splunk c",
+      "responsibilities": [],
+      "requirements": [],
+      "skills": [
+        "Splunk",
+        "Splunk ES",
+        "SOAR",
+        "SIEM",
+        "NG SIEM",
+        "detection engineering",
+        "normalization",
+        "cloud security",
+        "Python"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "FULL_TIME",
+      "experience": "6+ years",
+      "date_posted": "2026-11-20T15:20:23.000Z",
+      "valid_through": "2027-03-07T12:35:06.000Z",
+      "source_domain": "in.linkedin.com",
+      "page_status": "Fetched (HTTP 200)",
+      "score": 90,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Log onboarding and telemetry engineering alignment",
+        "Preferred Hyderabad location",
+        "Experience band aligns with a 7-year profile"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "Threat Detection Engineer",
       "url": "https://careers.spglobal.com/jobs/332493?lang=en-us",
       "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
       "target_employer": "S&P Global",
@@ -354,53 +402,6 @@
         "Detection, investigation and response engineering alignment",
         "Log onboarding and telemetry engineering alignment",
         "Remote India eligibility indicated"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "Lead Cybersecurity Engineer at Providence India — Hyderabad, Telangana, India | LinkedIn Jobs",
-      "url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
-      "target_employer": "Providence India",
-      "search_query": "LinkedIn",
-      "api_company": "Providence India",
-      "api_location": "Hyderabad, Telangana, India",
-      "api_salary": "Not disclosed",
-      "discovery_source": "LinkedIn",
-      "source_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "source_name": "LinkedIn",
-      "api_experience": "Not specified",
-      "apply_url": "https://in.linkedin.com/jobs/view/lead-cybersecurity-engineer-at-providence-india-4412775180",
-      "verification_note": "LinkedIn listing surfaced 22 Nov 2026; confirm active status and full requirements.",
-      "company": "Providence India",
-      "location": "Hyderabad, IN",
-      "description": "<strong>Job Description – SIEM Lead Engineer Role Overview<br><br></strong>The SIEM Lead Engineer is responsible for leading the design, development, and optimization of SIEM alerting, enrichment, and monitoring capabilities using Splunk. This role focuses on improving alert fidelity, contextual enrichment, detection engineering, and overall SOC effectiveness. The role acts as a technical lead and escalation point, working closely with SOC Analysts, Threat Detection, Security Engineering, and platform teams.<br><br><strong>Key Responsibilities<br><br></strong><ul><li>Lead engineering and optimization of Splunk-based SIEM alerting and monitoring.</li><li>Design, develop, and tune correlation rules and detections to reduce false positives.</li><li>Own alert lifecycle management including creation, tuning, validation, and retirement.</li><li>Design and implement alert enrichment using IAM, CMDB, vulnerability, and threat intelligence sources.</li><li>Ensure alerts are enriched with user, asset, privilege, and business context.</li><li>Engineer and maintain Splunk data ingestion, normalization, and CIM compliance.</li><li>Support onboarding of log sources across endpoint, network, cloud, and identity platforms.</li><li>Develop detection use cases mapped to MITRE ATT&amp;CK.</li><li>Act as L3 escalation for complex SIEM and detection issues.</li><li>Maintain SOPs, runbooks, and SIEM documentation.</li><li>Mentor SIEM engineers and provide technical guidance.<br><br><br></li></ul><strong>Required Skills &amp; Experience<br><br></strong><ul><li>6–10 years of experience in SIEM or security engineering roles.</li><li>Strong hands-on expertise with Splunk Enterprise / Splunk ES.</li><li>Proven experience in SIEM alert development, tuning, and enrichment.</li><li>Strong understanding of security telemetry across endpoint, network, cloud, and IAM.</li><li>Proficiency in SPL (Search Processing Language).</li><li>Experience with MITRE ATT&amp;CK and SOC workflows.</li><li>Experience integrating SIEM with IAM, CMDB, vulnerability, and threat intel platforms.<br><br><br></li></ul><strong>Preferred Qualifications<br><br></strong><ul><li>Experience in regulated environments such as healthcare or financial services.</li><li>Exposure to SOAR platforms and automated response workflows.</li><li>Scripting experience using Python or PowerShell.</li><li>Relevant security or Splunk c",
-      "responsibilities": [],
-      "requirements": [],
-      "skills": [
-        "Splunk",
-        "Splunk ES",
-        "SOAR",
-        "SIEM",
-        "NG SIEM",
-        "detection engineering",
-        "normalization",
-        "cloud security",
-        "Python"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "FULL_TIME",
-      "experience": "{\"@type\": \"OccupationalExperienceRequirements\", \"monthsOfExperience\": 72}",
-      "date_posted": "2026-11-20T15:20:23.000Z",
-      "valid_through": "2027-03-07T12:35:06.000Z",
-      "source_domain": "in.linkedin.com",
-      "page_status": "Fetched (HTTP 200)",
-      "score": 77,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Detection, investigation and response engineering alignment",
-        "Log onboarding and telemetry engineering alignment",
-        "Preferred Hyderabad location"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
@@ -970,7 +971,7 @@
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
     {
-      "title": "Track Manager - Security Investigations, SIEM Job Details | HCLTech",
+      "title": "Track Manager - Security Investigations, SIEM",
       "url": "https://careers.hcltech.com/job/Track-Manager-Security-Investigations%2C-SIEM/175830-en_US/",
       "snippet": "Hyderabad security engineering opportunity; full role details are fetched from the listing.",
       "target_employer": "HCLTech",
