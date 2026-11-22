@@ -31,10 +31,17 @@ def search_queries():
            ("Hyderabad discovery",'Hyderabad security engineer cloud security SIEM SOAR jobs')]
     return qs
 def api_row(title, company, location, url, description="", salary="Not disclosed", source="API"):
-    title=clean(title); url=clean(url)
+    title=clean(title); url=clean(url); location=clean(location)
     if not title or not url or BAD.search(title+" "+url): return None
-    if not re.search(r"security|siem|soar|detection|threat|incident|soc|cyber",title+" "+description,re.I): return None
-    return {"title":title,"url":url,"snippet":clean(description)[:1800],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":clean(location),"api_salary":clean(salary),"discovery_source":source}
+    # Match the job title itself, not incidental security words buried in an unrelated description.
+    if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): return None
+    # This dashboard prioritises India. Accept explicitly India-based roles and truly worldwide remote roles;
+    # do not label US/Europe-only vacancies as "Remote India".
+    loc=location.lower()
+    india=bool(re.search(r"india|hyderabad|bengaluru|bangalore|pune|gurugram|gurgaon|chennai|mumbai|noida",loc))
+    worldwide=bool(re.search(r"worldwide|anywhere|global|all countries|open to all",loc))
+    if not (india or worldwide): return None
+    return {"title":title,"url":url,"snippet":clean(description)[:1800],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":location or "Not specified","api_salary":clean(salary) or "Not disclosed","discovery_source":source}
 
 def discover():
     rows={}; health={}
@@ -46,7 +53,7 @@ def discover():
     feeds=[
       ("RemoteOK","https://remoteok.com/api",lambda j: api_row(j.get("position"),j.get("company"),j.get("location") or "Remote",j.get("url"),j.get("description") or " ".join(j.get("tags") or []),j.get("salary") or "Not disclosed","RemoteOK")),
       ("Arbeitnow","https://www.arbeitnow.com/api/job-board-api?page=1",lambda j: api_row(j.get("title"),j.get("company_name"),j.get("location") or ("Remote" if j.get("remote") else ""),j.get("url"),j.get("description") or "", "Not disclosed","Arbeitnow")),
-      ("Jobicy","https://jobicy.com/api/v2/remote-jobs?count=50&tag=security",lambda j: api_row(j.get("jobTitle"),j.get("companyName"),j.get("jobGeo") or "Remote",j.get("url"),j.get("jobDescription") or "",j.get("annualSalaryTo") or "Not disclosed","Jobicy")),
+      ("Jobicy","https://jobicy.com/api/v2/remote-jobs?count=50&tag=security",lambda j: api_row(j.get("jobTitle"),j.get("companyName"),j.get("candidateRequiredLocation") or j.get("jobGeo") or "",j.get("url"),j.get("jobDescription") or "",j.get("annualSalaryTo") or "Not disclosed","Jobicy")),
       ("Remotive","https://remotive.com/api/remote-jobs?search=security&limit=50",lambda j: api_row(j.get("title"),j.get("company_name"),j.get("candidate_required_location") or "Remote",j.get("url"),j.get("description") or "",j.get("salary") or "Not disclosed","Remotive"))
     ]
     session=requests.Session(); session.headers.update(HEADERS)
@@ -74,8 +81,9 @@ def discover():
                     for hit in ddgs.text(q,max_results=6):
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
                         if not url or not title or BAD.search(title+" "+url): continue
-                        if not re.search(r"security|siem|soar|detection|threat|incident|soc|cyber",title,re.I): continue
-                        add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"discovery_source":"DuckDuckGo"})
+                        if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
+                        if not re.search(r"India|Hyderabad|Bengaluru|Bangalore|Pune|Gurugram|Chennai|Mumbai|Noida|worldwide|anywhere|global",snippet+" "+title,re.I): continue
+                        add({"title":title,"url":url,"snippet":snippet,"target_employer":employer,"search_query":q,"api_location":"India/remote eligibility to verify","search_query_location":"India priority","discovery_source":"DuckDuckGo"})
                 except Exception as e:
                     print("Search query failed:",str(e)[:160])
                 time.sleep(.7)
@@ -153,7 +161,8 @@ def enrich(row):
             for s in SKILLS:
                 if re.search(re.escape(s),text,re.I): result["skills"].append(s)
             result["description"]=result["description"] if len(result["description"])>180 else text[:1800]
-            if re.search(r"remote|work from home",text,re.I): result["location"]="Remote / "+result["location"]
+            if re.search(r"remote|work from home",text,re.I) and result["location"] in ["Remote","Worldwide","Not specified"]:
+                result["location"]="Remote (worldwide eligibility not confirmed)" if result["location"]=="Not specified" else "Remote ("+result["location"]+")"
     except Exception as e: result["fetch_error"]=str(e)[:180]
     return result
 def rank(x):
