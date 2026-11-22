@@ -6,7 +6,6 @@ on:
     paths:
       - "cybersecurity_job_hunter.py"
       - "requirements.txt"
-      - "docs/index.html"
       - ".github/workflows/jobhunter.yml"
   schedule:
     - cron: "30 3 * * 1,4"
@@ -20,6 +19,7 @@ concurrency:
 jobs:
   search-and-publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
