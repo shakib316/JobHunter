@@ -1,0 +1,42 @@
+{
+  "project": "CyberJobHunter",
+  "generated_at": "2026-11-22 06:46 UTC",
+  "generated_at_iso": "2026-11-22T06:46:08.750237+00:00",
+  "total_candidates": 0,
+  "count": 0,
+  "profile": {
+    "title": "Security Engineer",
+    "experience_years": 7,
+    "focus": [
+      "Google SecOps",
+      "Chronicle",
+      "Splunk",
+      "SIEM",
+      "SOAR",
+      "YARA-L",
+      "BindPlane",
+      "Cribl",
+      "Detection Engineering",
+      "Cloud Security"
+    ]
+  },
+  "search_coverage": {
+    "cybersecurity_vendors": 50,
+    "named_gccs": 35,
+    "broad_discovery_queries": 4,
+    "locations_priority": [
+      "Hyderabad",
+      "Remote India",
+      "Remote",
+      "Bengaluru",
+      "Pune",
+      "Gurugram",
+      "Chennai",
+      "Mumbai",
+      "Noida",
+      "India"
+    ]
+  },
+  "results": [],
+  "disclaimer": "Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."
+}
