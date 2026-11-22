@@ -234,13 +234,19 @@ def rough_score(x):
 def main():
     now=datetime.now(timezone.utc); print("Searching target vendors, GCCs and wider India market…")
     raw,source_health=discover(); print(f"Discovered {len(raw)} candidate links")
+    DATA.mkdir(parents=True,exist_ok=True); ARCHIVE.mkdir(parents=True,exist_ok=True)
+    health_payload={"generated_at":now.strftime("%Y-%m-%d %H:%M UTC"),"source_health":source_health,"candidate_count":len(raw),"qualified_count":0,"published_count":0}
+    (DATA/"health.json").write_text(json.dumps(health_payload,indent=2,ensure_ascii=False),encoding="utf-8")
     if not raw:
-        raise SystemExit("No job candidates returned by any source; preserving the last published dataset.")
+        print("No job candidates returned; preserving the last published snapshot.")
+        return
     # Enrich only the strongest 60 leads to keep scheduled runs predictable.
     raw=sorted(raw,key=rough_score,reverse=True)[:60]
     enriched=[rank(enrich(x)) for x in raw]
     enriched=[x for x in enriched if x["score"]>=50]
     if not enriched:
+        health_payload["qualified_count"]=0
+        (DATA/"health.json").write_text(json.dumps(health_payload,indent=2,ensure_ascii=False),encoding="utf-8")
         print("No candidates met the minimum 50/100 relevance threshold; preserving the last published snapshot.")
         return
     enriched.sort(key=lambda x:(x["score"],"hyderabad" in x["location"].lower(),"remote" in x["location"].lower()),reverse=True)
@@ -252,6 +258,8 @@ def main():
         seen.add(k); chosen.append(x)
         if len(chosen)>=MAX_RESULTS: break
     stamp=now.strftime("%Y-%m-%d %H:%M UTC")
+    health_payload["qualified_count"]=len(enriched); health_payload["published_count"]=len(chosen)
+    (DATA/"health.json").write_text(json.dumps(health_payload,indent=2,ensure_ascii=False),encoding="utf-8")
     payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"broad_discovery_queries":4,"locations_priority":LOCATIONS},"source_health":source_health,"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
     DATA.mkdir(parents=True,exist_ok=True); ARCHIVE.mkdir(parents=True,exist_ok=True)
     (DATA/"latest.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
