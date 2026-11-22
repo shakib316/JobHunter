@@ -3,7 +3,9 @@
 Automated job intelligence for a 7-year Security Engineer profile focused on Google SecOps/Chronicle, Splunk, SIEM/SOAR, detection engineering, BindPlane, Cribl, YARA-L, cloud security and incident response.
 
 ## Website
-Once GitHub Pages is enabled with **GitHub Actions** as its build source, the dashboard is at:
+**One-time Pages activation:** open [Repository Settings → Pages](https://github.com/shakib316/JobHunter/settings/pages), set **Build and deployment → Source** to **GitHub Actions**, and save. GitHub requires this publishing source to be enabled for the repository before the deployment workflow can publish. The repository and published dashboard are public.
+
+After activation, the dashboard is at:
 https://shakib316.github.io/JobHunter/
 
 The dashboard reads `docs/data/latest.json` and provides search, location filtering, match scores, role summaries, skill matches, fit reasons and vacancy links. Downloadable CSV and raw JSON are also published.
