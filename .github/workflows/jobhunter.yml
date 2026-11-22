@@ -1,6 +1,15 @@
 name: CyberJobHunter scheduled search
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "cybersecurity_job_hunter.py"
+      - "requirements.txt"
+      - "docs/**"
+      - ".github/workflows/jobhunter.yml"
+    paths-ignore:
+      - "docs/data/**"
   schedule:
     - cron: "30 3 * * 1,4"
 permissions:
@@ -8,33 +17,34 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: cyberjobhunter
+  group: cyberjobhunter-pages
   cancel-in-progress: false
 jobs:
   search-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Run job search
+      - name: Run opportunity discovery and enrichment
         run: python cybersecurity_job_hunter.py
-      - name: Commit latest results
+      - name: Commit generated output
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/data
-          git diff --cached --quiet || git commit -m "Update CyberJobHunter results"
+          git diff --cached --quiet || git commit -m "Update CyberJobHunter opportunities"
           git push
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload Pages artifact
+      - name: Upload dashboard
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: Deploy dashboard
         uses: actions/deploy-pages@v4
