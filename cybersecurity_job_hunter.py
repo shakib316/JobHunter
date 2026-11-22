@@ -45,13 +45,44 @@ def discover():
             except Exception as e: print("Search error:",str(e)[:180])
             time.sleep(.25)
     return list(rows.values())
+def find_jobposting(obj):
+    if isinstance(obj,dict):
+        kind=obj.get("@type",[])
+        if isinstance(kind,str): kind=[kind]
+        if any("JobPosting" in str(k) for k in kind): return obj
+        for value in obj.values():
+            found=find_jobposting(value)
+            if found: return found
+    elif isinstance(obj,list):
+        for value in obj:
+            found=find_jobposting(value)
+            if found: return found
+    return None
 def enrich(row):
-    result={**row,"company":row["target_employer"],"location":"Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":"Not disclosed","employment_type":"Not specified","experience":"Not specified","apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only"}
+    result={**row,"company":row["target_employer"],"location":"Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":"Not disclosed","employment_type":"Not specified","experience":"Not specified","date_posted":"Not specified","valid_through":"Not specified","responsibilities":[],"requirements":[],"apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only"}
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
         result["page_status"]=f"Fetched (HTTP {r.status_code})"
         if r.ok and "text/html" in r.headers.get("content-type",""):
             soup=BeautifulSoup(r.text[:1_500_000],"html.parser")
+            job=None
+            for node in soup.select('script[type="application/ld+json"]'):
+                try:
+                    job=find_jobposting(json.loads(node.string or node.get_text()))
+                    if job: break
+                except Exception: pass
+            if job:
+                org=job.get("hiringOrganization",{})
+                if isinstance(org,dict) and org.get("name"): result["company"]=clean(org["name"])
+                result["date_posted"]=clean(job.get("datePosted") or "Not specified")
+                result["valid_through"]=clean(job.get("validThrough") or "Not specified")
+                result["employment_type"]=clean(job.get("employmentType") or "Not specified")
+                exp=job.get("experienceRequirements")
+                if exp: result["experience"]=clean(exp if isinstance(exp,str) else json.dumps(exp))
+                sal=job.get("baseSalary")
+                if sal: result["salary"]=clean(json.dumps(sal,ensure_ascii=False))
+                desc=job.get("description")
+                if desc: result["description"]=clean(BeautifulSoup(str(desc),"html.parser").get_text(" ",strip=True))[:2400]
             for tag in soup(["script","style","noscript","svg"]): tag.decompose()
             text=clean(soup.get_text(" ",strip=True))
             for sel,field in [('meta[name="description"]','description'),('meta[property="og:description"]','description')]:
@@ -111,7 +142,7 @@ def main():
     (DATA/"latest.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
     dated=now.strftime("%Y-%m-%d")
     (ARCHIVE/f"{dated}.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
-    fields=["score","title","company","location","salary","employment_type","experience","url","apply_url","description","skills","fit_reasons","page_status"]
+    fields=["score","title","company","location","salary","employment_type","experience","date_posted","valid_through","url","apply_url","description","skills","fit_reasons","page_status"]
     with (DATA/"latest.csv").open("w",newline="",encoding="utf-8-sig") as f:
         w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore"); w.writeheader()
         for x in chosen: w.writerow({**x,"skills":"; ".join(x["skills"]),"fit_reasons":"; ".join(x["fit_reasons"])})
