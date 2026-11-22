@@ -258,8 +258,9 @@ def enrich(row):
         exp=re.search(r"(\d{1,2})\s*\+?\s*(?:years|yrs)",result["description"],re.I)
         if exp: result["experience"]=exp.group(1)+"+ years (from job description)"
         bullets=row.get("api_bullets") or []
-        result["requirements"]=[concise(b,140) for b in [b for b in bullets if re.search(r"requirement|qualification|experience|years|must have|you have|we are looking for",b,re.I)][:3]]
-        result["responsibilities"]=[concise(b,140) for b in [b for b in bullets if b not in result["requirements"]][:3]]
+        req_bullets=[b for b in bullets if re.search(r"requirement|qualification|experience|years|must have|you have|we are looking for",b,re.I)][:3]
+        result["requirements"]=[concise(b,140) for b in req_bullets]
+        result["responsibilities"]=[concise(b,140) for b in bullets if b not in req_bullets and not re.search(r"winning as one team|customer driven innovation|agility in action|our culture|we value collaboration",b,re.I)][:3]
         result["page_status"]="Listed in Himalayas API"
         result["verification_note"]="Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas."
         result["salary"]=normalize_salary(result.get("salary"))
