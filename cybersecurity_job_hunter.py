@@ -4,7 +4,7 @@ from __future__ import annotations
 import csv, json, re, time, hashlib, html
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlencode
 import requests
 from bs4 import BeautifulSoup
 from ddgs import DDGS
@@ -69,6 +69,44 @@ def discover():
         except Exception as e:
             health[name]={"status":"error","error":str(e)[:220]}
             print(f"Source {name} failed: {str(e)[:180]}")
+    # Himalayas public remote-jobs API: India-filtered search; keep its application link unchanged.
+    try:
+        queries_h=["security engineer","security operations","SIEM","SOAR","detection engineer","incident response"]
+        hcount=0
+        for term in queries_h:
+            params=urlencode({"q":term,"country":"IN","sort":"recent","page":1})
+            response=session.get("https://himalayas.app/jobs/api/search?"+params,timeout=18)
+            response.raise_for_status()
+            body=response.json()
+            items=body.get("jobs",body.get("results",[])) if isinstance(body,dict) else []
+            for item in items:
+                title=clean(item.get("title")); company=clean(item.get("companyName"))
+                desc=BeautifulSoup(str(item.get("description") or item.get("excerpt") or ""),"html.parser").get_text(" ",strip=True)
+                restrictions=item.get("locationRestrictions") or []
+                location="Remote India" if restrictions else "Remote India (worldwide eligible)"
+                guid=clean(item.get("guid"))
+                source_url=guid if guid.startswith("http") else ("https://himalayas.app"+(guid if guid.startswith("/") else "/"+guid) if guid else "")
+                apply_link=clean(item.get("applicationLink"))
+                if not source_url or not apply_link: continue
+                expiry=item.get("expiryDate")
+                if expiry:
+                    try:
+                        if float(expiry)<time.time(): continue
+                    except (TypeError,ValueError): pass
+                salary="Not disclosed"
+                if item.get("minSalary") is not None or item.get("maxSalary") is not None:
+                    currency=clean(item.get("currency") or "")
+                    lo=item.get("minSalary"); hi=item.get("maxSalary")
+                    amount=(str(lo) if lo is not None else "")+("–"+str(hi) if hi is not None and hi!=lo else "")
+                    salary=clean(currency+" "+amount+" / "+clean(item.get("salaryPeriod") or "annual"))
+                row=api_row(title,company,location,source_url,desc,salary,"Himalayas")
+                if not row: continue
+                row.update({"apply_url":apply_link,"source_url":source_url,"source_name":"Himalayas","api_employment_type":item.get("employmentType") or "Not specified","api_date_posted":item.get("pubDate"),"api_valid_through":expiry})
+                add(row); hcount+=1
+        health["Himalayas"]={"status":"ok","matching_jobs":hcount,"note":"India-filtered remote listings; Apply uses the provider-supplied applicationLink."}
+    except Exception as e:
+        health["Himalayas"]={"status":"error","error":str(e)[:220]}
+        print("Source Himalayas failed:",str(e)[:180])
     # Search engine is supplementary. Rotate a small batch each run to avoid rate limits.
     try:
         with DDGS() as ddgs:
@@ -107,7 +145,7 @@ def find_jobposting(obj):
             if found: return found
     return None
 def enrich(row):
-    result={**row,"company":row.get("api_company") or "Employer not verified","location":row.get("api_location") or "Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":row.get("api_salary") or "Not disclosed","employment_type":"Not specified","experience":"Not specified","date_posted":"Not specified","valid_through":"Not specified","responsibilities":[],"requirements":[],"apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only","discovery_source":row.get("discovery_source","DuckDuckGo")}
+    result={**row,"company":row.get("api_company") or "Employer not verified","location":row.get("api_location") or "Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":row.get("api_salary") or "Not disclosed","employment_type":row.get("api_employment_type") or "Not specified","experience":"Not specified","date_posted":datetime.fromtimestamp(row["api_date_posted"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_date_posted") else "Not specified","valid_through":datetime.fromtimestamp(row["api_valid_through"],timezone.utc).strftime("%Y-%m-%d") if row.get("api_valid_through") else "Not specified","apply_url":row.get("apply_url") or row["url"],"source_url":row.get("source_url") or row["url"],"source_name":row.get("source_name") or row.get("discovery_source","Job source"),"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only","discovery_source":row.get("discovery_source","DuckDuckGo")}
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
         result["page_status"]=f"Fetched (HTTP {r.status_code})"
@@ -195,6 +233,10 @@ def main():
     # Enrich only the strongest 60 leads to keep scheduled runs predictable.
     raw=sorted(raw,key=rough_score,reverse=True)[:60]
     enriched=[rank(enrich(x)) for x in raw]
+    enriched=[x for x in enriched if x["score"]>=50]
+    if not enriched:
+        print("No candidates met the minimum 50/100 relevance threshold; preserving the last published snapshot.")
+        return
     enriched.sort(key=lambda x:(x["score"],"hyderabad" in x["location"].lower(),"remote" in x["location"].lower()),reverse=True)
     # Deduplicate on canonical URL and similar role+company.
     chosen=[]; seen=set()
@@ -211,7 +253,7 @@ def main():
     (ARCHIVE/f"{dated}.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
     archive_dates=sorted([p.stem for p in ARCHIVE.glob("*.json") if p.name!="index.json"],reverse=True)
     (ARCHIVE/"index.json").write_text(json.dumps({"dates":archive_dates},indent=2),encoding="utf-8")
-    fields=["score","title","company","location","salary","employment_type","experience","date_posted","valid_through","url","apply_url","description","skills","fit_reasons","page_status"]
+    fields=["score","title","company","location","salary","employment_type","experience","date_posted","valid_through","url","apply_url","source_url","source_name","description","skills","fit_reasons","page_status"]
     with (DATA/"latest.csv").open("w",newline="",encoding="utf-8-sig") as f:
         w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore"); w.writeheader()
         for x in chosen: w.writerow({**x,"skills":"; ".join(x["skills"]),"fit_reasons":"; ".join(x["fit_reasons"])})
