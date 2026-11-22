@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22 07:14 UTC",
+  "generated_at": "2026-11-22 07:18 UTC",
   "source_health": {
     "RemoteOK": {
       "status": "ok",
@@ -28,11 +28,11 @@
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
     "DuckDuckGo": {
-      "status": "degraded",
-      "matching_jobs": 0
+      "status": "ok",
+      "matching_jobs": 1
     }
   },
-  "candidate_count": 50,
+  "candidate_count": 51,
   "qualified_count": 33,
   "published_count": 15
 }

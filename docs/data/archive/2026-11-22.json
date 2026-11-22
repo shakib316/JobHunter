@@ -1,8 +1,8 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 07:14 UTC",
-  "generated_at_iso": "2026-11-22T07:14:47.508279+00:00",
-  "total_candidates": 50,
+  "generated_at": "2026-11-22 07:18 UTC",
+  "generated_at_iso": "2026-11-22T07:18:49.960388+00:00",
+  "total_candidates": 51,
   "count": 15,
   "profile": {
     "title": "Security Engineer",
@@ -31,9 +31,11 @@
       "Bengaluru",
       "Pune",
       "Gurugram",
+      "Gurgaon",
+      "Noida",
+      "Delhi",
       "Chennai",
       "Mumbai",
-      "Noida",
       "India"
     ]
   },
@@ -65,8 +67,8 @@
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
     "DuckDuckGo": {
-      "status": "degraded",
-      "matching_jobs": 0
+      "status": "ok",
+      "matching_jobs": 1
     }
   },
   "results": [
