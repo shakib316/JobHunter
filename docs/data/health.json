@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22 09:29 UTC",
+  "generated_at": "2026-11-22 09:33 UTC",
   "source_health": {
     "RemoteOK": {
       "status": "ok",
@@ -31,9 +31,10 @@
       "status": "ok",
       "companies_configured": 85,
       "companies_checked": 85,
-      "companies_with_matches": 37,
-      "matching_jobs": 97,
-      "raw_results_seen": 821,
+      "companies_with_matches": 35,
+      "candidate_links": 89,
+      "matching_jobs": 89,
+      "raw_results_seen": 803,
       "selected_backend": "Bing RSS",
       "backend_probe": {
         "status": "ok",
@@ -48,12 +49,13 @@
           }
         ]
       },
-      "note": "A successful probe proves the provider responds. no_results_returned means an employer query returned no raw hits, not proof that the employer has no vacancy."
+      "note": "candidate_links are search-result URLs passing role-title/snippet filters; they are not confirmed active vacancies. no_results_returned is not proof that an employer has no vacancy."
     },
     "Employer metasearch": {
       "status": "ok",
-      "raw_results_seen": 821,
-      "matching_jobs": 97,
+      "raw_results_seen": 803,
+      "candidate_links": 89,
+      "matching_jobs": 89,
       "queries_attempted": 85,
       "selected_backend": "Bing RSS",
       "backend_probe": {
@@ -84,6 +86,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -95,6 +98,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -106,6 +110,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 3,
       "matching_jobs": 3,
       "error": "",
       "backends_tested": [
@@ -117,6 +122,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -128,6 +134,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -139,6 +146,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -150,6 +158,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -161,6 +170,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -172,6 +182,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -183,6 +194,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -194,6 +206,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -205,6 +218,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -216,6 +230,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -227,6 +242,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -238,6 +254,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -249,6 +266,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -260,6 +278,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -271,6 +290,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -282,6 +302,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -293,6 +314,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -304,6 +326,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -314,7 +337,8 @@
       "company": "ReliaQuest",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -324,9 +348,10 @@
     {
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "matching_jobs": 6,
+      "status": "results_filtered_out",
+      "results_seen": 1,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -337,6 +362,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -348,6 +374,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -357,9 +384,10 @@
     {
       "company": "Recorded Future",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "matching_jobs": 0,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -370,6 +398,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -381,6 +410,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 5,
       "matching_jobs": 5,
       "error": "",
       "backends_tested": [
@@ -392,6 +422,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 4,
       "matching_jobs": 4,
       "error": "",
       "backends_tested": [
@@ -403,6 +434,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 4,
       "matching_jobs": 4,
       "error": "",
       "backends_tested": [
@@ -414,6 +446,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 11,
+      "candidate_links": 7,
       "matching_jobs": 7,
       "error": "",
       "backends_tested": [
@@ -425,6 +458,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -436,6 +470,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 7,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -447,6 +482,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -458,6 +494,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 8,
       "matching_jobs": 8,
       "error": "",
       "backends_tested": [
@@ -469,6 +506,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 4,
       "matching_jobs": 4,
       "error": "",
       "backends_tested": [
@@ -480,6 +518,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -489,9 +528,10 @@
     {
       "company": "Dropzone AI",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "matching_jobs": 1,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -502,6 +542,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 3,
       "matching_jobs": 3,
       "error": "",
       "backends_tested": [
@@ -511,9 +552,10 @@
     {
       "company": "Simbian",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "matching_jobs": 2,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -524,6 +566,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 9,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -535,6 +578,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -546,6 +590,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -557,6 +602,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -567,7 +613,8 @@
       "company": "Protect AI",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -579,6 +626,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 9,
       "matching_jobs": 9,
       "error": "",
       "backends_tested": [
@@ -590,6 +638,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -601,6 +650,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -612,6 +662,7 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 6,
       "matching_jobs": 6,
       "error": "",
       "backends_tested": [
@@ -623,6 +674,7 @@
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -634,6 +686,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -645,6 +698,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -656,6 +710,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -667,6 +722,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -678,6 +734,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -689,6 +746,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -700,6 +758,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -710,7 +769,8 @@
       "company": "DoorDash",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -722,6 +782,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -733,6 +794,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -744,6 +806,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -755,6 +818,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -766,6 +830,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 8,
+      "candidate_links": 3,
       "matching_jobs": 3,
       "error": "",
       "backends_tested": [
@@ -777,6 +842,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -788,6 +854,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -799,6 +866,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -810,6 +878,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -821,6 +890,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 7,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -832,6 +902,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -843,6 +914,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -854,6 +926,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -865,6 +938,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -876,6 +950,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -887,6 +962,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -898,6 +974,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -909,6 +986,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 10,
+      "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
       "backends_tested": [
@@ -920,6 +998,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -931,6 +1010,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -942,6 +1022,7 @@
       "category": "GCC",
       "status": "match",
       "results_seen": 7,
+      "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
       "backends_tested": [
@@ -953,6 +1034,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -964,6 +1046,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -975,6 +1058,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -986,6 +1070,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -997,6 +1082,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 10,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -1008,6 +1094,7 @@
       "category": "GCC",
       "status": "results_filtered_out",
       "results_seen": 7,
+      "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
       "backends_tested": [
@@ -1015,7 +1102,7 @@
       ]
     }
   ],
-  "candidate_count": 153,
+  "candidate_count": 145,
   "qualified_count": 32,
   "published_count": 15
 }
