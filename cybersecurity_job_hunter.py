@@ -148,7 +148,7 @@ def discover():
                     for hit in hits or []:
                         seen+=1
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
-                        if not url or not title or BAD.search(title+" "+url): continue
+                        if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
                         if not re.search(r"Remote|worldwide|anywhere|global|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
                         tokens=[t for t in re.findall(r"[a-z0-9]+",employer.lower()) if len(t)>3 and t not in {"group","security","cloud","software","technologies","technology","company","holdings"}]
@@ -276,8 +276,7 @@ def enrich(row):
             if re.search(r"remote|work from home",text,re.I) and result["location"] in ["Remote","Worldwide","Not specified"]:
                 result["location"]="Remote (worldwide eligibility not confirmed)" if result["location"]=="Not specified" else "Remote ("+result["location"]+")"
     except Exception as e: result["fetch_error"]=str(e)[:180]
-    return result
-def rank(x):
+    result["salary"]=normalize_salary(result.get("salary"))\n    result["description"]=concise(result.get("description") or result.get("snippet"),260)\n    return result\ndef rank(x):
     t=x["title"].lower(); blob=(t+" "+x["description"]+" "+" ".join(x["skills"])).lower()
     title_points=0
     if "security engineer" in t or "cybersecurity engineer" in t: title_points+=22
@@ -304,7 +303,7 @@ def rank(x):
     elif "remote" in loc: x["fit_reasons"].append("Remote opportunity; country eligibility should be checked")
     if experience: x["fit_reasons"].append("Experience band aligns with a 7-year profile")
     if not x["fit_reasons"]: x["fit_reasons"].append("Relevant security role; validate detailed requirements")
-    x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    x["description"]=concise(x.get("description") or x.get("snippet"),260)\n    x["salary"]=normalize_salary(x.get("salary"))\n    x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     x["verification_note"]=x.get("verification_note") or "Discovery result only; confirm the role is active and apply on the employer's official careers site."
     return x
 def rough_score(x):
