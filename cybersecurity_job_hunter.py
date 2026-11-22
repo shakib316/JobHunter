@@ -276,7 +276,10 @@ def enrich(row):
             if re.search(r"remote|work from home",text,re.I) and result["location"] in ["Remote","Worldwide","Not specified"]:
                 result["location"]="Remote (worldwide eligibility not confirmed)" if result["location"]=="Not specified" else "Remote ("+result["location"]+")"
     except Exception as e: result["fetch_error"]=str(e)[:180]
-    result["salary"]=normalize_salary(result.get("salary"))\n    result["description"]=concise(result.get("description") or result.get("snippet"),260)\n    return result\ndef rank(x):
+    result["salary"]=normalize_salary(result.get("salary"))
+    result["description"]=concise(result.get("description") or result.get("snippet"),260)
+    return result
+def rank(x):
     t=x["title"].lower(); blob=(t+" "+x["description"]+" "+" ".join(x["skills"])).lower()
     title_points=0
     if "security engineer" in t or "cybersecurity engineer" in t: title_points+=22
@@ -303,7 +306,9 @@ def enrich(row):
     elif "remote" in loc: x["fit_reasons"].append("Remote opportunity; country eligibility should be checked")
     if experience: x["fit_reasons"].append("Experience band aligns with a 7-year profile")
     if not x["fit_reasons"]: x["fit_reasons"].append("Relevant security role; validate detailed requirements")
-    x["description"]=concise(x.get("description") or x.get("snippet"),260)\n    x["salary"]=normalize_salary(x.get("salary"))\n    x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    x["description"]=concise(x.get("description") or x.get("snippet"),260)
+    x["salary"]=normalize_salary(x.get("salary"))
+    x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     x["verification_note"]=x.get("verification_note") or "Discovery result only; confirm the role is active and apply on the employer's official careers site."
     return x
 def rough_score(x):
