@@ -55,7 +55,10 @@ def location_allowed(location, description=""):
     loc=clean(location).lower()
     desc=clean(description)
     allowed_cities=r"hyderabad|gurugram|gurgaon|delhi|new delhi|noida"
+    # Keep multi-location roles if at least one location matches the user's list.
     if re.search(rf"\b(?:{allowed_cities})\b",loc,re.I): return True
+    # Explicit Pan-India / All-India listings are eligible; generic "India" alone is not.
+    if re.search(r"\b(?:pan[ -]?india|all[ -]?india|across india|anywhere in india|india[ -]wide|multiple locations across india|open across india)\b",loc,re.I): return True
     if not re.search(r"\b(remote|worldwide|anywhere|global|open to all|all countries)\b",loc,re.I): return False
     if re.search(r"not confirmed|unconfirmed|eligibility unknown",loc,re.I): return False
     # A remote label restricted to another city is not eligible for this search.
@@ -75,9 +78,9 @@ def search_queries():
     qs=[]
     role=' OR '.join('"'+r+'"' for r in ROLES[:9])
     for c in VENDORS:
-        qs.append((c,f'"{c}" ({role}) (Hyderabad OR Gurugram OR Gurgaon OR Delhi OR Noida OR remote) jobs'))
+        qs.append((c,f'"{c}" ({role}) (Hyderabad OR Gurugram OR Gurgaon OR Delhi OR Noida OR "Pan India" OR "All India" OR remote) jobs'))
     for c in GCCS:
-        qs.append((c,f'"{c}" (security OR SIEM OR SOAR OR detection OR SOC) (Hyderabad OR Gurugram OR Gurgaon OR Delhi OR Noida OR remote) careers jobs'))
+        qs.append((c,f'"{c}" (security OR SIEM OR SOAR OR detection OR SOC) (Hyderabad OR Gurugram OR Gurgaon OR Delhi OR Noida OR "Pan India" OR "All India" OR remote) careers jobs'))
     return qs
 
 def broad_search_queries():
@@ -86,7 +89,8 @@ def broad_search_queries():
         ("New Hyderabad GCCs",'Hyderabad global capability centre expansion information security careers 2026'),
         ("Delhi NCR discovery",'Delhi OR Gurgaon OR Gurugram OR Noida security engineer SIEM SOAR detection engineer cybersecurity jobs'),
         ("Delhi NCR GCC discovery",'Delhi NCR Gurgaon Gurugram Noida GCC security operations SIEM SOAR detection careers'),
-        ("Hyderabad discovery",'Hyderabad security engineer cloud security SIEM SOAR jobs')
+        ("Hyderabad discovery",'Hyderabad security engineer cloud security SIEM SOAR jobs'),
+        ("Pan-India discovery",'"Pan India" OR "All India" security engineer SIEM SOAR detection jobs')
     ]
 
 def api_row(title, company, location, url, description="", salary="Not disclosed", source="API"):
@@ -195,7 +199,7 @@ def discover():
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
                         if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
-                        if not re.search(r"Remote|worldwide|anywhere|global|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
+                        if not re.search(r"Remote|worldwide|anywhere|global|Pan India|All India|across India|India-wide|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
                         tokens=[t for t in re.findall(r"[a-z0-9]+",employer.lower()) if len(t)>3 and t not in {"group","security","cloud","software","technologies","technology","company","holdings"}]
                         evidence=(title+" "+snippet+" "+urlparse(url).netloc).lower()
                         if tokens and not any(t in evidence for t in tokens): continue
@@ -217,7 +221,7 @@ def discover():
                         url=clean(hit.get("href") or hit.get("url")); title=clean(hit.get("title")); snippet=clean(hit.get("body") or hit.get("snippet"))
                         if not url or not title or BAD.search(title+" "+url) or not valid_search_hit(title,url): continue
                         if not re.search(r"security|cyber|siem|soar|detection|threat|incident|soc|devsecops",title,re.I): continue
-                        if not re.search(r"Remote|worldwide|anywhere|global|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
+                        if not re.search(r"Remote|worldwide|anywhere|global|Pan India|All India|across India|India-wide|Hyderabad|Gurugram|Gurgaon|Delhi|New Delhi|Noida",snippet+" "+title,re.I): continue
                         add({"title":title,"url":url,"snippet":snippet,"target_employer":"Market discovery","search_query":q,"api_location":"Not specified","search_query_location":"India priority","discovery_source":"Broad search"})
                         matched+=1
                 except Exception as e:
@@ -416,7 +420,7 @@ def main():
     stamp=now.strftime("%Y-%m-%d %H:%M UTC")
     health_payload["qualified_count"]=len(enriched); health_payload["published_count"]=len(chosen)
     (DATA/"health.json").write_text(json.dumps(health_payload,indent=2,ensure_ascii=False),encoding="utf-8")
-    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"employer_searches_configured":len(VENDORS)+len(GCCS),"employer_searches_completed":sum(1 for x in employer_coverage if x["status"]!="error"),"broad_discovery_queries":len(broad_search_queries()),"locations_priority":LOCATIONS},"employer_coverage":employer_coverage,"broad_search_coverage":broad_coverage,"source_health":source_health,"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
+    payload={"project":"CyberJobHunter","generated_at":stamp,"generated_at_iso":now.isoformat(),"total_candidates":len(raw),"count":len(chosen),"profile":{"title":"Security Engineer","experience_years":7,"focus":["Google SecOps","Chronicle","Splunk","SIEM","SOAR","YARA-L","BindPlane","Cribl","Detection Engineering","Cloud Security"]},"search_coverage":{"cybersecurity_vendors":len(VENDORS),"named_gccs":len(GCCS),"employer_searches_configured":len(VENDORS)+len(GCCS),"employer_searches_completed":sum(1 for x in employer_coverage if x["status"]!="error"),"broad_discovery_queries":len(broad_search_queries()),"locations_priority":LOCATIONS+["Multi-location roles including any requested city","Pan-India / All-India roles"]},"employer_coverage":employer_coverage,"broad_search_coverage":broad_coverage,"source_health":source_health,"results":chosen,"disclaimer":"Search-engine discovery can miss vacancies or surface stale listings. Confirm status, location, eligibility and details on the employer's official careers page."}
     DATA.mkdir(parents=True,exist_ok=True); ARCHIVE.mkdir(parents=True,exist_ok=True)
     (DATA/"latest.json").write_text(json.dumps(payload,indent=2,ensure_ascii=False),encoding="utf-8")
     dated=now.strftime("%Y-%m-%d")
