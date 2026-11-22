@@ -55,7 +55,7 @@ REMOTE_RESTRICTED_CITIES = ["Pune","Baroda","Vadodara","Mumbai","Bengaluru","Ban
 def location_allowed(location, description=""):
     loc=clean(location).lower()
     desc=clean(description)
-    if re.search(r"\\b(?:remote|work from anywhere)\\s*(?:in|within|from)?\\s*india\\b|\\bindia[- ]based remote\\b",loc+" "+desc,re.I): return True
+    if re.search(r"\b(?:remote|work from anywhere)\s*(?:in|within|from)?\s*india\b|\bindia[- ]based remote\b",loc+" "+desc,re.I): return True
     allowed_cities=r"hyderabad|gurugram|gurgaon|delhi|new delhi|noida"
     # Keep multi-location roles if at least one location matches the user's list.
     if re.search(rf"\b(?:{allowed_cities})\b",loc,re.I): return True
@@ -413,7 +413,7 @@ def enrich(row):
             if m and result["location"] in ["Not specified","Remote"]: result["location"]=m.group(1)
             if result["location"] in ["Not specified","India"] and re.search(r"\b(?:pan[ -]?india|all[ -]?india|across india|anywhere in india|india[ -]wide|multiple locations across india|open across india)\b",text,re.I):
                 result["location"]="Pan-India"
-            if result["location"] in ["Not specified","India","Remote"] and re.search(r"\\b(?:remote|work from anywhere)\\s*(?:in|within|from)?\\s*india\\b|\\bindia[- ]based remote\\b",text,re.I): result["location"]="Remote India"
+            if result["location"] in ["Not specified","India","Remote"] and re.search(r"\b(?:remote|work from anywhere)\s*(?:in|within|from)?\s*india\b|\bindia[- ]based remote\b",text,re.I): result["location"]="Remote India"
             sal=re.search(r"(?:₹|INR|USD|US\$|\$)\s?[\d,.]+\s?(?:k|K|LPA|lakh|lakhs|per annum|/year|/yr|annually)",text,re.I)
             if sal and not re.search(r"\$\s?0(?:\.0+)?\b",sal.group(0)): result["salary"]=sal.group(0)
             for s in SKILLS:
