@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22 08:03 UTC",
+  "generated_at": "2026-11-22 08:10 UTC",
   "source_health": {
     "RemoteOK": {
       "status": "ok",
@@ -28,16 +28,16 @@
       "note": "Direct Hyderabad listings are re-fetched and enriched each scheduled run."
     },
     "Employer-by-employer search": {
-      "status": "ok",
+      "status": "error",
       "companies_configured": 90,
-      "companies_checked": 90,
-      "companies_with_matches": 16,
-      "matching_jobs": 28,
+      "companies_checked": 0,
+      "companies_with_matches": 0,
+      "matching_jobs": 0,
       "note": "Every configured vendor and GCC is queried on each scheduled run; a checked/no-match result does not prove no vacancy exists."
     },
     "DuckDuckGo": {
-      "status": "ok",
-      "matching_jobs": 28,
+      "status": "error",
+      "matching_jobs": 0,
       "queries_attempted": 90
     }
   },
@@ -45,725 +45,725 @@
     {
       "company": "\"Palo Alto Networks\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"CrowdStrike\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Microsoft Security\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 2,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Google Cloud Security\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"SentinelOne\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Darktrace\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Fortinet\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Cisco Security\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Check Point Software\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"IBM Security\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Zscaler\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Vectra AI\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"CyberArk\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Okta\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Cloudflare\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Proofpoint\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Trellix\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Sophos\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Rapid7\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Elastic\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Arctic Wolf\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"ReliaQuest\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Exabeam\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Securonix\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Abnormal Security\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 2,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Recorded Future\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Tenable\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Qualys\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Wiz\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Akamai\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Bitdefender\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Trend Micro\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"BlackBerry Cylance\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Cybereason\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"eSentire\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Huntress\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Expel\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Dropzone AI\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Torq\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Simbian\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Prophet Security\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Radiant Security\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 2,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Stellar Cyber\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Lakera\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Protect AI\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"HiddenLayer\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Mindgard\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Robust Intelligence\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Netskope\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"SparkCognition\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Deutsche Börse Group\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Vanguard\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Charles Schwab\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"UBS\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"HSBC\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Voya Financial\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"T-Mobile\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"DoorDash\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Billtrust\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Sanofi\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"JLL\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Acumatica\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Blackbaud\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Regeneron\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Amgen\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Eli Lilly\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Citizens Financial Group\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Nationwide\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"HCA Healthcare\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Western Union\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Costco\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Marriott\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"DAZN\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Agilent\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"McDonald's\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Micron\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Mattel\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"S&P Global\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"State Street\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "No results found."
     },
     {
       "company": "\"Wells Fargo\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "No results found."
     },
     {
       "company": "\"Synchrony\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "RequestError: RequestError('error sending request for url (https://html.duckduckgo.com/html/) > connection reset')"
     },
     {
       "company": "\"Salesforce\"",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 1,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "\"Google\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "\"Amazon\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "\"Microsoft\"",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "New Hyderabad GCCs",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 5,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "New Hyderabad GCCs",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "Delhi NCR discovery",
       "category": "GCC",
-      "status": "checked_no_match",
-      "results_seen": 5,
+      "status": "error",
+      "results_seen": 0,
       "matching_jobs": 0,
-      "error": ""
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "Delhi NCR GCC discovery",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 2,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     },
     {
       "company": "Hyderabad discovery",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 5,
-      "matching_jobs": 5,
-      "error": ""
+      "status": "error",
+      "results_seen": 0,
+      "matching_jobs": 0,
+      "error": "error sending request for url (https://html.duckduckgo.com/html/) > operation timed out"
     }
   ],
-  "candidate_count": 78,
-  "qualified_count": 39,
+  "candidate_count": 50,
+  "qualified_count": 33,
   "published_count": 15
 }
