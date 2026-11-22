@@ -7,6 +7,7 @@ on:
       - "cybersecurity_job_hunter.py"
       - "requirements.txt"
       - "docs/index.html"
+      - "tests/**"
       - ".github/workflows/jobhunter.yml"
   schedule:
     - cron: "30 3 * * 1,4"
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   search-and-publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 45
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -44,6 +45,7 @@ jobs:
           Path('/tmp/cyberjobhunter-dashboard.js').write_text(script, encoding='utf-8')
           PY
           node --check /tmp/cyberjobhunter-dashboard.js
+          python -m unittest discover -s tests -v
       - name: Run opportunity discovery and enrichment
         run: python cybersecurity_job_hunter.py
       - name: Commit generated output
