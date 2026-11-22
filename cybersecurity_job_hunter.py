@@ -88,9 +88,14 @@ def rank(x):
     x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering and cloud security"
     x["verification_note"]="Discovery result only; confirm the role is active and apply on the employer's official careers site."
     return x
+def rough_score(x):
+    title=x["title"].lower(); blob=(title+" "+x["snippet"]).lower()
+    return min(35,10+sum(5 for k in ["security engineer","siem","soar","detection","security platform","security lead"] if k in title))+min(35,sum(4 for k in ["google secops","chronicle","splunk","soar","siem","yara-l","bindplane","cribl","sentinel","crowdstrike","detection engineering"] if k in blob))+ (15 if "hyderabad" in blob else 10 if "remote india" in blob else 5 if "india" in blob else 0)
 def main():
     now=datetime.now(timezone.utc); print("Searching target vendors, GCCs and wider India market…")
     raw=discover(); print(f"Discovered {len(raw)} candidate links")
+    # Enrich only the strongest 60 leads to keep scheduled runs predictable.
+    raw=sorted(raw,key=rough_score,reverse=True)[:60]
     enriched=[rank(enrich(x)) for x in raw]
     enriched.sort(key=lambda x:(x["score"],"hyderabad" in x["location"].lower(),"remote" in x["location"].lower()),reverse=True)
     # Deduplicate on canonical URL and similar role+company.
