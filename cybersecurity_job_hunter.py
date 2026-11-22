@@ -62,10 +62,13 @@ def discover():
         except Exception as e:
             health[name]={"status":"error","error":str(e)[:220]}
             print(f"Source {name} failed: {str(e)[:180]}")
-    # Search engine is supplementary, not the sole dependency. Reduce query count and pace requests.
+    # Search engine is supplementary. Rotate a small batch each run to avoid rate limits.
     try:
         with DDGS() as ddgs:
-            queries=search_queries()
+            all_queries=search_queries()
+            run_slot=(datetime.now(timezone.utc).isocalendar().week*2 + (1 if datetime.now(timezone.utc).weekday() >= 3 else 0))*6
+            start=run_slot % len(all_queries)
+            queries=[all_queries[(start+i) % len(all_queries)] for i in range(min(6,len(all_queries)))]
             for employer,q in queries:
                 try:
                     for hit in ddgs.text(q,max_results=6):
@@ -99,7 +102,7 @@ def enrich(row):
     result={**row,"company":row.get("api_company") or "Employer not verified","location":row.get("api_location") or "Not specified","description":row["snippet"],"responsibilities":[],"requirements":[],"skills":[],"salary":row.get("api_salary") or "Not disclosed","employment_type":"Not specified","experience":"Not specified","date_posted":"Not specified","valid_through":"Not specified","responsibilities":[],"requirements":[],"apply_url":row["url"],"source_domain":urlparse(row["url"]).netloc,"page_status":"Search result only","discovery_source":row.get("discovery_source","DuckDuckGo")}
     try:
         r=requests.get(row["url"],headers=HEADERS,timeout=12,allow_redirects=True)
-        result["page_status","discovery_source"]=f"Fetched (HTTP {r.status_code})"
+        result["page_status"]=f"Fetched (HTTP {r.status_code})"
         if r.ok and "text/html" in r.headers.get("content-type",""):
             soup=BeautifulSoup(r.text[:1_500_000],"html.parser")
             job=None
@@ -177,7 +180,9 @@ def rough_score(x):
     return min(35,10+sum(5 for k in ["security engineer","siem","soar","detection","security platform","security lead"] if k in title))+min(35,sum(4 for k in ["google secops","chronicle","splunk","soar","siem","yara-l","bindplane","cribl","sentinel","crowdstrike","detection engineering"] if k in blob))+ (15 if "hyderabad" in blob else 10 if "remote india" in blob else 5 if "india" in blob else 0)
 def main():
     now=datetime.now(timezone.utc); print("Searching target vendors, GCCs and wider India market…")
-    raw=discover(); print(f"Discovered {len(raw)} candidate links")
+    raw,source_health=discover(); print(f"Discovered {len(raw)} candidate links")
+    if not raw:
+        raise SystemExit("No job candidates returned by any source; preserving the last published dataset.")
     # Enrich only the strongest 60 leads to keep scheduled runs predictable.
     raw=sorted(raw,key=rough_score,reverse=True)[:60]
     enriched=[rank(enrich(x)) for x in raw]
