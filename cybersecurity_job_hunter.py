@@ -41,7 +41,7 @@ def api_row(title, company, location, url, description="", salary="Not disclosed
     india=bool(re.search(r"india|hyderabad|bengaluru|bangalore|pune|gurugram|gurgaon|chennai|mumbai|noida",loc))
     worldwide=bool(re.search(r"worldwide|anywhere|global|all countries|open to all",loc))
     if not (india or worldwide): return None
-    return {"title":title,"url":url,"snippet":clean(description)[:1800],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":location or "Not specified","api_salary":clean(salary) or "Not disclosed","discovery_source":source}
+    return {"title":title,"url":url,"snippet":clean(description)[:4500],"target_employer":clean(company) or "API discovery","search_query":source,"api_company":clean(company),"api_location":location or "Not specified","api_salary":clean(salary) or "Not disclosed","discovery_source":source}
 
 def discover():
     rows={}; health={}
@@ -81,7 +81,10 @@ def discover():
             items=body.get("jobs",body.get("results",[])) if isinstance(body,dict) else []
             for item in items:
                 title=clean(item.get("title")); company=clean(item.get("companyName"))
-                desc=BeautifulSoup(str(item.get("description") or item.get("excerpt") or ""),"html.parser").get_text(" ",strip=True)
+                desc_html=str(item.get("description") or item.get("excerpt") or "")
+                desc_soup=BeautifulSoup(desc_html,"html.parser")
+                desc=desc_soup.get_text(" ",strip=True)
+                bullets=[clean(node.get_text(" ",strip=True)) for node in desc_soup.find_all("li") if clean(node.get_text(" ",strip=True))]
                 restrictions=item.get("locationRestrictions") or []
                 location="Remote India" if restrictions else "Remote India (worldwide eligible)"
                 guid=clean(item.get("guid"))
@@ -101,7 +104,7 @@ def discover():
                     salary=clean(currency+" "+amount+" / "+clean(item.get("salaryPeriod") or "annual"))
                 row=api_row(title,company,location,source_url,desc,salary,"Himalayas")
                 if not row: continue
-                row.update({"apply_url":apply_link,"source_url":source_url,"source_name":"Himalayas","api_employment_type":item.get("employmentType") or "Not specified","api_date_posted":item.get("pubDate"),"api_valid_through":expiry})
+                row.update({"snippet":desc[:4500],"api_bullets":bullets,"apply_url":apply_link,"source_url":source_url,"source_name":"Himalayas","api_employment_type":item.get("employmentType") or "Not specified","api_date_posted":item.get("pubDate"),"api_valid_through":expiry})
                 add(row); hcount+=1
         hcount=sum(1 for x in rows.values() if x.get("discovery_source")=="Himalayas")
         health["Himalayas"]={"status":"ok","matching_jobs":hcount,"note":"India-filtered remote listings; Apply uses the provider-supplied applicationLink."}
@@ -152,6 +155,9 @@ def enrich(row):
             if re.search(re.escape(skill),result["description"],re.I): result["skills"].append(skill)
         exp=re.search(r"(\d{1,2})\s*\+?\s*(?:years|yrs)",result["description"],re.I)
         if exp: result["experience"]=exp.group(1)+"+ years (from job description)"
+        bullets=row.get("api_bullets") or []
+        result["requirements"]=[b for b in bullets if re.search(r"requirement|qualification|experience|years|must have|you have|we are looking for",b,re.I)][:10]
+        result["responsibilities"]=[b for b in bullets if b not in result["requirements"]][:10]
         result["page_status"]="Listed in Himalayas API"
         result["verification_note"]="Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas."
         return result
