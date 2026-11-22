@@ -16,7 +16,7 @@ HEADERS={"User-Agent":"Mozilla/5.0 (compatible; CyberJobHunter/2.0; +https://git
 VENDORS=["Palo Alto Networks","CrowdStrike","Microsoft Security","Google Cloud Security","SentinelOne","Darktrace","Fortinet","Cisco Security","Check Point Software","IBM Security","Zscaler","Vectra AI","CyberArk","Okta","Cloudflare","Proofpoint","Trellix","Sophos","Rapid7","Elastic","Arctic Wolf","ReliaQuest","Exabeam","Securonix","Abnormal Security","Recorded Future","Tenable","Qualys","Wiz","Akamai","Bitdefender","Trend Micro","BlackBerry Cylance","Cybereason","eSentire","Huntress","Expel","Dropzone AI","Torq","Simbian","Prophet Security","Radiant Security","Stellar Cyber","Lakera","Protect AI","HiddenLayer","Mindgard","Robust Intelligence","Netskope","SparkCognition"]
 GCCS=["Deutsche Börse Group","Vanguard","Charles Schwab","UBS","HSBC","Voya Financial","T-Mobile","DoorDash","Billtrust","Sanofi","JLL","Acumatica","Blackbaud","Regeneron","Amgen","Eli Lilly","Citizens Financial Group","Nationwide","HCA Healthcare","Western Union","Costco","Marriott","DAZN","Agilent","McDonald's","Micron","Mattel","S&P Global","State Street","Wells Fargo","Synchrony","Salesforce","Google","Amazon","Microsoft"]
 ROLES=["security engineer","cybersecurity engineer","cyber security engineer","siem engineer","soar engineer","detection engineer","security platform engineer","security operations engineer","security analyst","soc engineer","security architect","cloud security engineer","incident response","threat detection","security consultant","security lead","cyber security lead"]
-SKILLS=["Google SecOps","Chronicle","Splunk","Splunk ES","SOAR","SIEM","YARA-L","BindPlane","Cribl","Microsoft Sentinel","CrowdStrike","NG SIEM","detection engineering","incident response","log ingestion","log parsing","normalization","AWS","Azure","GCP","KQL","Python","EDR","XDR"]
+SKILLS=["Google SecOps","Chronicle","Splunk","Splunk ES","SOAR","SIEM","YARA-L","BindPlane","Cribl","Microsoft Sentinel","CrowdStrike","NG SIEM","detection engineering","detection rules","incident response","log ingestion","log parsing","normalization","alert tuning","vulnerability management","cloud infrastructure","cloud security","threat hunting","AWS","Azure","GCP","KQL","Python","EDR","XDR","Kubernetes"]
 LOCATIONS=["Hyderabad","Remote India","Remote","Bengaluru","Pune","Gurugram","Chennai","Mumbai","Noida","India"]
 BAD=re.compile(r"documentation|product overview|pricing|course|certification|interview questions|salary guide|what is |definition|linkedin\.com/(in|company)/",re.I)
 def clean(s): return re.sub(r"\s+"," ",str(s or "")).strip()
@@ -103,6 +103,7 @@ def discover():
                 if not row: continue
                 row.update({"apply_url":apply_link,"source_url":source_url,"source_name":"Himalayas","api_employment_type":item.get("employmentType") or "Not specified","api_date_posted":item.get("pubDate"),"api_valid_through":expiry})
                 add(row); hcount+=1
+        hcount=sum(1 for x in rows.values() if x.get("discovery_source")=="Himalayas")
         health["Himalayas"]={"status":"ok","matching_jobs":hcount,"note":"India-filtered remote listings; Apply uses the provider-supplied applicationLink."}
     except Exception as e:
         health["Himalayas"]={"status":"error","error":str(e)[:220]}
@@ -149,6 +150,8 @@ def enrich(row):
     if row.get("source_name")=="Himalayas":
         for skill in SKILLS:
             if re.search(re.escape(skill),result["description"],re.I): result["skills"].append(skill)
+        exp=re.search(r"(\\d{1,2})\\s*\\+?\\s*(?:years|yrs)",result["description"],re.I)
+        if exp: result["experience"]=exp.group(1)+"+ years (from job description)"
         result["page_status"]="Listed in Himalayas API"
         result["verification_note"]="Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas."
         return result
@@ -211,21 +214,32 @@ def enrich(row):
     return result
 def rank(x):
     t=x["title"].lower(); blob=(t+" "+x["description"]+" "+" ".join(x["skills"])).lower()
-    title= min(35, 10+sum(5 for k in ["security engineer","siem","soar","detection","security platform","security lead"] if k in t))
-    skill=min(35,sum(4 for k in ["google secops","chronicle","splunk","soar","siem","yara-l","bindplane","cribl","sentinel","crowdstrike","detection engineering","incident response"] if k in blob))
+    title_points=0
+    if "security engineer" in t or "cybersecurity engineer" in t: title_points+=22
+    elif any(k in t for k in ["siem","soar","security operations","soc engineer"]): title_points+=18
+    elif any(k in t for k in ["security","cyber","detection","incident response","threat"]): title_points+=12
+    if any(k in t for k in ["detection","incident response","threat","siem","soar"]): title_points+=8
+    if any(k in t for k in ["senior","lead","staff","principal"]): title_points+=5
+    title=min(35,title_points)
+    skill_terms=["google secops","chronicle","splunk","soar","siem","yara-l","bindplane","cribl","sentinel","crowdstrike","detection engineering","detection rules","incident response","log ingestion","log parsing","alert tuning","vulnerability management","cloud infrastructure","cloud security","threat hunting","aws","azure","gcp"]
+    skill=min(35,sum(4 for k in skill_terms if k in blob))
     loc=x["location"].lower()
-    location=15 if "hyderabad" in loc else 12 if "remote" in loc and ("india" in loc or "not specified" not in loc) else 8 if "india" in loc else 3
-    seniority=5 if re.search(r"senior|lead|staff|principal|manager",t) else 2
+    location=20 if "hyderabad" in loc else 18 if "remote india" in loc else 15 if "india" in loc else 12 if "remote" in loc else 3
+    seniority=5 if re.search(r"senior|lead|staff|principal",t) else 2
+    experience=5 if re.search(r"6\\+? years|7\\+? years|8\\+? years|6-\\d+ years|7-\\d+ years",x.get("experience","").lower()) or re.search(r"\\b(?:6|7|8)\\+?\\s*(?:years|yrs)",blob) else 0
     employer=5 if x["company"]!="Employer not verified" else 0
-    penalties=15 if re.search(r"intern|junior|graduate|entry.level",t) else 0
-    x["score"]=max(0,min(100,title+skill+location+seniority+employer-penalties))
+    penalties=18 if re.search(r"intern|junior|graduate|entry.level|analyst i\\b",t) else 0
+    x["score"]=max(0,min(100,title+skill+location+seniority+experience+employer-penalties))
     x["fit_reasons"]=[]
     if any(k in blob for k in ["google secops","chronicle","splunk","soar","siem"]): x["fit_reasons"].append("Direct SIEM/SOAR platform alignment")
-    if any(k in blob for k in ["yara-l","detection engineering","threat detection"]): x["fit_reasons"].append("Detection engineering alignment")
+    if any(k in blob for k in ["detection","incident response","threat hunting","alert tuning"]): x["fit_reasons"].append("Detection, investigation and response engineering alignment")
+    if any(k in blob for k in ["log ingestion","log parsing","normalization"]): x["fit_reasons"].append("Log onboarding and telemetry engineering alignment")
     if "hyderabad" in loc: x["fit_reasons"].append("Preferred Hyderabad location")
-    if "remote" in loc: x["fit_reasons"].append("Remote opportunity indicated")
+    elif "remote india" in loc: x["fit_reasons"].append("Remote India eligibility indicated")
+    elif "remote" in loc: x["fit_reasons"].append("Remote opportunity; country eligibility should be checked")
+    if experience: x["fit_reasons"].append("Experience band aligns with a 7-year profile")
     if not x["fit_reasons"]: x["fit_reasons"].append("Relevant security role; validate detailed requirements")
-    x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering and cloud security"
+    x["profile_alignment"]="7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     x["verification_note"]=x.get("verification_note") or "Discovery result only; confirm the role is active and apply on the employer's official careers site."
     return x
 def rough_score(x):
