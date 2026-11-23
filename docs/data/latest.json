@@ -1,10 +1,10 @@
 {
   "project": "CyberJobHunter",
-  "generated_at": "2026-11-22 09:33 UTC",
-  "generated_at_iso": "2026-11-22T09:33:48.451609+00:00",
-  "total_candidates": 145,
+  "generated_at": "2026-11-23 13:28 UTC",
+  "generated_at_iso": "2026-11-23T13:28:58.761467+00:00",
+  "total_candidates": 193,
   "candidates_enriched": 60,
-  "qualified_count": 32,
+  "qualified_count": 31,
   "count": 15,
   "profile": {
     "title": "Security Engineer",
@@ -45,8 +45,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 3,
+      "matching_jobs": 3,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -54,6 +54,18 @@
     },
     {
       "company": "CrowdStrike",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 7,
+      "matching_jobs": 7,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "Microsoft Security",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
       "results_seen": 10,
@@ -65,7 +77,55 @@
       ]
     },
     {
-      "company": "Microsoft Security",
+      "company": "Google Cloud Security",
+      "category": "Cybersecurity vendor",
+      "status": "results_filtered_out",
+      "results_seen": 10,
+      "candidate_links": 0,
+      "matching_jobs": 0,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "SentinelOne",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 4,
+      "matching_jobs": 4,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "Darktrace",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 7,
+      "matching_jobs": 7,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "Fortinet",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 4,
+      "matching_jobs": 4,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "Cisco Security",
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
@@ -77,72 +137,12 @@
       ]
     },
     {
-      "company": "Google Cloud Security",
-      "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "SentinelOne",
-      "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
-      "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "Darktrace",
-      "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "Fortinet",
-      "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
-      "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "Cisco Security",
-      "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
-      "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
       "company": "Check Point Software",
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -152,7 +152,7 @@
       "company": "IBM Security",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -165,8 +165,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
+      "candidate_links": 6,
+      "matching_jobs": 6,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -177,8 +177,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 4,
+      "matching_jobs": 4,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -187,10 +187,10 @@
     {
       "company": "CyberArk",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 10,
+      "matching_jobs": 10,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -201,8 +201,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -211,10 +211,10 @@
     {
       "company": "Cloudflare",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 3,
+      "matching_jobs": 3,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -225,8 +225,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 5,
+      "matching_jobs": 5,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -237,8 +237,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 5,
+      "matching_jobs": 5,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -247,10 +247,10 @@
     {
       "company": "Sophos",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 5,
+      "matching_jobs": 5,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -259,10 +259,10 @@
     {
       "company": "Rapid7",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 7,
+      "matching_jobs": 7,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -271,10 +271,10 @@
     {
       "company": "Elastic",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "status": "results_filtered_out",
+      "results_seen": 7,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -295,10 +295,10 @@
     {
       "company": "ReliaQuest",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
-      "results_seen": 7,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 7,
+      "matching_jobs": 7,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -307,10 +307,10 @@
     {
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
-      "results_seen": 1,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -333,8 +333,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -343,10 +343,10 @@
     {
       "company": "Recorded Future",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -367,10 +367,10 @@
     {
       "company": "Qualys",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 5,
-      "matching_jobs": 5,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -391,10 +391,10 @@
     {
       "company": "Akamai",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 4,
-      "matching_jobs": 4,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -404,7 +404,7 @@
       "company": "Bitdefender",
       "category": "Cybersecurity vendor",
       "status": "match",
-      "results_seen": 11,
+      "results_seen": 10,
       "candidate_links": 7,
       "matching_jobs": 7,
       "error": "",
@@ -416,9 +416,9 @@
       "company": "Trend Micro",
       "category": "Cybersecurity vendor",
       "status": "match",
-      "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
+      "results_seen": 7,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -451,10 +451,10 @@
     {
       "company": "eSentire",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 8,
-      "matching_jobs": 8,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -501,8 +501,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 3,
-      "matching_jobs": 3,
+      "candidate_links": 4,
+      "matching_jobs": 4,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -511,10 +511,10 @@
     {
       "company": "Simbian",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 3,
+      "matching_jobs": 3,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -524,7 +524,7 @@
       "company": "Prophet Security",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 9,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -559,10 +559,10 @@
     {
       "company": "Lakera",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 6,
+      "matching_jobs": 6,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -571,10 +571,10 @@
     {
       "company": "Protect AI",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
-      "results_seen": 7,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -583,10 +583,10 @@
     {
       "company": "HiddenLayer",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 9,
-      "matching_jobs": 9,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -596,7 +596,7 @@
       "company": "Mindgard",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 4,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -632,7 +632,7 @@
       "company": "SparkCognition",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 1,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -644,9 +644,9 @@
       "company": "Deutsche Börse Group",
       "category": "GCC",
       "status": "match",
-      "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
+      "results_seen": 7,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -656,7 +656,7 @@
       "company": "Vanguard",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -667,10 +667,10 @@
     {
       "company": "Charles Schwab",
       "category": "GCC",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -692,7 +692,7 @@
       "company": "HSBC",
       "category": "GCC",
       "status": "match",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
@@ -728,7 +728,7 @@
       "company": "DoorDash",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -740,7 +740,7 @@
       "company": "Billtrust",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -788,9 +788,9 @@
       "company": "Blackbaud",
       "category": "GCC",
       "status": "match",
-      "results_seen": 8,
-      "candidate_links": 3,
-      "matching_jobs": 3,
+      "results_seen": 9,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -800,7 +800,7 @@
       "company": "Regeneron",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -823,10 +823,10 @@
     {
       "company": "Eli Lilly",
       "category": "GCC",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -835,10 +835,10 @@
     {
       "company": "Citizens Financial Group",
       "category": "GCC",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -884,7 +884,7 @@
       "company": "Costco",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -896,7 +896,7 @@
       "company": "Marriott",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 11,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -907,10 +907,10 @@
     {
       "company": "DAZN",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "status": "results_filtered_out",
+      "results_seen": 7,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -931,10 +931,10 @@
     {
       "company": "McDonald's",
       "category": "GCC",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -943,10 +943,10 @@
     {
       "company": "Micron",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "status": "results_filtered_out",
+      "results_seen": 11,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -956,7 +956,7 @@
       "company": "Mattel",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -992,7 +992,7 @@
       "company": "Wells Fargo",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -1039,10 +1039,10 @@
     {
       "company": "Amazon",
       "category": "GCC",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -1052,7 +1052,7 @@
       "company": "Microsoft",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -1065,43 +1065,43 @@
     {
       "query": "New Hyderabad GCCs",
       "status": "match",
-      "results_seen": 11,
-      "matching_jobs": 3,
+      "results_seen": 10,
+      "matching_jobs": 2,
       "error": ""
     },
     {
       "query": "New Hyderabad GCCs",
       "status": "results_filtered_out",
-      "results_seen": 11,
+      "results_seen": 10,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Delhi NCR discovery",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Delhi NCR GCC discovery",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Hyderabad discovery",
-      "status": "match",
-      "results_seen": 11,
-      "matching_jobs": 3,
+      "status": "results_filtered_out",
+      "results_seen": 10,
+      "matching_jobs": 0,
       "error": ""
     },
     {
       "query": "Pan-India discovery",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "matching_jobs": 2,
+      "matching_jobs": 0,
       "error": ""
     }
   ],
@@ -1124,7 +1124,7 @@
     },
     "Himalayas": {
       "status": "ok",
-      "matching_jobs": 44,
+      "matching_jobs": 45,
       "note": "India-filtered remote listings; Apply uses the provider-supplied applicationLink."
     },
     "Hyderabad employer watchlist": {
@@ -1136,21 +1136,21 @@
       "status": "ok",
       "companies_configured": 85,
       "companies_checked": 85,
-      "companies_with_matches": 35,
-      "candidate_links": 89,
-      "matching_jobs": 89,
-      "raw_results_seen": 803,
+      "companies_with_matches": 41,
+      "candidate_links": 142,
+      "matching_jobs": 142,
+      "raw_results_seen": 800,
       "selected_backend": "Bing RSS",
       "backend_probe": {
         "status": "ok",
         "selected_backend": "Bing RSS",
         "probe_query": "security engineer jobs India",
-        "results_seen": 3,
+        "results_seen": 5,
         "attempts": [
           {
             "backend": "Bing RSS",
             "status": "ok",
-            "results_seen": 3
+            "results_seen": 5
           }
         ]
       },
@@ -1158,21 +1158,21 @@
     },
     "Employer metasearch": {
       "status": "ok",
-      "raw_results_seen": 803,
-      "candidate_links": 89,
-      "matching_jobs": 89,
+      "raw_results_seen": 800,
+      "candidate_links": 142,
+      "matching_jobs": 142,
       "queries_attempted": 85,
       "selected_backend": "Bing RSS",
       "backend_probe": {
         "status": "ok",
         "selected_backend": "Bing RSS",
         "probe_query": "security engineer jobs India",
-        "results_seen": 3,
+        "results_seen": 5,
         "attempts": [
           {
             "backend": "Bing RSS",
             "status": "ok",
-            "results_seen": 3
+            "results_seen": 5
           }
         ]
       }
@@ -1180,8 +1180,8 @@
     "Broad market discovery": {
       "status": "ok",
       "queries_attempted": 6,
-      "raw_results_seen": 57,
-      "matching_jobs": 8,
+      "raw_results_seen": 60,
+      "matching_jobs": 2,
       "selected_backend": "Bing RSS"
     }
   },
@@ -1341,140 +1341,6 @@
         "Log onboarding and telemetry engineering alignment",
         "Preferred Hyderabad location",
         "Experience band aligns with a 7-year profile"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior - Shine.com",
-      "url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
-      "snippet": "Apply to TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job in EY at Hyderabad. Find related TC-CS-CDR-SIEM SOAR Platform Engineer-Senior and IT Services & Consulting Industry Jobs in Hyderabad 3 to 7 Yrs experience with security automation, orchestration, security operations, threat intelligence, communication skills,Palo Alto Cortex XSOAR, Python scripting, integration of security tools ...",
-      "target_employer": "Hyderabad discovery",
-      "search_query": "Hyderabad security engineer cloud security SIEM SOAR jobs",
-      "api_location": "Not specified",
-      "search_query_location": "India priority; full page location check",
-      "discovery_source": "Broad search",
-      "company": "EY",
-      "location": "Hyderabad, Telangana, IN",
-      "description": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Company: EY Job Location: Hyderabad, Telangana, India Employment Type: Full-time Experience Required: 3+ years Wed, 10/07/2026 - 00:43 At EY, youll have the chance to build a career as unique as you are, with the…",
-      "responsibilities": [],
-      "requirements": [
-        "security automation",
-        "orchestration",
-        "security operations"
-      ],
-      "skills": [
-        "SOAR",
-        "SIEM",
-        "incident response",
-        "cloud security",
-        "AWS",
-        "Azure",
-        "GCP",
-        "Python"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "FULL_TIME",
-      "experience": "3+ years",
-      "date_posted": "2026-10-17T12:53:46+05:30",
-      "valid_through": "2026-12-16T12:53:44+05:30",
-      "apply_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
-      "source_url": "https://www.shine.com/jobs/tc-cs-cdr-siem-soar-platform-engineer-senior/ey/19846467",
-      "source_name": "Broad search",
-      "source_domain": "www.shine.com",
-      "page_status": "Structured JobPosting found; check closing date",
-      "verification_note": "Structured JobPosting metadata was found. Confirm validThrough and the employer application page before applying.",
-      "score": 89,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Detection, investigation and response engineering alignment",
-        "Preferred Hyderabad location"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "TC-CS-CDR-SIEM SOAR Platform Engineer-Senior (Big4jobs)",
-      "url": "https://www.jobaaj.com/job/ey-big4job-tc-cs-cdr-siem-soar-platform-engineer-senior-hyderabad-tg-india-5-to-10-years-1861135",
-      "snippet": "You can apply now for TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job at Hyderabad, TG, India and explore the world of opportunities with Jobaaj. Only thing required is having expreience in IT / Software Development & Related and easily target good salary in the IT / Software Development & Related domain.",
-      "target_employer": "Hyderabad discovery",
-      "search_query": "Hyderabad security engineer cloud security SIEM SOAR jobs",
-      "api_location": "Not specified",
-      "search_query_location": "India priority; full page location check",
-      "discovery_source": "Broad search",
-      "company": "Employer not verified",
-      "location": "Hyderabad",
-      "description": "You can apply now for TC-CS-CDR-SIEM SOAR Platform Engineer-Senior Job at Hyderabad, TG, India and explore the world of opportunities with Jobaaj. Only thing required is having expreience in IT / Software Development & Related and easily target good salary in…",
-      "responsibilities": [],
-      "requirements": [],
-      "skills": [
-        "SOAR",
-        "SIEM",
-        "incident response",
-        "cloud security",
-        "AWS",
-        "Azure",
-        "GCP",
-        "Python"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "Not specified",
-      "experience": "Not specified",
-      "date_posted": "Not specified",
-      "valid_through": "Not specified",
-      "apply_url": "https://www.jobaaj.com/job/ey-big4job-tc-cs-cdr-siem-soar-platform-engineer-senior-hyderabad-tg-india-5-to-10-years-1861135",
-      "source_url": "https://www.jobaaj.com/job/ey-big4job-tc-cs-cdr-siem-soar-platform-engineer-senior-hyderabad-tg-india-5-to-10-years-1861135",
-      "source_name": "Broad search",
-      "source_domain": "www.jobaaj.com",
-      "page_status": "HTTP 200; vacancy not independently verified",
-      "verification_note": "The page responds, but no structured JobPosting was found. Confirm that this is an individual, open vacancy before applying.",
-      "score": 84,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Detection, investigation and response engineering alignment",
-        "Preferred Hyderabad location"
-      ],
-      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
-    },
-    {
-      "title": "SOAR Engineer - netenrich.com",
-      "url": "https://netenrich.com/careers/individual-job-soar-engineer",
-      "snippet": "Job Summary As a SOAR Engineer at Netenrich Technologies, You will be responsible for leveraging your expertise in SOAR, Threat Hunting, Chronicle, SIEM, and Writing Rules, Play books to detect and mitigate threats, analyze security data, and develop strategies to strengthen our cybersecurity infrastructure.",
-      "target_employer": "New Hyderabad GCCs",
-      "search_query": "new GCC Hyderabad 2026 cybersecurity security engineer SIEM SOAR jobs",
-      "api_location": "Not specified",
-      "search_query_location": "India priority; full page location check",
-      "discovery_source": "Broad search",
-      "company": "Employer not verified",
-      "location": "Hyderabad",
-      "description": "Job Summary As a SOAR Engineer at Netenrich Technologies, You will be responsible for leveraging your expertise in SOAR, Threat Hunting, Chronicle, SIEM, and Writing Rules, Play books to detect and mitigate threats, analyze security data, and develop…",
-      "responsibilities": [],
-      "requirements": [],
-      "skills": [
-        "Google SecOps",
-        "Chronicle",
-        "Splunk",
-        "SOAR",
-        "SIEM",
-        "incident response",
-        "threat hunting",
-        "AWS",
-        "Python"
-      ],
-      "salary": "Not disclosed",
-      "employment_type": "Not specified",
-      "experience": "Not specified",
-      "date_posted": "Not specified",
-      "valid_through": "Not specified",
-      "apply_url": "https://netenrich.com/careers/individual-job-soar-engineer",
-      "source_url": "https://netenrich.com/careers/individual-job-soar-engineer",
-      "source_name": "Broad search",
-      "source_domain": "netenrich.com",
-      "page_status": "HTTP 200; vacancy not independently verified",
-      "verification_note": "The page responds, but no structured JobPosting was found. Confirm that this is an individual, open vacancy before applying.",
-      "score": 80,
-      "fit_reasons": [
-        "Direct SIEM/SOAR platform alignment",
-        "Detection, investigation and response engineering alignment",
-        "Preferred Hyderabad location"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     },
@@ -2268,6 +2134,223 @@
         "Detection, investigation and response engineering alignment",
         "Remote India eligibility indicated",
         "Experience band aligns with a 7-year profile"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "Cloud Security Engineer",
+      "url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer",
+      "snippet": "About the role You’ll be the engineer our managed services clients rely on when something looks wrong in their AWS accounts or on their endpoints, and the one who makes sure it doesn’t happen twice.You will run AWS-native security services and enterprise EDR/XDR platforms across many client environments, lead incident response from the first alert to the root cause, manage devices through Microsoft Intune, and keep the controls and evidence clients need for SOC 2. The stack you’ll own: Five layers, many client environments. These are the services and tools you’ll work with every week. AWS foundation Accounts, identity, encryption and network edges AWS Organizations & SCPs Control Tower IAM & IAM Identity Center IAM Access Analyzer KMS Secrets Manager VPC & Network Firewall AWS WAF & Shield Cloud workloads EC2, containers and serverless, protected by AWS-native and thirdparty tools CrowdStrike Falcon Cloud Security Trend Micro Vision One / Cloud One Workload Security Bitdefender GravityZone Amazon Inspector GuardDuty Runtime Monitoring Systems Manager Patch Manager ECR image scanning Amazon EKS Endpoints, mobile and email Laptops, servers, phones and the mailboxes people use on them CrowdStrike Falcon SentinelOne Singularity Microsoft Defender for Endpoint Bitdefender GravityZone Microsoft Intune Intune app protection (MAM) Microsoft Entra ID Conditional Access Microsoft Defender for Office 365 SPF, DKIM & DMARC Detection and response EDR, XDR and MDR working as one service Amazon GuardDuty AWS Security Hub Amazon Detective AWS Security Incident Response Microsoft Sentinel Microsoft Defender XDR MDR partners Compliance and evidence Proof that controls work, ready for auditors SOC 2 Trust Services Criteria AWS Config conformance packs AWS Audit Manager AWS CloudTrail CIS Benchmarks Key responsibilities: AWS cloud security Design and run a multi-account security architecture for each client: a dedicated security tooling account with delegated administration for GuardDuty, Security Hub, Inspector, Macie and Detective, and an organization-wide CloudTrail delivered to a locked-down log archive account. Enable and tune GuardDuty protection plans (S3, EKS, Runtime Monitoring, Malware Protection, RDS and Lambda), maintain suppression rules, and route findings by severity to the right queue and on-call engineer. nClouds : Cloud Security Engineer Page 2 of 7 Operate Security Hub with central configuration across the organization: enable standards (AWS Foundational Security Best Practices, CIS, PCI DSS and NIST SP800-53), build automation rules and custom insights, and keep findings deduplicated. Own identity security: IAM Identity Center permission sets, service control and resource control policies, permission boundaries, cross-account role trust reviews, root account protection, MFA enforcement, access key rotation, and IAM Access Analyzer findings for external and unused access. Protect data with KMS key policies and rotation, S3 Block Public Access and bucket policy reviews, default EBS and RDS encryption, Secrets Manager rotation and Macie sensitive data discovery. Harden networks through security group and NACL reviews, AWS Network Firewall, Route 53 Resolver DNS Firewall, VPC endpoints, WAF managed and rate-based rules, Shield Advanced and VPC Flow Log analysis. Secure containers and serverless: EKS cluster hardening, EKS Pod Identity or IRSA, Kubernetes RBAC and audit logs, ECR enhanced scanning, and least-privilege Lambda execution roles. Build auto-remediation for common risks, such as public S3 buckets, security groups open to the internet on SSH or RDP, disabled logging and exposed access keys, using AWS Config rules, EventBridge, Lambda and Systems Manager Automation. Centralize security logs (CloudTrail, VPC Flow Logs, DNS, WAF and load balancer logs) in Amazon Security Lake or the client’s SIEM, with retention set to meet compliance needs. Run security posture reviews against the CIS AWS Foundations Benchmark, AWS Foundational Security Best Practices and the Well-Architected Security pillar, then drive remediation with the client. Review Terraform and CloudFormation changes for security misconfigurations before they reach production. Third-party cloud and workload security on AWS Deploy and manage third-party cloud security platforms alongside AWS-native services, including CrowdStrike Falcon Cloud Security, Trend Micro Vision One and Bitdefender GravityZone, covering workload protection, cloud posture (CSPM) and",
+      "target_employer": "nClouds",
+      "search_query": "Himalayas",
+      "api_company": "nClouds",
+      "api_location": "Remote India",
+      "api_salary": "Not disclosed",
+      "discovery_source": "Himalayas",
+      "api_bullets": [],
+      "apply_url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer?utm_source=api",
+      "source_url": "https://himalayas.app/companies/nclouds/jobs/cloud-security-engineer",
+      "source_name": "Himalayas",
+      "api_employment_type": "Full Time",
+      "api_date_posted": 1795106433,
+      "api_valid_through": 1800127849,
+      "company": "nClouds",
+      "location": "Remote India",
+      "description": "About the role You’ll be the engineer our managed services clients rely on when something looks wrong in their AWS accounts or on their endpoints, and the one who makes sure it doesn’t happen twice.You will run AWS-native security services and enterprise…",
+      "responsibilities": [],
+      "requirements": [],
+      "skills": [
+        "SIEM",
+        "Microsoft Sentinel",
+        "CrowdStrike",
+        "incident response",
+        "cloud security",
+        "AWS",
+        "EDR",
+        "XDR",
+        "Kubernetes"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "Full Time",
+      "experience": "Not specified",
+      "date_posted": "2026-11-19",
+      "valid_through": "2027-01-16",
+      "source_domain": "himalayas.app",
+      "page_status": "Listed in Himalayas API",
+      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
+      "score": 71,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Remote India eligibility indicated"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "Sr IT Cyber Defense Analyst",
+      "url": "https://himalayas.app/companies/altera-digital-health/jobs/sr-it-cyber-defense-analyst",
+      "snippet": "Senior IT Cyber Defense Analyst (Shift Lead) AI-Enabled Security Operations | 24/7 SOC Location: Remote – Pune/Baroda, India Department: IT Cybersecurity – Security Operations Center (SOC) Reports To: SOC Manager Work Schedule: 24/7 rotational shifts About the Role We are seeking an experienced Senior IT Cyber Defense Analyst (Shift Lead) to lead day-to-day SOC operations, oversee security investigations, coordinate incident response, and mentor SOC analysts. The ideal candidate will bring strong SIEM/EDR expertise, advanced threat investigation skills, and hands-on experience using AI/LLM tools and automation to improve SOC efficiency and detection capabilities. Key Responsibilities Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence. Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network activity. Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework. Develop, optimize, and troubleshoot SIEM queries, analytics rules, and detection use cases using Microsoft Sentinel and KQL. Use approved AI/LLM tools for alert triage, investigation assistance, threat intelligence enrichment, KQL development, incident reporting, and workflow automation; independently validate AI-generated outputs. Automate repetitive SOC tasks using Python, PowerShell, APIs, or SOAR capabilities. Mentor analysts, improve investigation quality, reduce false positives, and maintain accurate incident documentation and audit-ready evidence. Coordinate with Incident Response, IT, Endpoint, Network, and Cloud teams to support containment, remediation, and recovery. Required Skills and Qualifications Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience. 5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring. Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection. Proficiency in Microsoft Sentinel and KQL; experience with Microsoft Defender, CrowdStrike, or similar security platforms. Strong understanding of networking, Windows/Linux, identity security, email threats, and MITRE ATT&CK. Mandatory practical AI/LLM proficiency, including prompt engineering, AI-assisted investigations, validation of AI-generated queries/scripts, and awareness of hallucinations, prompt injection, and data privacy risks. Scripting or automation experience using Python, PowerShell, APIs, or SOAR tools. Strong analytical, communication, decision-making, and team leadership skills; willingness to work in a 24/7 rotational shift environment. Preferred Qualifications Certifications such as Microsoft SC-200, CompTIA CySA+, GCIH, or relevant SIEM/EDR vendor certifications. Experience in proactive threat hunting, detection engineering, cloud security, and SOC process improvement. What Success Looks Like Effective shift leadership and timely, high-quality incident handling. Improved detection coverage, investigation efficiency, and reduced false positives. Practical adoption of AI and automation to reduce repetitive work while maintaining security, accuracy, and human oversight. Strong analyst development, documentation, and operational consistency. Originally posted on Himalayas",
+      "target_employer": "Altera Digital Health",
+      "search_query": "Himalayas",
+      "api_company": "Altera Digital Health",
+      "api_location": "Remote India",
+      "api_salary": "Not disclosed",
+      "discovery_source": "Himalayas",
+      "api_bullets": [
+        "Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence.",
+        "Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network activity.",
+        "Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework.",
+        "Develop, optimize, and troubleshoot SIEM queries, analytics rules, and detection use cases using Microsoft Sentinel and KQL.",
+        "Use approved AI/LLM tools for alert triage, investigation assistance, threat intelligence enrichment, KQL development, incident reporting, and workflow automation; independently validate AI-generated outputs.",
+        "Automate repetitive SOC tasks using Python, PowerShell, APIs, or SOAR capabilities.",
+        "Mentor analysts, improve investigation quality, reduce false positives, and maintain accurate incident documentation and audit-ready evidence.",
+        "Coordinate with Incident Response, IT, Endpoint, Network, and Cloud teams to support containment, remediation, and recovery.",
+        "Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience.",
+        "5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring.",
+        "Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection.",
+        "Proficiency in Microsoft Sentinel and KQL; experience with Microsoft Defender, CrowdStrike, or similar security platforms.",
+        "Strong understanding of networking, Windows/Linux, identity security, email threats, and MITRE ATT&CK.",
+        "Mandatory practical AI/LLM proficiency, including prompt engineering, AI-assisted investigations, validation of AI-generated queries/scripts, and awareness of hallucinations, prompt injection, and data privacy risks.",
+        "Scripting or automation experience using Python, PowerShell, APIs, or SOAR tools.",
+        "Strong analytical, communication, decision-making, and team leadership skills; willingness to work in a 24/7 rotational shift environment.",
+        "Certifications such as Microsoft SC-200, CompTIA CySA+, GCIH, or relevant SIEM/EDR vendor certifications.",
+        "Experience in proactive threat hunting, detection engineering, cloud security, and SOC process improvement.",
+        "Effective shift leadership and timely, high-quality incident handling.",
+        "Improved detection coverage, investigation efficiency, and reduced false positives.",
+        "Practical adoption of AI and automation to reduce repetitive work while maintaining security, accuracy, and human oversight.",
+        "Strong analyst development, documentation, and operational consistency."
+      ],
+      "apply_url": "https://himalayas.app/companies/altera-digital-health/jobs/sr-it-cyber-defense-analyst?utm_source=api",
+      "source_url": "https://himalayas.app/companies/altera-digital-health/jobs/sr-it-cyber-defense-analyst",
+      "source_name": "Himalayas",
+      "api_employment_type": "Full Time",
+      "api_date_posted": 1795107718,
+      "api_valid_through": 1798505680,
+      "company": "Altera Digital Health",
+      "location": "Remote India",
+      "description": "Senior IT Cyber Defense Analyst (Shift Lead) AI-Enabled Security Operations | 24/7 SOC Location: Remote – Pune/Baroda, India Department: IT Cybersecurity – Security Operations Center (SOC) Reports To: SOC Manager Work Schedule: 24/7 rotational shifts About…",
+      "responsibilities": [
+        "Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence.",
+        "Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network…",
+        "Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework."
+      ],
+      "requirements": [
+        "Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience.",
+        "5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring.",
+        "Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection."
+      ],
+      "skills": [
+        "SOAR",
+        "SIEM",
+        "Microsoft Sentinel",
+        "CrowdStrike",
+        "NG SIEM",
+        "detection engineering",
+        "incident response",
+        "cloud security",
+        "threat hunting",
+        "KQL",
+        "Python",
+        "EDR",
+        "XDR"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "Full Time",
+      "experience": "5+ years (from job description)",
+      "date_posted": "2026-11-19",
+      "valid_through": "2026-12-29",
+      "source_domain": "himalayas.app",
+      "page_status": "Listed in Himalayas API",
+      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
+      "score": 69,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Remote India eligibility indicated"
+      ],
+      "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
+    },
+    {
+      "title": "Sr IT Cyber Defense Analyst",
+      "url": "https://himalayas.app/companies/harris/jobs/sr-it-cyber-defense-analyst",
+      "snippet": "Senior IT Cyber Defense Analyst (Shift Lead) AI-Enabled Security Operations | 24/7 SOC Location: Remote – Pune/Baroda, India Department: IT Cybersecurity – Security Operations Center (SOC) Reports To: SOC Manager Work Schedule: 24/7 rotational shifts About the Role We are seeking an experienced Senior IT Cyber Defense Analyst (Shift Lead) to lead day-to-day SOC operations, oversee security investigations, coordinate incident response, and mentor SOC analysts. The ideal candidate will bring strong SIEM/EDR expertise, advanced threat investigation skills, and hands-on experience using AI/LLM tools and automation to improve SOC efficiency and detection capabilities. Key Responsibilities Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence. Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network activity. Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework. Develop, optimize, and troubleshoot SIEM queries, analytics rules, and detection use cases using Microsoft Sentinel and KQL. Use approved AI/LLM tools for alert triage, investigation assistance, threat intelligence enrichment, KQL development, incident reporting, and workflow automation; independently validate AI-generated outputs. Automate repetitive SOC tasks using Python, PowerShell, APIs, or SOAR capabilities. Mentor analysts, improve investigation quality, reduce false positives, and maintain accurate incident documentation and audit-ready evidence. Coordinate with Incident Response, IT, Endpoint, Network, and Cloud teams to support containment, remediation, and recovery. Required Skills and Qualifications Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience. 5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring. Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection. Proficiency in Microsoft Sentinel and KQL; experience with Microsoft Defender, CrowdStrike, or similar security platforms. Strong understanding of networking, Windows/Linux, identity security, email threats, and MITRE ATT&CK. Mandatory practical AI/LLM proficiency, including prompt engineering, AI-assisted investigations, validation of AI-generated queries/scripts, and awareness of hallucinations, prompt injection, and data privacy risks. Scripting or automation experience using Python, PowerShell, APIs, or SOAR tools. Strong analytical, communication, decision-making, and team leadership skills; willingness to work in a 24/7 rotational shift environment. Preferred Qualifications Certifications such as Microsoft SC-200, CompTIA CySA+, GCIH, or relevant SIEM/EDR vendor certifications. Experience in proactive threat hunting, detection engineering, cloud security, and SOC process improvement. What Success Looks Like Effective shift leadership and timely, high-quality incident handling. Improved detection coverage, investigation efficiency, and reduced false positives. Practical adoption of AI and automation to reduce repetitive work while maintaining security, accuracy, and human oversight. Strong analyst development, documentation, and operational consistency. Originally posted on Himalayas",
+      "target_employer": "Harris",
+      "search_query": "Himalayas",
+      "api_company": "Harris",
+      "api_location": "Remote India",
+      "api_salary": "Not disclosed",
+      "discovery_source": "Himalayas",
+      "api_bullets": [
+        "Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence.",
+        "Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network activity.",
+        "Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework.",
+        "Develop, optimize, and troubleshoot SIEM queries, analytics rules, and detection use cases using Microsoft Sentinel and KQL.",
+        "Use approved AI/LLM tools for alert triage, investigation assistance, threat intelligence enrichment, KQL development, incident reporting, and workflow automation; independently validate AI-generated outputs.",
+        "Automate repetitive SOC tasks using Python, PowerShell, APIs, or SOAR capabilities.",
+        "Mentor analysts, improve investigation quality, reduce false positives, and maintain accurate incident documentation and audit-ready evidence.",
+        "Coordinate with Incident Response, IT, Endpoint, Network, and Cloud teams to support containment, remediation, and recovery.",
+        "Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience.",
+        "5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring.",
+        "Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection.",
+        "Proficiency in Microsoft Sentinel and KQL; experience with Microsoft Defender, CrowdStrike, or similar security platforms.",
+        "Strong understanding of networking, Windows/Linux, identity security, email threats, and MITRE ATT&CK.",
+        "Mandatory practical AI/LLM proficiency, including prompt engineering, AI-assisted investigations, validation of AI-generated queries/scripts, and awareness of hallucinations, prompt injection, and data privacy risks.",
+        "Scripting or automation experience using Python, PowerShell, APIs, or SOAR tools.",
+        "Strong analytical, communication, decision-making, and team leadership skills; willingness to work in a 24/7 rotational shift environment.",
+        "Certifications such as Microsoft SC-200, CompTIA CySA+, GCIH, or relevant SIEM/EDR vendor certifications.",
+        "Experience in proactive threat hunting, detection engineering, cloud security, and SOC process improvement.",
+        "Effective shift leadership and timely, high-quality incident handling.",
+        "Improved detection coverage, investigation efficiency, and reduced false positives.",
+        "Practical adoption of AI and automation to reduce repetitive work while maintaining security, accuracy, and human oversight.",
+        "Strong analyst development, documentation, and operational consistency."
+      ],
+      "apply_url": "https://himalayas.app/companies/harris/jobs/sr-it-cyber-defense-analyst?utm_source=api",
+      "source_url": "https://himalayas.app/companies/harris/jobs/sr-it-cyber-defense-analyst",
+      "source_name": "Himalayas",
+      "api_employment_type": "Full Time",
+      "api_date_posted": 1793148493,
+      "api_valid_through": 1798332492,
+      "company": "Harris",
+      "location": "Remote India",
+      "description": "Senior IT Cyber Defense Analyst (Shift Lead) AI-Enabled Security Operations | 24/7 SOC Location: Remote – Pune/Baroda, India Department: IT Cybersecurity – Security Operations Center (SOC) Reports To: SOC Manager Work Schedule: 24/7 rotational shifts About…",
+      "responsibilities": [
+        "Lead SOC shift operations, prioritize alerts, manage escalations, and ensure timely handovers and SLA adherence.",
+        "Investigate complex incidents involving phishing, malware, ransomware, compromised accounts, endpoint threats, and suspicious network…",
+        "Conduct threat hunting, correlate security telemetry, and map attacker behavior to the MITRE ATT&CK framework."
+      ],
+      "requirements": [
+        "Bachelor’s degree in Cybersecurity, Information Technology, Computer Science, or equivalent practical experience.",
+        "5+ years of experience in SOC, cyber defense, or incident response, including shift leadership, incident coordination, or analyst mentoring.",
+        "Strong hands-on experience with SIEM, EDR/XDR, incident investigation, and threat detection."
+      ],
+      "skills": [
+        "SOAR",
+        "SIEM",
+        "Microsoft Sentinel",
+        "CrowdStrike",
+        "NG SIEM",
+        "detection engineering",
+        "incident response",
+        "cloud security",
+        "threat hunting",
+        "KQL",
+        "Python",
+        "EDR",
+        "XDR"
+      ],
+      "salary": "Not disclosed",
+      "employment_type": "Full Time",
+      "experience": "5+ years (from job description)",
+      "date_posted": "2026-10-28",
+      "valid_through": "2026-12-27",
+      "source_domain": "himalayas.app",
+      "page_status": "Listed in Himalayas API",
+      "verification_note": "Listed in the Himalayas India-filtered API. Source link is shown separately; Apply uses the original applicationLink supplied by Himalayas.",
+      "score": 69,
+      "fit_reasons": [
+        "Direct SIEM/SOAR platform alignment",
+        "Detection, investigation and response engineering alignment",
+        "Remote India eligibility indicated"
       ],
       "profile_alignment": "7-year Security Engineer profile: SIEM/SOAR, Google SecOps, Splunk, detection engineering, incident response and cloud security"
     }
