@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-23 13:28 UTC",
+  "generated_at": "2026-11-26 09:28 UTC",
   "source_health": {
     "RemoteOK": {
       "status": "ok",
-      "matching_jobs": 1
+      "matching_jobs": 2
     },
     "Arbeitnow": {
       "status": "ok",
@@ -11,7 +11,7 @@
     },
     "Jobicy": {
       "status": "ok",
-      "matching_jobs": 0
+      "matching_jobs": 9
     },
     "Remotive": {
       "status": "ok",
@@ -19,7 +19,7 @@
     },
     "Himalayas": {
       "status": "ok",
-      "matching_jobs": 45,
+      "matching_jobs": 43,
       "note": "India-filtered remote listings; Apply uses the provider-supplied applicationLink."
     },
     "Hyderabad employer watchlist": {
@@ -31,21 +31,21 @@
       "status": "ok",
       "companies_configured": 85,
       "companies_checked": 85,
-      "companies_with_matches": 41,
-      "candidate_links": 142,
-      "matching_jobs": 142,
-      "raw_results_seen": 800,
+      "companies_with_matches": 40,
+      "candidate_links": 147,
+      "matching_jobs": 147,
+      "raw_results_seen": 813,
       "selected_backend": "Bing RSS",
       "backend_probe": {
         "status": "ok",
         "selected_backend": "Bing RSS",
         "probe_query": "security engineer jobs India",
-        "results_seen": 5,
+        "results_seen": 10,
         "attempts": [
           {
             "backend": "Bing RSS",
             "status": "ok",
-            "results_seen": 5
+            "results_seen": 10
           }
         ]
       },
@@ -53,21 +53,21 @@
     },
     "Employer metasearch": {
       "status": "ok",
-      "raw_results_seen": 800,
-      "candidate_links": 142,
-      "matching_jobs": 142,
+      "raw_results_seen": 813,
+      "candidate_links": 147,
+      "matching_jobs": 147,
       "queries_attempted": 85,
       "selected_backend": "Bing RSS",
       "backend_probe": {
         "status": "ok",
         "selected_backend": "Bing RSS",
         "probe_query": "security engineer jobs India",
-        "results_seen": 5,
+        "results_seen": 10,
         "attempts": [
           {
             "backend": "Bing RSS",
             "status": "ok",
-            "results_seen": 5
+            "results_seen": 10
           }
         ]
       }
@@ -86,8 +86,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 3,
-      "matching_jobs": 3,
+      "candidate_links": 8,
+      "matching_jobs": 8,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -132,10 +132,10 @@
     {
       "company": "SentinelOne",
       "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 4,
-      "matching_jobs": 4,
+      "status": "results_filtered_out",
+      "results_seen": 7,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -146,8 +146,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 7,
-      "matching_jobs": 7,
+      "candidate_links": 5,
+      "matching_jobs": 5,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -157,7 +157,7 @@
       "company": "Fortinet",
       "category": "Cybersecurity vendor",
       "status": "match",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 4,
       "matching_jobs": 4,
       "error": "",
@@ -170,8 +170,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 3,
-      "matching_jobs": 3,
+      "candidate_links": 4,
+      "matching_jobs": 4,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -182,8 +182,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -193,7 +193,7 @@
       "company": "IBM Security",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -206,8 +206,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 6,
-      "matching_jobs": 6,
+      "candidate_links": 7,
+      "matching_jobs": 7,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -217,9 +217,9 @@
       "company": "Vectra AI",
       "category": "Cybersecurity vendor",
       "status": "match",
-      "results_seen": 10,
-      "candidate_links": 4,
-      "matching_jobs": 4,
+      "results_seen": 7,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -230,8 +230,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 10,
-      "matching_jobs": 10,
+      "candidate_links": 9,
+      "matching_jobs": 9,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -254,8 +254,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 3,
-      "matching_jobs": 3,
+      "candidate_links": 6,
+      "matching_jobs": 6,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -263,42 +263,6 @@
     },
     {
       "company": "Proofpoint",
-      "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 5,
-      "matching_jobs": 5,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "Trellix",
-      "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 5,
-      "matching_jobs": 5,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "Sophos",
-      "category": "Cybersecurity vendor",
-      "status": "match",
-      "results_seen": 10,
-      "candidate_links": 5,
-      "matching_jobs": 5,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "Rapid7",
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
@@ -310,10 +274,46 @@
       ]
     },
     {
+      "company": "Trellix",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 7,
+      "matching_jobs": 7,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "Sophos",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 4,
+      "matching_jobs": 4,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "Rapid7",
+      "category": "Cybersecurity vendor",
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 5,
+      "matching_jobs": 5,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
       "company": "Elastic",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -338,8 +338,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 7,
-      "matching_jobs": 7,
+      "candidate_links": 6,
+      "matching_jobs": 6,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -349,7 +349,7 @@
       "company": "Exabeam",
       "category": "Cybersecurity vendor",
       "status": "match",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 1,
       "matching_jobs": 1,
       "error": "",
@@ -398,8 +398,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
+      "candidate_links": 3,
+      "matching_jobs": 3,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -432,10 +432,10 @@
     {
       "company": "Akamai",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 4,
+      "matching_jobs": 4,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -457,9 +457,9 @@
       "company": "Trend Micro",
       "category": "Cybersecurity vendor",
       "status": "match",
-      "results_seen": 7,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "results_seen": 10,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -480,10 +480,10 @@
     {
       "company": "Cybereason",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 9,
+      "matching_jobs": 9,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -528,10 +528,10 @@
     {
       "company": "Dropzone AI",
       "category": "Cybersecurity vendor",
-      "status": "results_filtered_out",
+      "status": "match",
       "results_seen": 10,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -542,8 +542,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 4,
-      "matching_jobs": 4,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -552,10 +552,10 @@
     {
       "company": "Simbian",
       "category": "Cybersecurity vendor",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 3,
-      "matching_jobs": 3,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -589,7 +589,7 @@
       "company": "Stellar Cyber",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -601,9 +601,9 @@
       "company": "Lakera",
       "category": "Cybersecurity vendor",
       "status": "match",
-      "results_seen": 10,
-      "candidate_links": 6,
-      "matching_jobs": 6,
+      "results_seen": 7,
+      "candidate_links": 3,
+      "matching_jobs": 3,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -637,7 +637,7 @@
       "company": "Mindgard",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 4,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -662,8 +662,8 @@
       "category": "Cybersecurity vendor",
       "status": "match",
       "results_seen": 10,
-      "candidate_links": 6,
-      "matching_jobs": 6,
+      "candidate_links": 5,
+      "matching_jobs": 5,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -673,7 +673,7 @@
       "company": "SparkCognition",
       "category": "Cybersecurity vendor",
       "status": "results_filtered_out",
-      "results_seen": 1,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -684,20 +684,8 @@
     {
       "company": "Deutsche Börse Group",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 7,
-      "candidate_links": 1,
-      "matching_jobs": 1,
-      "error": "",
-      "backends_tested": [
-        "Bing RSS"
-      ]
-    },
-    {
-      "company": "Vanguard",
-      "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -706,12 +694,24 @@
       ]
     },
     {
-      "company": "Charles Schwab",
+      "company": "Vanguard",
       "category": "GCC",
       "status": "match",
       "results_seen": 10,
       "candidate_links": 1,
       "matching_jobs": 1,
+      "error": "",
+      "backends_tested": [
+        "Bing RSS"
+      ]
+    },
+    {
+      "company": "Charles Schwab",
+      "category": "GCC",
+      "status": "results_filtered_out",
+      "results_seen": 10,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -732,10 +732,10 @@
     {
       "company": "HSBC",
       "category": "GCC",
-      "status": "match",
-      "results_seen": 7,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "status": "results_filtered_out",
+      "results_seen": 10,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -781,7 +781,7 @@
       "company": "Billtrust",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -805,7 +805,7 @@
       "company": "JLL",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -829,7 +829,7 @@
       "company": "Blackbaud",
       "category": "GCC",
       "status": "match",
-      "results_seen": 9,
+      "results_seen": 8,
       "candidate_links": 2,
       "matching_jobs": 2,
       "error": "",
@@ -841,7 +841,7 @@
       "company": "Regeneron",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 7,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -853,7 +853,7 @@
       "company": "Amgen",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -876,10 +876,10 @@
     {
       "company": "Citizens Financial Group",
       "category": "GCC",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 2,
-      "matching_jobs": 2,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -948,10 +948,10 @@
     {
       "company": "DAZN",
       "category": "GCC",
-      "status": "results_filtered_out",
-      "results_seen": 7,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 2,
+      "matching_jobs": 2,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -985,7 +985,7 @@
       "company": "Micron",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 11,
+      "results_seen": 10,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -1021,9 +1021,9 @@
       "company": "State Street",
       "category": "GCC",
       "status": "match",
-      "results_seen": 7,
-      "candidate_links": 2,
-      "matching_jobs": 2,
+      "results_seen": 10,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -1032,10 +1032,10 @@
     {
       "company": "Wells Fargo",
       "category": "GCC",
-      "status": "results_filtered_out",
-      "results_seen": 7,
-      "candidate_links": 0,
-      "matching_jobs": 0,
+      "status": "match",
+      "results_seen": 10,
+      "candidate_links": 1,
+      "matching_jobs": 1,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -1045,7 +1045,7 @@
       "company": "Synchrony",
       "category": "GCC",
       "status": "results_filtered_out",
-      "results_seen": 10,
+      "results_seen": 7,
       "candidate_links": 0,
       "matching_jobs": 0,
       "error": "",
@@ -1080,10 +1080,10 @@
     {
       "company": "Amazon",
       "category": "GCC",
-      "status": "match",
+      "status": "results_filtered_out",
       "results_seen": 10,
-      "candidate_links": 1,
-      "matching_jobs": 1,
+      "candidate_links": 0,
+      "matching_jobs": 0,
       "error": "",
       "backends_tested": [
         "Bing RSS"
@@ -1102,7 +1102,7 @@
       ]
     }
   ],
-  "candidate_count": 193,
+  "candidate_count": 204,
   "qualified_count": 31,
   "published_count": 15
 }
